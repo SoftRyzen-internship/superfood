@@ -1,4 +1,4 @@
-import { client } from '@/utils/sanity/client';
+import { client } from '../../../sanity/client';
 
 // Fetch content with GROQ
 async function getContent() {

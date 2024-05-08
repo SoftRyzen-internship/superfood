@@ -3,7 +3,7 @@ import classNames from 'classnames';
 import { Roboto_Condensed } from 'next/font/google';
 import localFont from 'next/font/local';
 import './globals.css';
-
+import ProductSwiper from '@/components/common/Swiper/ProductSwiper';
 const roboto = Roboto_Condensed({
   subsets: ['cyrillic', 'latin'],
   weight: '700',
@@ -60,8 +60,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="uk">
-      <body className={classNames(geologica.variable, roboto.variable, 'h-full min-h-screen')}>
+      <body
+        className={classNames(
+          geologica.variable,
+          roboto.variable,
+          'h-full min-h-screen'
+        )}
+      >
         {children}
+        <div className="w-[400px] mx-[auto]">
+          <ProductSwiper />
+        </div>
       </body>
     </html>
   );

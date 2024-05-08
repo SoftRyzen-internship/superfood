@@ -24,7 +24,7 @@ function ScrollButton({
         variant === 'secondary' &&
           'py-4 px-6 text-green  border border-solid border-button xl:hover:text-white xl:hover:bg-green  xl:focus:text-white xl:focus:bg-green',
         variant === 'navlink' &&
-          'text-green text-2xl leading-[1.15] uppercase relative md:text-[40px] xl:text-base xl:font-extralight xl:normal-case xl:text-black  xl:hover:text-green xl:focus:text-green transition-colors xl:after:block xl:after:absolute xl:after:bg-green xl:after:w-full xl:after:h-[1px] xl:after:opacity-0 xl:after:top-[22px] xl:hover:after:opacity-100 xl:focus:after:opacity-100 xl:after:transition-opacity inline-block',
+          'text-green text-2xl max-md:font-roboto leading-[1.15] uppercase relative md:text-[40px] xl:text-base xl:font-extralight xl:normal-case xl:text-black  xl:hover:text-green xl:focus:text-green transition-colors xl:after:block xl:after:absolute xl:after:bg-green xl:after:w-full xl:after:h-[1px] xl:after:opacity-0 xl:after:top-[22px] xl:hover:after:opacity-100 xl:focus:after:opacity-100 xl:after:transition-opacity inline-block',
 
         className
       )}

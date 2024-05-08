@@ -3,7 +3,7 @@
 import React from 'react';
 import classNames from 'classnames';
 
-import { ButtonProps } from './types';
+import { ButtonProps } from './Button.types';
 
 function Button({
   label,
@@ -17,9 +17,9 @@ function Button({
       className={classNames(
         'font-bold uppercase rounded-full transition-colors inline-block',
         variant === 'primary' &&
-          'py-5 px-8  text-center text-lg text-white bg-green  xl:hover:bg-darkGreen  xl:text-xl',
+          'py-5 px-8  text-center text-lg text-white bg-green  xl:hover:bg-darkGreen  xl:focus:bg-darkGreen xl:text-xl',
         variant === 'secondary' &&
-          'text-green py-4 px-6 border border-solid border-button  xl:focus:text-white xl:focus:bg-green',
+          'text-green py-4 px-6 border border-solid border-button  xl:hover:text-white xl:hover:bg-green xl:focus:text-white xl:focus:bg-green',
         variant === 'primary2' &&
           'text-white text-xl py-5 px-8 border border-solid border-white xl:hover:text-green xl:hover:bg-white',
         variant === 'readmore' &&

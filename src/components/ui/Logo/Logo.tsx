@@ -10,7 +10,7 @@ function Logo({ text, path }: LogoProps) {
       : 'text-[22px] leading-[26.4px] font-extrabold text-white hover:text-green';
 
   const logoClasses = classNames(
-    'cursor-pointer inline-block transition',
+    'cursor-pointer inline-block uppercase transition',
     logoSizes
   );
 

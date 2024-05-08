@@ -1,6 +1,5 @@
 import Done from '@/../public/icons/Done.svg';
 import { AdvantageItemProps } from './AdvantageItem.types';
-import item from '@/data/advantageItem.json';
 
 function AdvantageItem({ text }: AdvantageItemProps) {
   return (

@@ -1,20 +1,56 @@
-import type { Config } from "tailwindcss";
+import type { Config } from 'tailwindcss';
 
 const config: Config = {
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/sections/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/layout/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    screens: {
+      sm: '480px',
+      smOnly: { max: '767px' },
+      md: '768px',
+      mdOnly: { max: '1279px' },
+      xl: '1280px',
+    },
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      container: {
+        center: true,
+        padding: {
+          DEFAULT: '1rem',
+          sm: '1rem',
+          md: '34px',
+          xl: '2rem',
+        },
+      },
+      fontFamily: {
+        geologica: ['var(--font-geologica)'],
+        roboto: ['var(--font-roboto)'],
+      },
+      fontSize: {
+        light: ['16px', '1.35'],
+        medium: ['18px', '1.35'],
+        lightLarge: ['24px', '1.35'],
+        large: ['26px', '1.35'],
+        extraLarge: ['32px', '1.35'],
+      },
+      colors: {
+        green: '#1F7437',
+        lightGreen: '#F1FAE1',
+        black: '#3B433E',
+        white: '#FFFFFF',
+        input: '#F6F9F1',
+        accent: '#FFE55E',
+        grey: '#859589',
+        strokeGreen: '#579368',
+        strokeLightGreen: '#CADAB0',
+        button: '#177531',
+        red: '#FF0000',
       },
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/typography')],
 };
 export default config;

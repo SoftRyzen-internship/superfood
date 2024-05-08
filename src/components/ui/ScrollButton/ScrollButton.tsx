@@ -4,7 +4,7 @@ import React from 'react';
 import classNames from 'classnames';
 import { Link } from 'react-scroll';
 
-import { ScrollButtonProps } from './types';
+import { ScrollButtonProps } from './ScrollButton.types';
 
 function ScrollButton({
   label,

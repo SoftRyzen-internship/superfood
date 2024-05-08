@@ -5,25 +5,19 @@ export const phoneType = defineType({
   title: 'Phone',
   type: 'document',
   fields: [
-    defineField({
-      name: 'phones',
-      type: 'array',
-      of: [
-        {
-          type: 'object',
-          fields: [
             defineField({
               name: 'country',
               type: 'string',
+              options: {
+        list: [
+          { value: 'UA', title: 'Ukraine' },
+          { value: 'LT', title: 'Lithuania' },
+        ],
+      },
             }),
             defineField({
               name: 'phone',
               type: 'number',
             }),
-          ],
-        },
-      ],
-      validation: Rule => Rule.required().min(2).max(2),
-    }),
   ],
 });

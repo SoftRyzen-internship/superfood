@@ -1,22 +1,18 @@
 import {defineField, defineType} from 'sanity'
 
+
 export const reviewType = defineType({
-  name: 'review',
-  title: 'Review',
-  type: 'array',
-  of: [
-    {
-      type: 'object',
-      fields: [
-        defineField({
-          name: 'name',
-          type: 'string',
-        }),
-        defineField({
-          name: 'comments',
-          type: 'string', 
-        }),
-      ],
-    },
-  ],
-});
+    name: 'review',
+    title: 'Review',
+    type: 'document',
+    fields: [
+                defineField({
+                    name: 'name',
+                    type: 'string',
+                }),
+                defineField({
+                    name: 'comment',
+                    type: 'string',
+                }),
+            ]
+})

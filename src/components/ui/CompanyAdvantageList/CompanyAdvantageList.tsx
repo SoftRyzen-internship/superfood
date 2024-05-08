@@ -1,4 +1,4 @@
-import items from '@/data/advantageItem.json';
+import items from '@/data/advantageItems.json';
 import AdvantageItem from '../AdvantageItem/AdvantageItem';
 
 function CompanyAdvantageList() {

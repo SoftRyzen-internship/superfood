@@ -1,4 +1,3 @@
-import Logo from '@/components/ui/Logo/Logo';
 import { client } from '../../../sanity/client';
 
 // Fetch content with GROQ
@@ -26,5 +25,5 @@ getContent().then(content => console.log(content));
 // Insert the return component calling `getContent()` below
 
 export default function Home() {
-  return <main><Logo path='header' classNames=""/></main>;
+  return <main></main>;
 }

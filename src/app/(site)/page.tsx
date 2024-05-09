@@ -1,7 +1,15 @@
-import { getContent } from '@/actions/asynchronous-functions';
+import {
+  getPolicy,
+  getPhones,
+  getPrices,
+  getReviews,
+} from '../../../sanity/requests';
 
 // Log content to console
-getContent().then(content => console.log(content));
+getPolicy().then(content => console.log(content));
+getPhones().then(content => console.log(content));
+getPrices().then(content => console.log(content));
+getReviews().then(content => console.log(content));
 
 // Insert the return component calling `getContent()` below
 

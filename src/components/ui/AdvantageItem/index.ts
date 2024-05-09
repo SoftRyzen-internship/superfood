@@ -1,1 +1,1 @@
-export * from './AdvantageItem';
+export { default } from './AdvantageItem';

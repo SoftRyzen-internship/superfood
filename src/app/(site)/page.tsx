@@ -1,3 +1,4 @@
+import { HeroSection } from '@/sections/HeroSection';
 import { client } from '../../../sanity/client';
 
 // Fetch content with GROQ
@@ -25,5 +26,9 @@ getContent().then(content => console.log(content));
 // Insert the return component calling `getContent()` below
 
 export default function Home() {
-  return <main></main>;
+  return (
+    <main>
+      <HeroSection />
+    </main>
+  );
 }

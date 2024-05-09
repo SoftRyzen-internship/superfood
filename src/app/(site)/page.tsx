@@ -1,3 +1,4 @@
+import CompanyAdvantageSection from '@/sections/CompanyAdvantageSection/CompanyAdvantageSection';
 import { HeroSection } from '@/sections/HeroSection';
 import { client } from '../../../sanity/client';
 
@@ -29,6 +30,7 @@ export default function Home() {
   return (
     <main>
       <HeroSection />
+      <CompanyAdvantageSection />
     </main>
   );
 }

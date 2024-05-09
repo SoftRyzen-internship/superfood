@@ -1,4 +1,6 @@
+import { HeroSection } from '@/sections/HeroSection';
 import { FAQSection } from '@/sections/FAQSection';
+
 import { client } from '../../../sanity/client';
 
 // Fetch content with GROQ
@@ -28,6 +30,7 @@ getContent().then(content => console.log(content));
 export default function Home() {
   return (
     <main>
+      <HeroSection />
       <FAQSection />
     </main>
   );

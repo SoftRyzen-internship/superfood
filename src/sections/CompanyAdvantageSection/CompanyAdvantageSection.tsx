@@ -13,7 +13,7 @@ function CompanyAdvantageSection() {
             </h2>
             <CompanyAdvantageList />
           </div>
-          <div className="relative pl-[10px] pb-[44px] md:pl-[9px] md:pb-[39px] xl:pl-[43px] xl:pb-[47px]">
+          <div className="relative pl-[10px] pb-[44px] md:pl-[9px] md:pb-[40px] xl:pl-[43px] xl:pb-[47px]">
             <Image
               className="md:w-[293px] md:h-[247px] xl:w-[592px] xl:h-[526px]"
               src={data.image.src}

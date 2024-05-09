@@ -7,7 +7,7 @@ import ScrollButton from '@/components/ui/ScrollButton/ScrollButton';
 
 const HeroSection: FC = () => {
   return (
-    <section className="overflow-hidden bg-lightGreen bg-bg_yellow bg-cover pt-[88px] pb-[30px] relative md:pt-[152px] md:pb-[76px] xl:pt-[148px] xl:pb-[100px]">
+    <section className="bg-lightGreen bg-bg_yellow bg-cover pt-[88px] pb-[30px] relative md:pt-[152px] md:pb-[76px] xl:pt-[148px] xl:pb-[100px]">
       <div className="container">
         <Image
           className="absolute bottom-[-17%] left-[-58.5%] h-[460px] min-w-[516px] md:h-[755px] md:min-w-[847px] md:bottom-[-13%] md:left-[-22%] xl:h-[1306px] xl:min-w-[1465px] xl:bottom-[-36%] xl:left-[-10%]"

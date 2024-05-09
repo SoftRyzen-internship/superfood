@@ -7,15 +7,22 @@ function AdvantageItem({ text }: AdvantageItemProps) {
       <div>
         <Done width={24} height={24} className="w-6 h-6 xl:w-7 xl:h-7" />
       </div>
-      <p
-        className=" font-geologica
+      <div>
+        {text.map(item => {
+          return (
+            <p
+              key={item}
+              className=" font-geologica
         text-medium
         font-light
         color-black
         xl:text-large"
-      >
-        {text}
-      </p>
+            >
+              {item}
+            </p>
+          );
+        })}
+      </div>
     </li>
   );
 }

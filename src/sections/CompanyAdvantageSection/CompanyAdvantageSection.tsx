@@ -22,7 +22,7 @@ function CompanyAdvantageSection() {
               alt={data.image.src}
             />
             <Image
-              className="absolute bottom-0 left-0 md:w-[277px] md:h-[200px]"
+              className="absolute bottom-0 left-0 md:w-[137px] md:h-[95px] xl:w-[277px] xl:h-[200px]"
               src={data.image.srcSmall}
               width={148}
               height={106}

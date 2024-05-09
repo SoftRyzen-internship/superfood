@@ -15,7 +15,7 @@ function ScrollButton({ label, to, variant, className = '' }: ScrollButtonProps)
       className={classNames(
         ' text-center font-bold font-geologica uppercase rounded-full inline-block transition-colors cursor-pointer',
         variant === 'primary' &&
-          'py-5 px-8 text-[18px] leading-tight text-white bg-green  xl:hover:bg-darkGreen xl:focus:bg-darkGreen xl:text-[20px]',
+          'py-5 px-8 text-lg text-white bg-green  xl:hover:bg-darkGreen xl:focus:bg-darkGreen xl:text-xl',
         variant === 'secondary' &&
           'py-4 px-6 text-green  border border-solid border-button xl:hover:text-white xl:hover:bg-green  xl:focus:text-white xl:focus:bg-green',
         variant === 'navlink' &&

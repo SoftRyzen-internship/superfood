@@ -1,0 +1,22 @@
+{
+  "sectionTitle": "Переваги Компанії",
+  "items": [
+    {
+      "id": 1,
+      "text": ["Відомі серед європейських", "споживачів"]
+    },
+    {
+      "id": 2,
+      "text": ["Підтримка", "української економіки"]
+    },
+    {
+      "id": 3,
+      "text": ["Доставка в країни світу Литва", "Латвія, Естонія, Фінляндія"]
+    }
+  ],
+  "image": {
+    "src": "/images/companyAdvantage/sprouted-beans@2x.webp",
+    "srcSmall": "/images/companyAdvantage/sprouted-beans-small@2x.webp",
+    "alt": "Пророщені зерна бобових"
+  }
+}

@@ -1,3 +1,10 @@
+-Logo
+
+| Prop        | Default | Description                                                                                            |
+| ----------- | ------- | ------------------------------------------------------------------------------------------------------ |
+| `path`      | --      | required, `header` or `footer` and styled is changing                                                  |
+| `className` | `""`    | optinal, `string` add tailwind styles                                                                  |
+
 - ScrollButton
 
 | Prop        | Default | Description                                                                                            |

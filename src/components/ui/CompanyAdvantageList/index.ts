@@ -1,1 +1,1 @@
-export * from './CompanyAdvantageList';
+export { default } from './CompanyAdvantageList';

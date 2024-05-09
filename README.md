@@ -24,6 +24,14 @@
 | `onCLick`   | `undefined` | optinal, `string` () => void, add the function                                                         |
 | `className` | `""`        | optinal, `string` add tailwind styles                                                                  |
 
+- Telephones
+
+| Prop        | Default | Description                                                                                            |
+| ----------- | ------- | ------------------------------------------------------------------------------------------------------ |
+| `path`      | --      | required, `contacts` or `footer` and styled is changing                                                  |
+| `className` | `""`    | optinal, `string` add tailwind styles                                                                |
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with
 [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 

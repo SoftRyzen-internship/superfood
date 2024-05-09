@@ -6,12 +6,7 @@ import { Link } from 'react-scroll';
 
 import { ScrollButtonProps } from './ScrollButton.types';
 
-function ScrollButton({
-  label,
-  to,
-  variant,
-  className = '',
-}: ScrollButtonProps) {
+function ScrollButton({ label, to, variant, className = '' }: ScrollButtonProps) {
   return (
     <Link
       to={to}

@@ -1,23 +1,4 @@
-import { client } from '../../../sanity/client';
-
-// Fetch content with GROQ
-async function getContent() {
-  const CONTENT_QUERY = `*[_type == "project"] {
-  ...,
-  coverImage {
-    ...,
-    asset->
-  },
-  duration {
-    ...
-  },
-  tags[],
-  body
-}
-`;
-  const content = await client.fetch(CONTENT_QUERY);
-  return content;
-}
+import { getContent } from '@/actions/asynchronous-functions';
 
 // Log content to console
 getContent().then(content => console.log(content));

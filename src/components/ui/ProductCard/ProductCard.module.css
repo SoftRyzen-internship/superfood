@@ -1,8 +1,16 @@
 .ProductBg {
-  background: url('/images/bg/sprouted-grains-of-beans-bg.webp');
+  background-image: url('/images/bg/bg_sprouted_grains_of_beans@1x.webp');
   background-size: 264px 248px;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .ProductBg {
+    background-image: url('/images/bg/bg_sprouted_grains_of_beans@2x.webp');
+  }
 }
 
 @media screen and (min-width: 768px) {

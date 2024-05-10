@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import Button from '../Button';
+import LinkButton from '../ScrollLink/ScrollLink';
 
 // import { ProductCardProps } from './ProductCard.types'; типи для даних які будуть передаватися
 
@@ -14,14 +14,14 @@ function ProductCard() {
     <div className="bg-darkGreen flex flex-col items-center w-full main">
       <div className={` relative  mb-4 flex justify-center md:mb-5 `}>
         <Image
-          src="/images/products/sprouted-grains-of-beans.webp"
+          src="/images/products/sprouted-grains-of-beans@2x.webp"
           alt=""
           width={311}
           height={286}
           className={`${style.ProductBg} w-[311px] h-[286px]  md:w-[380px] md:h-[350px] xl:w-[407px] xl:h-[382px]`}
         />
         <Image
-          src="/images/products/beans.webp"
+          src="/images/products/beans@2x.webp"
           alt=""
           width={125}
           height={69}
@@ -46,8 +46,7 @@ function ProductCard() {
           </span>
         ))}
       </div>
-      {/*буде перероблено на посилання як тільки будуть готові посилання*/}
-      <Button label="детальніше" variant="primary2" />
+      <LinkButton label="детальніше" href={'productPage'} variant="primary2" />
     </div>
   );
 }

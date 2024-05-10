@@ -50,7 +50,9 @@ export default function Home() {
 
       <HeroSection />
       <Benefits />
+      <Benefits />
       <CompanyAdvantageSection />
+      <SocialMedia />
       <ProductCard
         img="/images/products/sprouted-grains-of-beans@2x.webp"
         imgBg="beans"

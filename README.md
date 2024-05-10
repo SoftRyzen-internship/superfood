@@ -41,9 +41,10 @@
 
 - SocialMedia
 
-| Prop      | Default | Description                              |
-| --------- | ------- | ---------------------------------------- |
-| `section` | menu    | required, `menu`, `contacts` or `footer` |
+| Prop        | Default | Description                              |
+| ----------- | ------- | ---------------------------------------- |
+| `section`   | menu    | required, `menu`, `contacts` or `footer` |
+| `className` | `""`    | optinal, `string` add tailwind styles    |
 
 - ProductCard
 

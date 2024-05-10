@@ -7,6 +7,8 @@ import ScrollLink from '@/components/ui/ScrollLink/';
 import Button from '@/components/ui/Button';
 import NavList from '@/components/common/NavList/';
 import MovingBaner from '@/components/ui/MovingBaner/MovingBaner';
+import Benefits from '@/sections/Benefits/Benefits';
+import SocialMedia from '@/components/ui/SocialMedia';
 
 // Fetch content with GROQ
 async function getContent() {
@@ -58,8 +60,10 @@ export default function Home() {
       </div>
 
       <HeroSection />
+      <Benefits />
       <CompanyAdvantageSection />
       <ProductCard />
+      <SocialMedia />
       <MovingBaner />
     </main>
   );

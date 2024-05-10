@@ -1,1 +1,1 @@
-export * from './PhoneContacts'
+export { default } from './PhoneContacts';

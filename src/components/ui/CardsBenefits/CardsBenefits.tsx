@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { BenefitsCards } from './CardBenefits.types';
 
 function CardsBenefits({ id, icon, text }: BenefitsCards) {

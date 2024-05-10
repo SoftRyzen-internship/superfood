@@ -5,6 +5,7 @@ import { client } from '../../../sanity/client';
 import ScrollLink from '@/components/ui/ScrollLink/';
 import Button from '@/components/ui/Button';
 import NavList from '@/components/common/NavList/';
+import Benefits from '@/sections/Benefits/Benefits';
 
 // Fetch content with GROQ
 async function getContent() {
@@ -57,7 +58,9 @@ export default function Home() {
       </div>
 
       <HeroSection />
+      <Benefits/>
       <CompanyAdvantageSection />
+      
     </main>
   );
 }

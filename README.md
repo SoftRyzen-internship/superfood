@@ -5,7 +5,7 @@
 | `path`      | --      | required, `header` or `footer` and styled is changing |
 | `className` | `""`    | optinal, `string` add tailwind styles                 |
 
-- LinkButton
+- ScrollLink
 
 | Prop        | Default | Description                                                                                                                                  |
 | ----------- | ------- | -------------------------------------------------------------------------------------------------------------------------------------------- |

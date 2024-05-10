@@ -4,7 +4,7 @@ import React from 'react';
 import Link from 'next/link';
 import classNames from 'classnames';
 
-import { LinkButtonProps } from './LinkButton.types';
+import { LinkButtonProps } from './ScrollLink.types';
 
 function LinkButton({
   label,

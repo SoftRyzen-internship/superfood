@@ -6,24 +6,6 @@
     transform: translateX(calc(-100% - 24px));
   }
 }
-
 .movingLine {
   animation: moveLineAnimation 15s linear infinite;
-}
-
-.movingLine li {
-  display: flex;
-  gap: 24px;
-  align-items: center;
-  color: #579368;
-  font-size: 18px;
-  font-weight: bold;
-  text-wrap: nowrap;
-  white-space: nowrap;
-  font-family: 'Roboto';
-  font-size: 36px;
-  font-weight: 900;
-  line-height: 1;
-  text-align: left;
-  text-transform: uppercase;
 }

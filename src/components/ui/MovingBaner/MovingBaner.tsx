@@ -5,7 +5,10 @@ import styles from './MovingBaner.module.css';
 function MovingBaner() {
   const renderBanners = () => {
     return banners.map((banner, index) => (
-      <li key={index}>
+      <li
+        key={index}
+        className="flex gap-6 items-center text-strokeGreen text-[40px] leading-[46px] font-bold text-nowrap whitespace-nowrap font-roboto uppercase"
+      >
         <p>{banner.text}</p>
         <Circle width={17.95} height={16} className="fill-strokeGreen" />
       </li>

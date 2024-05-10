@@ -21,17 +21,18 @@ function SocialMedia({ section = 'menu', className }: SocialMediaProps) {
             href={link}
             target="_blank"
             rel="noopener noreferrer nofollow"
+            aria-label={`open ${name}`}
             className={classNames(
               'rounded-full flex justify-center items-center transition-colors',
               section === 'menu' &&
-                'w-10 h-10 bg-white hover:bg-green focus:bg-green  md:w-[72px] md:h-[72px]',
+                'w-10 h-10 bg-white hover:bg-strokeGreen  focus:bg-strokeGreen   md:w-[72px] md:h-[72px]',
               section === 'contacts' &&
-                'w-16 h-16 bg-white hover:bg-green focus:bg-green md:w-[72px] md:h-[72px]',
+                'w-16 h-16 bg-strokeGreen white hover:bg-strokeGreen  focus:bg-strokeGreen  md:w-[72px] md:h-[72px]',
               section === 'footer' &&
                 'w-14 h-14 bg-strokeGreen hover:bg-white focus:bg-white xl:w-[72px] xl:h-[72px]'
             )}
           >
-            {name === 'Facebook' ? (
+            {name === 'facebook' ? (
               <Facebook
                 width={24}
                 height={24}

@@ -1,6 +1,7 @@
 import CompanyAdvantageSection from '@/sections/CompanyAdvantageSection/CompanyAdvantageSection';
 import { HeroSection } from '@/sections/HeroSection';
 import { client } from '../../../sanity/client';
+import SocialMedia from '@/components/ui/SocialMedia';
 
 // Fetch content with GROQ
 async function getContent() {
@@ -29,8 +30,9 @@ getContent().then(content => console.log(content));
 export default function Home() {
   return (
     <main>
-      <HeroSection />
+      {/* <HeroSection /> */}
       <CompanyAdvantageSection />
+      <SocialMedia section="contacts" />
     </main>
   );
 }

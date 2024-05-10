@@ -7,7 +7,7 @@ function MovingBaner() {
     return banners.map((banner, index) => (
       <li
         key={index}
-        className="flex gap-6 items-center text-strokeGreen text-[40px] leading-[46px] font-bold text-nowrap whitespace-nowrap font-roboto uppercase"
+        className="flex gap-6 items-center text-strokeGreen text-lightLarge md:text-[40px] xl:text-[68px] md:leading-[46px] xl:leading-[78px] font-bold text-nowrap whitespace-nowrap font-roboto uppercase"
       >
         <p>{banner.text}</p>
         <Circle width={17.95} height={16} className="fill-strokeGreen" />
@@ -21,7 +21,7 @@ function MovingBaner() {
       movingLineContainers.push(
         <div key={i}>
           <ul
-            className={`flex gap-6 h-[102px] overflow-hidden ${styles.movingLine}`}
+            className={`flex gap-6 h-[72px] md:h-[102px] xl:h-[198px] overflow-hidden ${styles.movingLine}`}
             aria-hidden={i > 0}
           >
             {renderBanners()}
@@ -33,7 +33,7 @@ function MovingBaner() {
   };
 
   return (
-    <div className="absolute left-0 w-full bg-darkGreen overflow-hidden flex gap-6 select-none">
+    <div className="absolute left-0 w-full bg-green overflow-hidden flex gap-6 select-none">
       {renderMovingLineContainers(3)}
     </div>
   );

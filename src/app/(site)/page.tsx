@@ -1,6 +1,7 @@
 import CompanyAdvantageSection from '@/sections/CompanyAdvantageSection/CompanyAdvantageSection';
 import { HeroSection } from '@/sections/HeroSection';
 import { client } from '../../../sanity/client';
+import ProductCard from '@/components/ui/ProductCard';
 
 import ScrollLink from '@/components/ui/ScrollLink/';
 import Button from '@/components/ui/Button';
@@ -60,7 +61,7 @@ export default function Home() {
       <HeroSection />
       <Benefits/>
       <CompanyAdvantageSection />
-      
+      <ProductCard />
     </main>
   );
 }

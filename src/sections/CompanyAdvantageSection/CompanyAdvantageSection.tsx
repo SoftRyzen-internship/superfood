@@ -12,22 +12,13 @@ function CompanyAdvantageSection() {
           </h2>
           <CompanyAdvantageList />
         </div>
-        <div className="relative pl-[10px] pb-[44px] md:pl-[9px] md:pb-[40px] xl:pl-[43px] xl:pb-[47px]">
-          <Image
-            className="md:w-[293px] md:h-[247px] xl:w-[592px] xl:h-[526px]"
-            src={data.image.src}
-            width={328}
-            height={320}
-            alt={data.image.src}
-          />
-          <Image
-            className="absolute bottom-0 left-0 md:w-[137px] md:h-[95px] xl:w-[277px] xl:h-[200px]"
-            src={data.image.srcSmall}
-            width={148}
-            height={106}
-            alt={data.image.src}
-          />
-        </div>
+        <Image
+          className="md:w-[302px] md:h-[286px] xl:w-[635px] xl:h-[573px]"
+          src={data.image.src}
+          width={328}
+          height={320}
+          alt={data.image.src}
+        />
       </div>
     </section>
   );

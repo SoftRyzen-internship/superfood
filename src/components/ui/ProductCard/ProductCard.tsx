@@ -1,12 +1,12 @@
 import Image from 'next/image';
 
+import classNames from 'classnames';
+
 import LinkButton from '../ScrollLink/ScrollLink';
 
-// import { ProductCardProps } from './ProductCard.types'; типи для даних які будуть передаватися
+import { ProductCardProps } from './ProductCard.types';
 
 import style from './ProductCard.module.css';
-import { ProductCardProps } from './ProductCard.types';
-import classNames from 'classnames';
 
 function ProductCard({
   img,

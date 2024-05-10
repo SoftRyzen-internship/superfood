@@ -41,8 +41,23 @@ export default function Home() {
 
       <HeroSection />
       <Benefits />
+      <Benefits />
       <CompanyAdvantageSection />
-      <ProductCard />
+      <SocialMedia />
+      <ProductCard
+        img="/images/products/sprouted-grains-of-beans@2x.webp"
+        imgBg="beans"
+        alt="ПРОРОЩЕНІ ЗЕРНА БОБОВИХ"
+        name="ПРОРОЩЕНІ ЗЕРНА БОБОВИХ"
+        descriptionItems={[
+          'Джерело білка',
+          'Фолієва кислота',
+          'Антиоксиданти',
+          'Клітковина',
+        ]}
+        link="/:productId"
+        buttonText="детальніше"
+      />
       <SocialMedia />
     </main>
   );

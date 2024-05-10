@@ -39,12 +39,24 @@
 | `text` | ---     | `string`, text can change in data |
 | `id`   | ---     | `number`, text can change in data |
 
-- Social media
+- SocialMedia
 
 | Prop        | Default | Description                              |
 | ----------- | ------- | ---------------------------------------- |
 | `section`   | menu    | required, `menu`, `contacts` or `footer` |
 | `className` | `""`    | optinal, `string` add tailwind styles    |
+
+- ProductCard
+
+| Prop               | Default | Description                                                    |
+| ------------------ | ------- | -------------------------------------------------------------- |
+| `img`              | -       | required, `string`, image url                                  |
+| `imgBg`            | -       | required, `beans`, `wheat`, `vegetables`, `corn`, or `seaweed` |
+| `alt`              | -       | required, `string`, image description                          |
+| `name`             | -       | required, `string`, product name                               |
+| `descriptionItems` | -       | required, `string`,product description                         |
+| `link`             | -       | required, `string`, link to product page                       |
+| `buttonText`       | -       | required, `string`, text for button                            |
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with
 [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).

@@ -7,6 +7,7 @@ import ScrollLink from '@/components/ui/ScrollLink/';
 import Button from '@/components/ui/Button';
 import NavList from '@/components/common/NavList/';
 import Benefits from '@/sections/Benefits/Benefits';
+import SocialMedia from '@/components/ui/SocialMedia';
 
 // Fetch content with GROQ
 async function getContent() {
@@ -62,6 +63,7 @@ export default function Home() {
       <Benefits/>
       <CompanyAdvantageSection />
       <ProductCard />
+      <SocialMedia  />
     </main>
   );
 }

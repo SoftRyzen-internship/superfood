@@ -26,10 +26,10 @@
 
 - Telephones
 
-| Prop        | Default | Description                                                                                            |
-| ----------- | ------- | ------------------------------------------------------------------------------------------------------ |
-| `path`      | --      | required, `contacts` or `footer` and styled is changing                                                  |
-| `className` | `""`    | optinal, `string` add tailwind styles                                                                |
+| Prop        | Default | Description                                             |
+| ----------- | ------- | ------------------------------------------------------- |
+| `path`      | --      | required, `contacts` or `footer` and styled is changing |
+| `className` | `""`    | optinal, `string` add tailwind styles                   |
 
 - CardsBenefits
 
@@ -38,6 +38,12 @@
 | `icon`      | --      | `JSX.Element`and show icons                                   |
 | `text`      | ---     | `string`, text can change in data                             |
 | `id`       | ---     | `number`, text can change in data                             |
+
+- Social media
+
+| Prop      | Default | Description                              |
+| --------- | ------- | ---------------------------------------- |
+| `section` | menu    | required, `menu`, `contacts` or `footer` |
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with
 [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).

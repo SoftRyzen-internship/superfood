@@ -14,7 +14,7 @@ function SocialMedia({ section = 'menu' }: SocialMediaProps) {
     section === 'footer' && 'w-8 h-8 xl:w-10 xl:h-10'
   );
   return (
-    <ul className="bg-green flex gap-5">
+    <ul className="flex gap-5">
       {socialMedia.map(({ name, link }, index) => (
         <li key={index}>
           <a

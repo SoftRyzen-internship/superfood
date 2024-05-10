@@ -1,18 +1,20 @@
 'use client';
 
 import React from 'react';
+import { Dialog, DialogPanel, Transition } from '@headlessui/react';
 import classNames from 'classnames';
 
-import { Dialog, DialogPanel, Transition } from '@headlessui/react';
+import { ModalProps } from './Modal.types';
 
-export interface ModalProps {
-  children: React.ReactNode;
-  isOpen: boolean;
-  close: () => void;
-  variant?: string;
-}
+import Icon from '@/../../public/icons/LowPartOfReview.svg';
 
-function Modal({ children, isOpen, close, variant }: ModalProps) {
+function Modal({
+  children,
+  isOpen,
+  close,
+  variant,
+  className = '',
+}: ModalProps) {
   return (
     <>
       <Transition
@@ -31,13 +33,21 @@ function Modal({ children, isOpen, close, variant }: ModalProps) {
           <div className="fixed inset-0 flex w-screen items-center justify-center">
             <DialogPanel
               className={classNames(
-                ' bg-white',
-                variant === 'burgermenu' && 'w-full h-full',
-                variant === 'modal' &&
-                  'px-4 py-4 max-w-[360px] max-h-[90%] rounded-xl'
+                'bg-white relative',
+                variant === 'burger' && 'w-full h-full',
+                (variant === 'comments' || variant === 'simple') &&
+                  'max-w-[328px] max-h-[90%] rounded-xl md:max-w-[700px] xl:max-w-[800px]',
+                className
               )}
             >
               {children}
+              {variant === 'comments' && (
+                <Icon
+                  width={31}
+                  height={21}
+                  className="absolute bottom-[-21px] left-10  w-[31px] h-[21px]"
+                />
+              )}
             </DialogPanel>
           </div>
         </Dialog>

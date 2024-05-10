@@ -56,7 +56,10 @@ export default function Home() {
       <div className="container py-2 flex flex-wrap gap-2 items-center bg-gray-400">
         <NavList />
       </div>
-      <OpenModalExampleBtn />
+      <div className="container text-center">Modals</div>
+      <div className="container py-2 flex flex-wrap gap-2 items-center bg-gray-400">
+        <OpenModalExampleBtn />
+      </div>
       <HeroSection />
       <CompanyAdvantageSection />
       <ProductCard />

@@ -1,4 +1,8 @@
 export interface AccordionProps {
-  question: string;
-  answer: string;
+  index: number;
+  titleItem: string;
+  description: string;
+  variant: 'home' | 'formulaic';
+  info?: { id: string; caption: string; captionText: string }[];
+  openFirst?: boolean;
 }

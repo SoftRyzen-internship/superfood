@@ -60,7 +60,7 @@ export default function Home() {
       <HeroSection />
       <CompanyAdvantageSection />
       <ProductCard />
-      <SocialMedia />
+      <SocialMedia  />
     </main>
   );
 }

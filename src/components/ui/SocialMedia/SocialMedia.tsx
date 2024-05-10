@@ -7,14 +7,14 @@ import { SocialMediaProps } from './SocialMedia.types';
 
 import socialMedia from '@/data/socialMedia.json';
 
-function SocialMedia({ section = 'menu' }: SocialMediaProps) {
+function SocialMedia({ section = 'menu', className }: SocialMediaProps) {
   const iconClass = classNames(
     section === 'menu' && 'w-6 h-6 md:w-10 md:h-10',
     section === 'contacts' && 'w-9 h-9  md:w-10 md:h-10',
     section === 'footer' && 'w-8 h-8 xl:w-10 xl:h-10'
   );
   return (
-    <ul className="flex gap-5">
+    <ul className={classNames('flex gap-5', className && className)}>
       {socialMedia.map(({ name, link }, index) => (
         <li key={index}>
           <a

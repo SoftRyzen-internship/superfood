@@ -24,7 +24,6 @@ getReviews().then(content => console.log(content));
 // Insert the return component calling `getContent()` below
 
 export default function Home() {
-
   return (
     <main>
       <div className="container text-center">ScrollLink</div>
@@ -50,10 +49,10 @@ export default function Home() {
       </div>
 
       <HeroSection />
-      <Benefits/>
+      <Benefits />
       <CompanyAdvantageSection />
       <ProductCard />
-      <SocialMedia  />
+      <SocialMedia />
     </main>
   );
 }

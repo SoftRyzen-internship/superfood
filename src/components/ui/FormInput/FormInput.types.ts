@@ -1,5 +1,6 @@
 export interface FormInputProps {
   type: string;
   placeholder: string;
-  error: string;
+  errorMessage: string;
+  error?: boolean;
 }

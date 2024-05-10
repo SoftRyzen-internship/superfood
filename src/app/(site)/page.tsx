@@ -10,6 +10,7 @@ import SocialMedia from '@/components/ui/SocialMedia';
 import FormInput from '@/components/ui/FormInput';
 
 import form from '@/data/form.json';
+import Checkbox from '@/components/ui/Checkbox';
 
 // Fetch content with GROQ
 async function getContent() {
@@ -64,14 +65,16 @@ export default function Home() {
       <CompanyAdvantageSection />
       <ProductCard />
       <SocialMedia section="footer" />
-      {form.formProps.map(({ type, placeholder, error }, index) => (
+      {form.formProps.map(({ type, placeholder, errorMessage }, index) => (
         <FormInput
           key={index}
           type={type}
           placeholder={placeholder}
-          error={error}
+          error={true}
+          errorMessage={errorMessage}
         />
       ))}
+      <Checkbox label="Даю згоду на обробку персональних даних " />
     </main>
   );
 }

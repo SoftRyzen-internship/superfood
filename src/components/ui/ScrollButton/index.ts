@@ -1,1 +1,1 @@
-export { default } from './ScrollButton';
+export { default } from './LinkButton';

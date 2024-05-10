@@ -1,28 +1,28 @@
 -Logo
 
-| Prop        | Default | Description                                                                                            |
-| ----------- | ------- | ------------------------------------------------------------------------------------------------------ |
-| `path`      | --      | required, `header` or `footer` and styled is changing                                                  |
-| `className` | `""`    | optinal, `string` add tailwind styles                                                                  |
+| Prop        | Default | Description                                           |
+| ----------- | ------- | ----------------------------------------------------- |
+| `path`      | --      | required, `header` or `footer` and styled is changing |
+| `className` | `""`    | optinal, `string` add tailwind styles                 |
 
-- ScrollButton
+- LinkButton
 
-| Prop        | Default | Description                                                                                            |
-| ----------- | ------- | ------------------------------------------------------------------------------------------------------ |
-| `label`     | --      | required, `string` button's text                                                                       |
-| `to`        | --      | required, `string` name of id section for scroll                                                       |
-| `variant`   | --      | required, `string` 'primary', 'secondary' see UiKIt (Buttons), 'navlink' for NavBar (desktop, mobile); |
-| `className` | `""`    | optinal, `string` add tailwind styles                                                                  |
+| Prop        | Default | Description                                                                                                                                  |
+| ----------- | ------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| `label`     | --      | required, `string` button's text                                                                                                             |
+| `href`      | --      | required, `string` path to page or name of id section for scroll, examples 'policy' or '#sectionId'                                          |
+| `variant`   | --      | required, `string` 'primary', 'secondary', 'primary2' see UiKIt (Buttons), 'navlink' for NavBar (desktop, mobile), "policy" for policy page; |
+| `className` | `""`    | optinal, `string` add tailwind styles                                                                                                        |
 
 - Button
 
-| Prop        | Default     | Description                                                                                            |
-| ----------- | ----------- | ------------------------------------------------------------------------------------------------------ |
-| `label`     | --          | required, `string` button's text                                                                       |
-| `variant`   | --          | required, `string` 'primary', 'secondary' see UiKIt (Buttons), 'navlink' for NavBar (desktop, mobile); |
-| `type`      | `button`    | optinal, `string` 'button', 'submit'                                                                   |
-| `onCLick`   | `undefined` | optinal, `string` () => void, add the function                                                         |
-| `className` | `""`        | optinal, `string` add tailwind styles                                                                  |
+| Prop        | Default     | Description                                                                       |
+| ----------- | ----------- | --------------------------------------------------------------------------------- |
+| `label`     | --          | required, `string` button's text                                                  |
+| `variant`   | --          | required, `string` 'primary' see UiKIt (Buttons), 'readmore' for comments button; |
+| `type`      | `button`    | optinal, `string` 'button', 'submit'                                              |
+| `onCLick`   | `undefined` | optinal, `string` () => void, add the function                                    |
+| `className` | `""`        | optinal, `string` add tailwind styles                                             |
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with
 [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).

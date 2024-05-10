@@ -3,7 +3,7 @@ import { FC } from 'react';
 import Image from 'next/image';
 
 import heroSection from '@/data/heroSection.json';
-import ScrollButton from '@/components/ui/ScrollButton/ScrollButton';
+import ScrollButton from '@/components/ui/ScrollButton/LinkButton';
 
 const HeroSection: FC = () => {
   return (

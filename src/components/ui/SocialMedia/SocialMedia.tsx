@@ -14,7 +14,7 @@ function SocialMedia({ section = 'menu' }: SocialMediaProps) {
     section === 'footer' && 'w-8 h-8 xl:w-10 xl:h-10'
   );
   return (
-    <ul className="bg-green flex gap-5 h-80">
+    <ul className="bg-green flex gap-5">
       {socialMedia.map(({ name, link }, index) => (
         <li key={index}>
           <a
@@ -29,9 +29,9 @@ function SocialMedia({ section = 'menu' }: SocialMediaProps) {
             )}
           >
             {name === 'Facebook' ? (
-              <Facebook className={iconClass} aria-label="facebook" />
+              <Facebook className={iconClass} aria-label="open facebook" />
             ) : (
-              <Telegram className={iconClass} aria-label="telegram" />
+              <Telegram className={iconClass} aria-label="open telegram" />
             )}
           </a>
         </li>

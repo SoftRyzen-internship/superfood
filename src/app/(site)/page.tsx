@@ -7,6 +7,9 @@ import ScrollLink from '@/components/ui/ScrollLink/';
 import Button from '@/components/ui/Button';
 import NavList from '@/components/common/NavList/';
 import SocialMedia from '@/components/ui/SocialMedia';
+import FormInput from '@/components/ui/FormInput';
+
+import form from '@/data/form.json';
 
 // Fetch content with GROQ
 async function getContent() {
@@ -60,7 +63,15 @@ export default function Home() {
       <HeroSection />
       <CompanyAdvantageSection />
       <ProductCard />
-      <SocialMedia  />
+      <SocialMedia section="footer" />
+      {form.formProps.map(({ type, placeholder, error }, index) => (
+        <FormInput
+          key={index}
+          type={type}
+          placeholder={placeholder}
+          error={error}
+        />
+      ))}
     </main>
   );
 }

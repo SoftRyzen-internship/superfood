@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 @layer components {
   .title {
     @apply font-roboto text-green text-center text-[28px] font-bold leading-[1.15] uppercase md:text-[48px] xl:text-[72px];
@@ -25,3 +30,5 @@
     text-wrap: balance;
   }
 }
+
+

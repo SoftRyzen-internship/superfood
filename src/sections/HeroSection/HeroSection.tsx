@@ -3,7 +3,7 @@ import { FC } from 'react';
 import Image from 'next/image';
 
 import heroSection from '@/data/heroSection.json';
-import ScrollButton from '@/components/ui/ScrollButton/ScrollButton';
+import ScrollLink from '@/components/ui/ScrollLink';
 
 const HeroSection: FC = () => {
   return (
@@ -33,9 +33,9 @@ const HeroSection: FC = () => {
             {heroSection.description}
           </p>
           <div className="md:flex md:justify-center">
-            <ScrollButton
+            <ScrollLink
               label={heroSection.label}
-              to={heroSection.to}
+              href={heroSection.to}
               variant={'primary'}
               className={'w-full md:w-[253px] xl:w-[274px]'}
             />

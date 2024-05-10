@@ -1,0 +1,5 @@
+[
+  { "id": 1, "title": "Продукти", "sectionId": "products" },
+  { "id": 2, "title": "Відгуки", "sectionId": "reviews" },
+  { "id": 3, "title": "Контакти", "sectionId": "contacts" }
+]

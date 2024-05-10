@@ -1,3 +1,3 @@
 export interface AdvantageItemProps {
-  text: string;
+  text: string[];
 }

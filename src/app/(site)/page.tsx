@@ -5,6 +5,7 @@ import { client } from '../../../sanity/client';
 import ScrollLink from '@/components/ui/ScrollLink/';
 import Button from '@/components/ui/Button';
 import NavList from '@/components/common/NavList/';
+import OpenModalExampleBtn from '@/components/common/Modal/OpenModalExampleBtn';
 
 // Fetch content with GROQ
 async function getContent() {
@@ -54,7 +55,7 @@ export default function Home() {
       <div className="container py-2 flex flex-wrap gap-2 items-center bg-gray-400">
         <NavList />
       </div>
-
+      <OpenModalExampleBtn />
       <HeroSection />
       <CompanyAdvantageSection />
     </main>

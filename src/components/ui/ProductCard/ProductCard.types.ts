@@ -1,9 +1,9 @@
 export interface ProductCardProps {
   img: string;
-  imgLittle: string;
-  imgBg: string;
+  imgBg: 'beans' | 'wheat' | 'vegetables' | 'corn' | 'seaweed';
   alt: string;
   name: string;
-  descriptionItem: string;
+  descriptionItems: string[];
   link: string;
+  buttonText: string;
 }

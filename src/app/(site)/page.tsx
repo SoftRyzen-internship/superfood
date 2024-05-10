@@ -24,7 +24,6 @@ getReviews().then(content => console.log(content));
 // Insert the return component calling `getContent()` below
 
 export default function Home() {
-
   return (
     <main>
       <div className="container text-center">ScrollLink</div>
@@ -50,10 +49,23 @@ export default function Home() {
       </div>
 
       <HeroSection />
-      <Benefits/>
+      <Benefits />
       <CompanyAdvantageSection />
-      <ProductCard />
-      <SocialMedia  />
+      <ProductCard
+        img="/images/products/sprouted-grains-of-beans@2x.webp"
+        imgBg="beans"
+        alt="ПРОРОЩЕНІ ЗЕРНА БОБОВИХ"
+        name="ПРОРОЩЕНІ ЗЕРНА БОБОВИХ"
+        descriptionItems={[
+          'Джерело білка',
+          'Фолієва кислота',
+          'Антиоксиданти',
+          'Клітковина',
+        ]}
+        link="/:productId"
+        buttonText="детальніше"
+      />
+      <SocialMedia />
     </main>
   );
 }

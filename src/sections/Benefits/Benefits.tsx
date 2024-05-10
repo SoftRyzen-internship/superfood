@@ -19,9 +19,9 @@ function Benefits() {
   );
 
   const IconsBenefits: IconsBenefits = {
-    1: <BenefitsPlant className={IconsStyles} />,
-    2: <BenefitsLightning className={IconsStyles} />,
-    3: <BenefitsVagetables className={IconsStyles} />,
+    1: <BenefitsPlant className={IconsStyles} width="100" height="100"/>,
+    2: <BenefitsLightning className={IconsStyles} width="100" height="100"/>,
+    3: <BenefitsVagetables className={IconsStyles} width="100" height="100"/>,
   };
 
   return (

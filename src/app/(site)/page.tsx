@@ -6,6 +6,7 @@ import ProductCard from '@/components/ui/ProductCard';
 import ScrollLink from '@/components/ui/ScrollLink/';
 import Button from '@/components/ui/Button';
 import NavList from '@/components/common/NavList/';
+import MovingBaner from '@/components/ui/MovingBaner/MovingBaner';
 
 // Fetch content with GROQ
 async function getContent() {
@@ -59,6 +60,7 @@ export default function Home() {
       <HeroSection />
       <CompanyAdvantageSection />
       <ProductCard />
+      <MovingBaner />
     </main>
   );
 }

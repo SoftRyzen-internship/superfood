@@ -1,1 +1,1 @@
-export * from './CardComments'
+export { default } from './CardComments'

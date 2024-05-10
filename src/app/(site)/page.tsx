@@ -6,6 +6,7 @@ import ProductCard from '@/components/ui/ProductCard';
 import ScrollLink from '@/components/ui/ScrollLink/';
 import Button from '@/components/ui/Button';
 import NavList from '@/components/common/NavList/';
+import Benefits from '@/sections/Benefits/Benefits';
 import SocialMedia from '@/components/ui/SocialMedia';
 
 // Fetch content with GROQ
@@ -33,6 +34,7 @@ getContent().then(content => console.log(content));
 // Insert the return component calling `getContent()` below
 
 export default function Home() {
+
   return (
     <main>
       <div className="container text-center">ScrollLink</div>
@@ -58,6 +60,7 @@ export default function Home() {
       </div>
 
       <HeroSection />
+      <Benefits/>
       <CompanyAdvantageSection />
       <ProductCard />
       <SocialMedia  />

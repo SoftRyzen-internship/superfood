@@ -31,6 +31,14 @@
 | `path`      | --      | required, `contacts` or `footer` and styled is changing |
 | `className` | `""`    | optinal, `string` add tailwind styles                   |
 
+- CardsBenefits
+
+| Prop        | Default | Description                                                   |
+| ----------- | ------- | ------------------------------------------------------------- |
+| `icon`      | --      | `JSX.Element`and show icons                                   |
+| `text`      | ---     | `string`, text can change in data                             |
+| `id`       | ---     | `number`, text can change in data                             |
+
 - Social media
 
 | Prop      | Default | Description                              |

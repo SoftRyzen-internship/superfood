@@ -1,7 +1,5 @@
 import React from 'react';
 import classNames from 'classnames';
-import Image from 'next/image';
-
 import data from '../../data/Benefits.json';
 import CardsBenefits from '@/components/ui/CardsBenefits/CardsBenefits';
 
@@ -19,62 +17,32 @@ function Benefits() {
   );
 
   const IconsBenefits: IconsBenefits = {
-    1: <BenefitsPlant className={IconsStyles} width="100" height="100"/>,
-    2: <BenefitsLightning className={IconsStyles} width="100" height="100"/>,
-    3: <BenefitsVagetables className={IconsStyles} width="100" height="100"/>,
+    1: <BenefitsPlant className={IconsStyles} width="100" height="100" />,
+    2: <BenefitsLightning className={IconsStyles} width="100" height="100" />,
+    3: <BenefitsVagetables className={IconsStyles} width="100" height="100" />,
   };
 
   return (
-    <section id="benefits" className="bg-white overflow-hidden py-[60px] md:py-20 xl:py-40">
+    <section
+      id="benefits"
+      className="bg-white py-[60px] overflow-hidden md:py-20 xl:py-40"
+    >
       <div className="relative">
-        <Image
-          src="/images/benefits/FirstFoodBen@2x.webp"
-          width={276}
-          height={266}
-          className="absolute pt-[57px] left-[-152px] xl:hidden smOnly:hidden "
-          alt="First Food Benefits"
+        <div
+          className="absolute bg-[url('/images/benefits/FirstFoodBen@2x.webp')] w-[276px] h-[266px] top-[57px] left-[-152px] xl:w-[345.66px] xl:h-[332.25px] xl:top-[65px] xl:left-[-51.6px] bg-contain bg-no-repeat smOnly:hidden transition"
         />
-         <Image
-          src="/images/benefits/FirstFoodBen@2x.webp"
-          width={345.66}
-          height={332.25}
-          className="absolute pt-[65px] left-[-51.16px] mdOnly:hidden"
-          alt="First Food Benefits"
+        <div
+          className="absolute bg-[url('/images/benefits/SecondFoodBen@2x.webp')] w-[292px] h-[293px] top-[363px] right-[-198px] xl:w-[372px] xl:h-[373px] xl:top-[444px] xl:right-[-52px] bg-contain bg-no-repeat smOnly:hidden transition"
         />
-        <Image
-          src="/images/benefits/SecondFoodBen@2x.webp"
-          width={292}
-          height={293}
-          className="absolute pt-[315px] right-[-168px]  xl:hidden smOnly:hidden"
-          alt="Second Food Benefits"
-        />
-        <Image
-          src="/images/benefits/SecondFoodBen@2x.webp"
-          width={372}
-          height={373}
-          className="absolute pt-[444px] right-[-52px] mdOnly:hidden"
-          alt="Second Food Benefits"
-        />
-        <Image
-          src="/images/benefits/ThirthFoodBen@2x.webp"
-          width={263}
-          height={221}
-          className="absolute pt-[617px] left-[-107px] xl:hidden smOnly:hidden"
-          alt="Third Food Benefits"
-        />
-        <Image
-          src="/images/benefits/ThirthFoodBen@2x.webp"
-          width={335}
-          height={282}
-          className="absolute pt-[896px] left-[-22px] mdOnly:hidden"
-          alt="Third Food Benefits"
+        <div
+          className="absolute bg-[url('/images/benefits/ThirthFoodBen@2x.webp')] w-[263px] h-[221px] top-[617px] left-[-138px] xl:w-[335px] xl:h-[282px] xl:top-[896px] xl:left-[-15px] bg-contain bg-no-repeat smOnly:hidden transition"
         />
         <div className="flex flex-col justify-center items-center">
           <h2 className="section-title transition text-center pb-9 md:pb-16 xl:pb-14">
             {data.title}
           </h2>
           <ul className="flex flex-col gap-[32px] md:gap-[60px] xl:gap-[120px] items-center">
-            {data.cards.map(card => (
+            {data.cards.map((card) => (
               <CardsBenefits
                 key={card.id}
                 id={card.id}

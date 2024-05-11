@@ -12,6 +12,8 @@ import ProductCard from '@/components/ui/ProductCard';
 import ScrollLink from '@/components/ui/ScrollLink/';
 import Button from '@/components/ui/Button';
 import NavList from '@/components/common/NavList/';
+import Benefits from '@/sections/Benefits/Benefits';
+import SocialMedia from '@/components/ui/SocialMedia';
 
 // Log content to console
 getPolicy().then(content => console.log(content));
@@ -47,8 +49,25 @@ export default function Home() {
       </div>
 
       <HeroSection />
+      <Benefits />
+      <Benefits />
       <CompanyAdvantageSection />
-      <ProductCard />
+      <SocialMedia />
+      <ProductCard
+        img="/images/products/sprouted-grains-of-beans@2x.webp"
+        imgBg="beans"
+        alt="ПРОРОЩЕНІ ЗЕРНА БОБОВИХ"
+        name="ПРОРОЩЕНІ ЗЕРНА БОБОВИХ"
+        descriptionItems={[
+          'Джерело білка',
+          'Фолієва кислота',
+          'Антиоксиданти',
+          'Клітковина',
+        ]}
+        link="/:productId"
+        buttonText="детальніше"
+      />
+      <SocialMedia />
     </main>
   );
 }

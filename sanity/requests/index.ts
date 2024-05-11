@@ -1,6 +1,6 @@
 import { getPhones } from "./phoneRequest"
 import { getPolicy } from "./policyRequest"
-import { getPrices } from "./priceRequest"
+import { getProduct } from "./productRequest"
 import { getReviews } from "./reviewRequest"
 
-export {getPhones, getPolicy, getPrices, getReviews}
+export {getPhones, getPolicy, getProduct, getReviews}

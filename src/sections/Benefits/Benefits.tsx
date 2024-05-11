@@ -1,16 +1,15 @@
 import React from 'react';
 import classNames from 'classnames';
-import data from '../../data/Benefits.json';
-import CardsBenefits from '@/components/ui/CardsBenefits/CardsBenefits';
 
+import CardsBenefits from '@/components/ui/CardsBenefits/CardsBenefits';
+import { IconsBenefits } from '@/types/Benefits.types';
+
+import data from '../../data/Benefits.json';
 import BenefitsLightning from '../../../public/icons/BenefitsLightning.svg';
 import BenefitsPlant from '../../../public/icons/BenefitsPlant.svg';
 import BenefitsVagetables from '../../../public/icons/BenefitsVagetables.svg';
 
 function Benefits() {
-  type IconsBenefits = {
-    [key: number]: JSX.Element;
-  };
 
   const IconsStyles = classNames(
     'transition w-[100px] h-[100px] md:w-[130px] md:h-[130px] xl:w-[160px] xl:h-[160px] '

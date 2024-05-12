@@ -1,3 +1,9 @@
+import {
+  getPolicy,
+  getPhones,
+  getPrices,
+  getReviews,
+} from '../../../sanity/requests';
 import CompanyAdvantageSection from '@/sections/CompanyAdvantageSection/CompanyAdvantageSection';
 import { HeroSection } from '@/sections/HeroSection';
 import { client } from '../../../sanity/client';
@@ -6,33 +12,14 @@ import ProductCard from '@/components/ui/ProductCard';
 import ScrollLink from '@/components/ui/ScrollLink/';
 import Button from '@/components/ui/Button';
 import NavList from '@/components/common/NavList/';
+import Benefits from '@/sections/Benefits/Benefits';
 import SocialMedia from '@/components/ui/SocialMedia';
-import FormInput from '@/components/ui/FormInput';
-
-import form from '@/data/form.json';
-import Checkbox from '@/components/ui/Checkbox';
-
-// Fetch content with GROQ
-async function getContent() {
-  const CONTENT_QUERY = `*[_type == "project"] {
-  ...,
-  coverImage {
-    ...,
-    asset->
-  },
-  duration {
-    ...
-  },
-  tags[],
-  body
-}
-`;
-  const content = await client.fetch(CONTENT_QUERY);
-  return content;
-}
 
 // Log content to console
-getContent().then(content => console.log(content));
+getPolicy().then(content => console.log(content));
+getPhones().then(content => console.log(content));
+getPrices().then(content => console.log(content));
+getReviews().then(content => console.log(content));
 
 // Insert the return component calling `getContent()` below
 
@@ -62,19 +49,25 @@ export default function Home() {
       </div>
 
       <HeroSection />
+      <Benefits />
+      <Benefits />
       <CompanyAdvantageSection />
-      <ProductCard />
-      <SocialMedia section="footer" />
-      {form.formProps.map(({ type, placeholder, errorMessage }, index) => (
-        <FormInput
-          key={index}
-          type={type}
-          placeholder={placeholder}
-          error={true}
-          errorMessage={errorMessage}
-        />
-      ))}
-      <Checkbox label="Даю згоду на обробку персональних даних " />
+      <SocialMedia />
+      <ProductCard
+        img="/images/products/sprouted-grains-of-beans@2x.webp"
+        imgBg="beans"
+        alt="ПРОРОЩЕНІ ЗЕРНА БОБОВИХ"
+        name="ПРОРОЩЕНІ ЗЕРНА БОБОВИХ"
+        descriptionItems={[
+          'Джерело білка',
+          'Фолієва кислота',
+          'Антиоксиданти',
+          'Клітковина',
+        ]}
+        link="/:productId"
+        buttonText="детальніше"
+      />
+      <SocialMedia />
     </main>
   );
 }

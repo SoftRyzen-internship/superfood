@@ -1,7 +1,7 @@
 import { getPolicy, getPhones, getPrices, getReviews } from '../../../sanity/requests';
 import CompanyAdvantageSection from '@/sections/CompanyAdvantageSection/CompanyAdvantageSection';
 import { HeroSection } from '@/sections/HeroSection';
-import { FAQSection } from '@/sections/FAQSection';
+import FAQSection from '@/sections/FAQSection';
 
 import { client } from '../../../sanity/client';
 import ProductCard from '@/components/ui/ProductCard';
@@ -42,7 +42,6 @@ export default function Home() {
       </div>
 
       <HeroSection />
-      <FAQSection />
       <Benefits />
       <Benefits />
       <CompanyAdvantageSection />
@@ -56,6 +55,7 @@ export default function Home() {
         link="/:productId"
         buttonText="детальніше"
       />
+      <FAQSection />
       <SocialMedia />
     </main>
   );

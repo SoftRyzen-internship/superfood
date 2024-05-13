@@ -1,8 +1,6 @@
-export interface AccordionProps {
-  index: number;
+export interface AccordionItemProps {
   titleItem: string;
   description: string;
-  variant: 'home' | 'formulaic';
   info?: { id: string; caption: string; captionText: string }[];
   openFirst?: boolean;
 }

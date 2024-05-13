@@ -4,8 +4,9 @@ import {
   getProduct,
   getReviews,
 } from '../../../sanity/requests';
+
 import CompanyAdvantageSection from '@/sections/CompanyAdvantageSection/CompanyAdvantageSection';
-import { HeroSection } from '@/sections/HeroSection';
+import HeroSection from '@/sections/HeroSection';
 import { client } from '../../../sanity/client';
 import ProductCard from '@/components/ui/ProductCard';
 
@@ -31,11 +32,7 @@ export default function Home() {
         <ScrollLink label="Primary" href="#sectionId" variant="primary" />
         <ScrollLink label="Secondary" href="#sectionId" variant="secondary" />
         <ScrollLink label="Navlink" href="#sectionId" variant="navlink" />
-        <ScrollLink
-          label="Primary2-Nav-To-Page"
-          href="policy"
-          variant="primary2"
-        />
+        <ScrollLink label="Primary2-Nav-To-Page" href="policy" variant="primary2" />
         <ScrollLink label="Policy" href="" variant="policy" />
       </div>
       <div className="container text-center">Button</div>

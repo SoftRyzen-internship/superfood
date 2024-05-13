@@ -14,7 +14,6 @@ import Button from '@/components/ui/Button';
 import NavList from '@/components/common/NavList/';
 import Benefits from '@/sections/Benefits/Benefits';
 import SocialMedia from '@/components/ui/SocialMedia';
-
 // Log content to console
 getPolicy().then(content => console.log(content));
 getPhones().then(content => console.log(content));
@@ -67,7 +66,6 @@ export default function Home() {
         link="/:productId"
         buttonText="детальніше"
       />
-      <SocialMedia />
     </main>
   );
 }

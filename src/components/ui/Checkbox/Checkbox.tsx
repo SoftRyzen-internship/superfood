@@ -1,31 +1,43 @@
 'use client';
-import { useState } from 'react';
+
+import classNames from 'classnames';
 
 import CheckboxIcon from '/public/icons/Checkbox.svg';
 
 import { CheckboxProps } from './Checkbox.types';
-import classNames from 'classnames';
 
-function Checkbox({ label, error }: CheckboxProps) {
-  const [isChecked, setIsChecked] = useState(false);
-
+function Checkbox({
+  label,
+  error,
+  isChecked,
+  setIsChecked,
+  register,
+  name,
+}: CheckboxProps) {
+  console.log(isChecked);
   return (
-    <div>
-      <label className="relative flex items-center gap-3">
-        <input
-          type="checkbox"
-          checked={isChecked}
-          onChange={() => setIsChecked(prev => !prev)}
-          className={classNames(
-            'appearance-none	border border-solid rounded-md border-[rgba(23,117,49,0.5)] w-5 h-5 outline-none hover:border-green focus:border-green',
-            isChecked && 'border-green',
-            error && 'border-red'
-          )}
-        />
-        <span>{label}</span>
-        {isChecked && <CheckboxIcon className="absolute top-auto left-[2px]" />}
-      </label>
-    </div>
+    <label className="relative flex items-center gap-3">
+      <input
+        type="checkbox"
+        checked={isChecked}
+        {...register(name, {
+          onchange: () => setIsChecked(!isChecked),
+          value: isChecked,
+        })}
+        onChange={() => setIsChecked(!isChecked)}
+        className={classNames(
+          'appearance-none	border border-solid rounded-md border-[rgba(23,117,49,0.5)] w-5 h-5 outline-none cursor-pointer hover:border-green focus:border-green',
+          isChecked && 'border-green hover:border-green focus:border-green',
+          error[name] && 'border-red '
+        )}
+      />
+      <span className="text-geologica font-light text-sm leading-[1.35] tracking-[-0.02em] text-black xl:text-light">
+        {label}
+      </span>
+      {isChecked && (
+        <CheckboxIcon className="absolute top-auto left-[2px] cursor-pointer" />
+      )}
+    </label>
   );
 }
 

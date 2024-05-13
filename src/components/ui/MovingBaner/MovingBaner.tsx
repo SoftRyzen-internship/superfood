@@ -33,7 +33,7 @@ function MovingBaner() {
   };
 
   return (
-    <div className="absolute left-0 w-full bg-green overflow-hidden flex gap-6 select-none">
+    <div className="absolute left-0 w-full bg-darkGreen overflow-hidden flex gap-6 select-none">
       {renderMovingLineContainers(3)}
     </div>
   );

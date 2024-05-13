@@ -1,6 +1,6 @@
 import { defineField, defineType } from 'sanity'
 
-export const phoneType = defineType({
+export const phone = defineType({
   name: 'phone',
   title: 'Phone',
   type: 'document',

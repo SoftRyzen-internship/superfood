@@ -1,11 +1,10 @@
-import { getPolicy, getPhones, getPrices, getReviews } from '../../../sanity/requests';
-import CompanyAdvantageSection from '@/sections/CompanyAdvantageSection/CompanyAdvantageSection';
-import { HeroSection } from '@/sections/HeroSection';
-import FAQSection from '@/sections/FAQSection';
+import { getPolicy, getPhones, getProduct, getReviews } from '../../../sanity/requests';
 
+import CompanyAdvantageSection from '@/sections/CompanyAdvantageSection/CompanyAdvantageSection';
+import HeroSection from '@/sections/HeroSection';
 import { client } from '../../../sanity/client';
 import ProductCard from '@/components/ui/ProductCard';
-
+import FAQSection from '@/sections/FAQSection';
 import ScrollLink from '@/components/ui/ScrollLink/';
 import Button from '@/components/ui/Button';
 import NavList from '@/components/common/NavList/';
@@ -15,7 +14,7 @@ import SocialMedia from '@/components/ui/SocialMedia';
 // Log content to console
 getPolicy().then(content => console.log(content));
 getPhones().then(content => console.log(content));
-getPrices().then(content => console.log(content));
+getProduct().then(content => console.log(content));
 getReviews().then(content => console.log(content));
 
 // Insert the return component calling `getContent()` below
@@ -42,7 +41,6 @@ export default function Home() {
       </div>
 
       <HeroSection />
-      <Benefits />
       <Benefits />
       <CompanyAdvantageSection />
       <SocialMedia />

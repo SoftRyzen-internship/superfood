@@ -47,7 +47,6 @@ export default function Home() {
 
       <HeroSection />
       <Benefits />
-      <Benefits />
       <CompanyAdvantageSection />
       <SocialMedia />
       <ProductCard

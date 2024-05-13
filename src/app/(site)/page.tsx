@@ -32,7 +32,11 @@ export default function Home() {
         <ScrollLink label="Primary" href="#sectionId" variant="primary" />
         <ScrollLink label="Secondary" href="#sectionId" variant="secondary" />
         <ScrollLink label="Navlink" href="#sectionId" variant="navlink" />
-        <ScrollLink label="Primary2-Nav-To-Page" href="policy" variant="primary2" />
+        <ScrollLink
+          label="Primary2-Nav-To-Page"
+          href="policy"
+          variant="primary2"
+        />
         <ScrollLink label="Policy" href="" variant="policy" />
       </div>
       <div className="container text-center">Button</div>
@@ -45,6 +49,7 @@ export default function Home() {
         <NavList />
       </div>
 
+      <Header />
       <HeroSection />
       <Benefits />
       <CompanyAdvantageSection />

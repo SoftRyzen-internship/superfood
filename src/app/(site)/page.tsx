@@ -1,4 +1,10 @@
-import { getPolicy, getPhones, getPrices, getReviews } from '../../../sanity/requests';
+import {
+  getPolicy,
+  getPhones,
+  getProduct,
+  getReviews,
+} from '../../../sanity/requests';
+
 import CompanyAdvantageSection from '@/sections/CompanyAdvantageSection/CompanyAdvantageSection';
 import HeroSection from '@/sections/HeroSection';
 import { client } from '../../../sanity/client';
@@ -13,7 +19,7 @@ import SocialMedia from '@/components/ui/SocialMedia';
 // Log content to console
 getPolicy().then(content => console.log(content));
 getPhones().then(content => console.log(content));
-getPrices().then(content => console.log(content));
+getProduct().then(content => console.log(content));
 getReviews().then(content => console.log(content));
 
 // Insert the return component calling `getContent()` below

@@ -4,5 +4,8 @@
     "primary": "Детальніше",
     "secondary": "Читати більше"
   },
-  "email": "dffgf"
+  "email": "alisagrushkovska@gmail.com",
+  "ariaLabel": {
+    "burgerClose": "Закрити бургер меню"
+  }
 }

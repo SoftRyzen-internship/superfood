@@ -17,27 +17,35 @@ export interface BurgerMenu {}
 function BurgerMenu({}: BurgerMenu) {
   const { main } = data.buttonsLabel;
   return (
-    <div className={classNames(styles.burger, 'relative px-4 pt-[30px] pb-6')}>
-      <Logo path="header" classNames="mb-[67px]" />
-      <button type="button" className="absolute top-8 right-4">
-        <CloseIcon
-          width={24}
-          height={24}
-          className="w-7 h-7"
-          aria-label="Закрити бургер меню"
-        />
-      </button>
+    <div className={classNames(styles.burger, 'pt-[30px] pb-6')}>
+      <div className="container relative">
+        <Logo path="header" classNames="mb-[67px]" />
+        <button type="button" className="absolute top-0 right-4">
+          <CloseIcon
+            width={24}
+            height={24}
+            className="w-7 h-7"
+            aria-label="Закрити бургер меню"
+          />
+        </button>
 
-      <div className="mb-10">
-        <NavList />
+        <div className="mb-10">
+          <NavList />
+        </div>
+
+        <div className="text-center mb-[130px]">
+          <ScrollLink label={main} href="#contacts" variant="secondary" />
+        </div>
+
+        <PhoneContacts location="footer" classNames="self-center mb-3" />
+        <a
+          href="mailto:alisagrushkovska@gmail.com"
+          className="flex justify-center mb-6 font-geologica text-black font-light text-[14px] leading-[1.35] text-center md:font-[250] md:text-[16px] md:leading-[22.4px]"
+        >
+          alisagrushkovska@gmail.com
+        </a>
+        <SocialMedia className="justify-center" />
       </div>
-
-      <div className="text-center mb-[130px]">
-        <ScrollLink label={main} href="#contacts" variant="secondary" />
-      </div>
-
-      <PhoneContacts location="footer" classNames="self-center" />
-      <SocialMedia className="justify-center" />
     </div>
   );
 }

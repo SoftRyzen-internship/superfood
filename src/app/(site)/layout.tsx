@@ -3,7 +3,7 @@ import classNames from 'classnames';
 import { Roboto_Condensed } from 'next/font/google';
 import localFont from 'next/font/local';
 import './globals.css';
-import Footer from '@/sections/Footer';
+import Footer from '@/layout/Footer';
 
 const roboto = Roboto_Condensed({
   subsets: ['cyrillic', 'latin'],

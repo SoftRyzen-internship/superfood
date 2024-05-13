@@ -1,9 +1,4 @@
-import {
-  getPolicy,
-  getPhones,
-  getProduct,
-  getReviews,
-} from '../../../sanity/requests';
+import { getPolicy, getPhones, getProduct, getReviews } from '../../../sanity/requests';
 
 import CompanyAdvantageSection from '@/sections/CompanyAdvantageSection/CompanyAdvantageSection';
 import HeroSection from '@/sections/HeroSection';
@@ -54,12 +49,7 @@ export default function Home() {
         imgBg="beans"
         alt="ПРОРОЩЕНІ ЗЕРНА БОБОВИХ"
         name="ПРОРОЩЕНІ ЗЕРНА БОБОВИХ"
-        descriptionItems={[
-          'Джерело білка',
-          'Фолієва кислота',
-          'Антиоксиданти',
-          'Клітковина',
-        ]}
+        descriptionItems={['Джерело білка', 'Фолієва кислота', 'Антиоксиданти', 'Клітковина']}
         link="/:productId"
         buttonText="детальніше"
       />

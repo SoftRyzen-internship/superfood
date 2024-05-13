@@ -61,10 +61,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="uk">
-      <body className={classNames(geologica.variable, roboto.variable, 'h-full min-h-screen')}>
+      <body
+        className={classNames(
+          geologica.variable,
+          roboto.variable,
+          'h-full min-h-screen'
+        )}
+      >
         {children}
+        <Footer />
       </body>
-      <Footer/>
     </html>
   );
 }

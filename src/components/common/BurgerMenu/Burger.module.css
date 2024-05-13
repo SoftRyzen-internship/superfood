@@ -1,0 +1,16 @@
+.burger {
+  background-image: url(/images/bg/bg_yellow.webp),
+    linear-gradient(to right, #f1fae1, #f1fae1);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    & {
+      background-image: url(/images/bg/bg_yellow@2x.webp),
+        linear-gradient(to right, #f1fae1, #f1fae1);
+    }
+  }
+}

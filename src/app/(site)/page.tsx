@@ -12,6 +12,7 @@ import ProductCard from '@/components/ui/ProductCard';
 import ScrollLink from '@/components/ui/ScrollLink/';
 import Button from '@/components/ui/Button';
 import NavList from '@/components/common/NavList/';
+import BurgerMenu from '@/components/common/BurgerMenu';
 import Benefits from '@/sections/Benefits/Benefits';
 import SocialMedia from '@/components/ui/SocialMedia';
 
@@ -26,6 +27,7 @@ getReviews().then(content => console.log(content));
 export default function Home() {
   return (
     <main>
+      <BurgerMenu />
       <div className="container text-center">ScrollLink</div>
       <div className="container py-2 flex flex-wrap gap-2 items-center bg-gray-400">
         <ScrollLink label="Primary" href="#sectionId" variant="primary" />

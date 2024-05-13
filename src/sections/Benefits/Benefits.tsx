@@ -29,7 +29,7 @@ function Benefits() {
     >
       <div className="relative">
         <div
-          className="absolute bg-[url('/images/benefits/FirstFoodBen@2x.webp')] w-[276px] h-[266px] top-[57px] left-[-152px] xl:w-[345px] xl:h-[332.25px] xl:top-[65px] xl:left-[-51px] bg-contain bg-no-repeat smOnly:hidden transition"
+          className="absolute bg-[url('/images/benefits/FirstFoodBen@2x.webp')] w-[276px] h-[266px] top-[57px] left-[-152px] xl:w-[345px] xl:h-[332px] xl:top-[65px] xl:left-[-51px] bg-contain bg-no-repeat smOnly:hidden transition"
         />
         <div
           className="absolute bg-[url('/images/benefits/SecondFoodBen@2x.webp')] w-[292px] h-[293px] top-[363px] right-[-198px] xl:w-[372px] xl:h-[373px] xl:top-[444px] xl:right-[-52px] bg-contain bg-no-repeat smOnly:hidden transition"

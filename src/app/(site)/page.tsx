@@ -1,5 +1,12 @@
+import {
+  getPolicy,
+  getPhones,
+  getProduct,
+  getReviews,
+} from '../../../sanity/requests';
+
 import CompanyAdvantageSection from '@/sections/CompanyAdvantageSection/CompanyAdvantageSection';
-import { HeroSection } from '@/sections/HeroSection';
+import HeroSection from '@/sections/HeroSection';
 import { client } from '../../../sanity/client';
 import ProductCard from '@/components/ui/ProductCard';
 
@@ -7,28 +14,15 @@ import ScrollLink from '@/components/ui/ScrollLink/';
 import Button from '@/components/ui/Button';
 import NavList from '@/components/common/NavList/';
 import OpenModalExampleBtn from '@/components/common/Modal/OpenModalExampleBtn';
-
-// Fetch content with GROQ
-async function getContent() {
-  const CONTENT_QUERY = `*[_type == "project"] {
-  ...,
-  coverImage {
-    ...,
-    asset->
-  },
-  duration {
-    ...
-  },
-  tags[],
-  body
-}
-`;
-  const content = await client.fetch(CONTENT_QUERY);
-  return content;
-}
+import MovingBaner from '@/components/ui/MovingBaner/MovingBaner';
+import Benefits from '@/sections/Benefits/Benefits';
+import SocialMedia from '@/components/ui/SocialMedia';
 
 // Log content to console
-getContent().then(content => console.log(content));
+getPolicy().then(content => console.log(content));
+getPhones().then(content => console.log(content));
+getProduct().then(content => console.log(content));
+getReviews().then(content => console.log(content));
 
 // Insert the return component calling `getContent()` below
 
@@ -61,8 +55,24 @@ export default function Home() {
         <OpenModalExampleBtn />
       </div>
       <HeroSection />
+      <Benefits />
       <CompanyAdvantageSection />
-      <ProductCard />
+      <ProductCard
+        img="/images/products/sprouted-grains-of-beans@2x.webp"
+        imgBg="beans"
+        alt="ПРОРОЩЕНІ ЗЕРНА БОБОВИХ"
+        name="ПРОРОЩЕНІ ЗЕРНА БОБОВИХ"
+        descriptionItems={[
+          'Джерело білка',
+          'Фолієва кислота',
+          'Антиоксиданти',
+          'Клітковина',
+        ]}
+        link="/:productId"
+        buttonText="детальніше"
+      />
+      <SocialMedia />
+      <MovingBaner />
     </main>
   );
 }

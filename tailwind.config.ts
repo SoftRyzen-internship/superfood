@@ -26,8 +26,7 @@ const config: Config = {
         },
       },
       backgroundImage: {
-        bg_green: `image-set(url('/images/bg/bg_green.webp') 1x, url('/images/bg/bg_green@2x.webp') 2x)`,
-        bg_yellow: `image-set(url('/images/bg/bg_yellow.webp') 1x, url('/images/bg/bg_yellow@2x.webp') 2x)`,
+        bg_green: `image-set(url('/images/bg/bg_green@1x.webp') 1x, url('/images/bg/bg_green@2x.webp') 2x)`,
       },
       fontFamily: {
         geologica: ['var(--font-geologica)'],

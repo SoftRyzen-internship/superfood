@@ -15,9 +15,6 @@ import NavList from '@/components/common/NavList/';
 import Benefits from '@/sections/Benefits/Benefits';
 import SocialMedia from '@/components/ui/SocialMedia';
 import ProductCard from '@/components/ui/ProductCard';
-import Form from '@/components/ui/Form';
-
-import form from '@/data/form.json';
 
 // Log content to console
 getPolicy().then(content => console.log(content));
@@ -69,12 +66,6 @@ export default function Home() {
         ]}
         link="/:productId"
         buttonText="детальніше"
-      />
-      <Form
-        title={form.title}
-        text={form.text}
-        formProps={form.formProps}
-        buttonText={form.buttonText}
       />
     </main>
   );

@@ -31,7 +31,7 @@ function Checkbox({
           error[name] && 'border-red '
         )}
       />
-      <span className="text-geologica font-light text-sm leading-[1.35] tracking-[-0.02em] text-black xl:text-light">
+      <span className="font-geologica font-light text-sm leading-[1.35] tracking-[-0.02em] text-black xl:text-light">
         {label}
       </span>
       {isChecked && (

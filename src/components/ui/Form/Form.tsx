@@ -44,10 +44,10 @@ function Form({ title, text, formProps, buttonText }: FormProps) {
   //модалки будуть коли створимо групу та логіку надсилання даних туди
   return (
     <div className="max-w-[360px] py-[60px] px-4 bg-white md:w-[527px] md:rounded-xl	 md:py-12 md:px-16 xl:w-[592px] xl:py-14 xl:px-20">
-      <h3 className="text-roboto font-bold text-[22px] leading-[1.15] uppercase text-center text-black mb-3 md:text-lightLarge xl:text3xl ">
+      <h3 className="font-roboto font-bold text-[22px] leading-[1.15] uppercase text-center text-black mb-3 md:text-lightLarge xl:text3xl ">
         {title}
       </h3>
-      <p className="text-geologica font-light text-light tracking-[-0.02em] text-center text-black mb-8 xl:text-medium ">
+      <p className="font-geologica font-light text-light tracking-[-0.02em] text-center text-black mb-8 xl:text-medium ">
         {text}
       </p>
       <form onSubmit={handleSubmit(onSubmit)}>

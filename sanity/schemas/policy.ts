@@ -1,6 +1,6 @@
 import { defineField, defineType } from 'sanity'
 
-export const policyType = defineType({
+export const policy = defineType({
   name: 'policy',
   title: 'Policy',
   type: 'document',
@@ -13,8 +13,10 @@ export const policyType = defineType({
 
             }),
             defineField({
-              name: 'text',
-              type: 'string',
-            }),
+      name: 'description',
+      title: 'description',
+      type: 'array',
+      of: [{ type: 'block' }],
+    }),
           ],
 });

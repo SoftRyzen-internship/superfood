@@ -13,9 +13,9 @@ function FormInput({
   register,
 }: FormInputProps) {
   return (
-    <div
+    <label
       className={classNames(
-        'h-[83px]  mb-[34px]',
+        'block h-[83px]  mb-[34px]',
         error[name] && `relative ${style.errorIcon}`
       )}
     >
@@ -30,7 +30,7 @@ function FormInput({
         )}
       />
       {error[name] && <span className="text-red">{errorMessage}</span>}
-    </div>
+    </label>
   );
 }
 

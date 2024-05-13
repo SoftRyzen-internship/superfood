@@ -8,13 +8,17 @@ import {
 import CompanyAdvantageSection from '@/sections/CompanyAdvantageSection/CompanyAdvantageSection';
 import HeroSection from '@/sections/HeroSection';
 import { client } from '../../../sanity/client';
-import ProductCard from '@/components/ui/ProductCard';
 
 import ScrollLink from '@/components/ui/ScrollLink/';
 import Button from '@/components/ui/Button';
 import NavList from '@/components/common/NavList/';
 import Benefits from '@/sections/Benefits/Benefits';
 import SocialMedia from '@/components/ui/SocialMedia';
+import ProductCard from '@/components/ui/ProductCard';
+import Form from '@/components/ui/Form';
+
+import form from '@/data/form.json';
+
 // Log content to console
 getPolicy().then(content => console.log(content));
 getPhones().then(content => console.log(content));
@@ -31,7 +35,11 @@ export default function Home() {
         <ScrollLink label="Primary" href="#sectionId" variant="primary" />
         <ScrollLink label="Secondary" href="#sectionId" variant="secondary" />
         <ScrollLink label="Navlink" href="#sectionId" variant="navlink" />
-        <ScrollLink label="Primary2-Nav-To-Page" href="policy" variant="primary2" />
+        <ScrollLink
+          label="Primary2-Nav-To-Page"
+          href="policy"
+          variant="primary2"
+        />
         <ScrollLink label="Policy" href="" variant="policy" />
       </div>
       <div className="container text-center">Button</div>
@@ -61,6 +69,12 @@ export default function Home() {
         ]}
         link="/:productId"
         buttonText="детальніше"
+      />
+      <Form
+        title={form.title}
+        text={form.text}
+        formProps={form.formProps}
+        buttonText={form.buttonText}
       />
     </main>
   );

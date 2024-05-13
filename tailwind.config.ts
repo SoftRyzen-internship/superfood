@@ -25,6 +25,9 @@ const config: Config = {
           xl: '2rem',
         },
       },
+      backgroundImage: {
+        bg_green: `image-set(url('/images/bg/bg_green@1x.webp') 1x, url('/images/bg/bg_green@2x.webp') 2x)`,
+      },
       fontFamily: {
         geologica: ['var(--font-geologica)'],
         roboto: ['var(--font-roboto)'],
@@ -38,6 +41,7 @@ const config: Config = {
       },
       colors: {
         green: '#1F7437',
+        darkGreen: '#0F5924',
         lightGreen: '#F1FAE1',
         black: '#3B433E',
         white: '#FFFFFF',

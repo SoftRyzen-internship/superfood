@@ -17,6 +17,7 @@
     "next-sanity": "^7.1.4",
     "react": "^18",
     "react-dom": "^18",
+    "react-scroll": "^1.9.0",
     "sanity": "^3.40.0",
     "styled-components": "^6.1.9",
     "swiper": "^11.1.1"
@@ -25,8 +26,9 @@
     "@svgr/webpack": "^8.1.0",
     "@tailwindcss/typography": "^0.5.13",
     "@types/node": "^20",
-    "@types/react": "^18",
+    "@types/react": "^18.3.1",
     "@types/react-dom": "^18",
+    "@types/react-scroll": "^1.8.10",
     "eslint": "^8",
     "eslint-config-next": "14.2.3",
     "postcss": "^8",

@@ -1,10 +1,10 @@
 import { type SchemaTypeDefinition } from 'sanity'
 
-import { phoneType } from './schemaTypes/phoneType'
-import { priceType } from './schemaTypes/priceType'
-import { reviewType } from './schemaTypes/reviewType'
-import { policyType } from './schemaTypes/policyType'
+import { product } from './schemas/product'
+import { review } from './schemas/review'
+import { policy } from './schemas/policy'
+import { phone } from './schemas/phone'
 
 export const schema: { types: SchemaTypeDefinition[] } = {
-  types: [phoneType, priceType, reviewType, policyType],
+  types: [product, review, policy, phone],
 }

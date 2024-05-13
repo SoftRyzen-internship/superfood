@@ -13,7 +13,6 @@ import ProductCard from '@/components/ui/ProductCard';
 import ScrollLink from '@/components/ui/ScrollLink/';
 import Button from '@/components/ui/Button';
 import NavList from '@/components/common/NavList/';
-import MovingBaner from '@/components/ui/MovingBaner/MovingBaner';
 import Benefits from '@/sections/Benefits/Benefits';
 import SocialMedia from '@/components/ui/SocialMedia';
 
@@ -68,7 +67,6 @@ export default function Home() {
         buttonText="детальніше"
       />
       <SocialMedia />
-      <MovingBaner />
     </main>
   );
 }

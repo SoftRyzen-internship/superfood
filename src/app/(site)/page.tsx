@@ -1,4 +1,9 @@
-import { getPolicy, getPhones, getProduct, getReviews } from '../../../sanity/requests';
+import {
+  getPolicy,
+  getPhones,
+  getProduct,
+  getReviews,
+} from '../../../sanity/requests';
 
 import CompanyAdvantageSection from '@/sections/CompanyAdvantageSection/CompanyAdvantageSection';
 import HeroSection from '@/sections/HeroSection';
@@ -13,6 +18,7 @@ import MovingBaner from '@/components/ui/MovingBaner/MovingBaner';
 import BurgerMenu from '@/components/common/BurgerMenu';
 import Benefits from '@/sections/Benefits/Benefits';
 import SocialMedia from '@/components/ui/SocialMedia';
+import Contacts from '@/sections/Contacts';
 
 // Log content to console
 getPolicy().then(content => console.log(content));
@@ -59,12 +65,18 @@ export default function Home() {
         imgBg="beans"
         alt="ПРОРОЩЕНІ ЗЕРНА БОБОВИХ"
         name="ПРОРОЩЕНІ ЗЕРНА БОБОВИХ"
-        descriptionItems={['Джерело білка', 'Фолієва кислота', 'Антиоксиданти', 'Клітковина']}
+        descriptionItems={[
+          'Джерело білка',
+          'Фолієва кислота',
+          'Антиоксиданти',
+          'Клітковина',
+        ]}
         link="/:productId"
         buttonText="детальніше"
       />
-      <FAQSection />
+      {/* <FAQSection /> */}
       <SocialMedia />
+      <Contacts />
     </main>
   );
 }

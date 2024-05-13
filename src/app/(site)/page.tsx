@@ -74,7 +74,6 @@ export default function Home() {
         buttonText="детальніше"
       />
       <SocialMedia />
-      <MovingBaner />
     </main>
   );
 }

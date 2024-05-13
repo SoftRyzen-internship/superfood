@@ -13,6 +13,7 @@ import ProductCard from '@/components/ui/ProductCard';
 import ScrollLink from '@/components/ui/ScrollLink/';
 import Button from '@/components/ui/Button';
 import NavList from '@/components/common/NavList/';
+import MovingBaner from '@/components/ui/MovingBaner/MovingBaner';
 import Benefits from '@/sections/Benefits/Benefits';
 import SocialMedia from '@/components/ui/SocialMedia';
 
@@ -32,7 +33,11 @@ export default function Home() {
         <ScrollLink label="Primary" href="#sectionId" variant="primary" />
         <ScrollLink label="Secondary" href="#sectionId" variant="secondary" />
         <ScrollLink label="Navlink" href="#sectionId" variant="navlink" />
-        <ScrollLink label="Primary2-Nav-To-Page" href="policy" variant="primary2" />
+        <ScrollLink
+          label="Primary2-Nav-To-Page"
+          href="policy"
+          variant="primary2"
+        />
         <ScrollLink label="Policy" href="" variant="policy" />
       </div>
       <div className="container text-center">Button</div>
@@ -48,7 +53,6 @@ export default function Home() {
       <HeroSection />
       <Benefits />
       <CompanyAdvantageSection />
-      <SocialMedia />
       <ProductCard
         img="/images/products/sprouted-grains-of-beans@2x.webp"
         imgBg="beans"
@@ -64,6 +68,7 @@ export default function Home() {
         buttonText="детальніше"
       />
       <SocialMedia />
+      <MovingBaner />
     </main>
   );
 }

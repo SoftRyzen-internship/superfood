@@ -13,6 +13,7 @@ import ProductCard from '@/components/ui/ProductCard';
 import ScrollLink from '@/components/ui/ScrollLink/';
 import Button from '@/components/ui/Button';
 import NavList from '@/components/common/NavList/';
+import OpenModalExampleBtn from '@/components/common/Modal/OpenModalExampleBtn';
 import MovingBaner from '@/components/ui/MovingBaner/MovingBaner';
 import Benefits from '@/sections/Benefits/Benefits';
 import SocialMedia from '@/components/ui/SocialMedia';
@@ -49,7 +50,10 @@ export default function Home() {
       <div className="container py-2 flex flex-wrap gap-2 items-center bg-gray-400">
         <NavList />
       </div>
-
+      <div className="container text-center">Modals</div>
+      <div className="container py-2 flex flex-wrap gap-2 items-center bg-gray-400">
+        <OpenModalExampleBtn />
+      </div>
       <HeroSection />
       <Benefits />
       <CompanyAdvantageSection />

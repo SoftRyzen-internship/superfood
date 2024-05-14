@@ -1,0 +1,12 @@
+{
+  "buttonsLabel": {
+    "main": "Залишити заявку",
+    "primary": "Детальніше",
+    "secondary": "Читати більше"
+  },
+  "email": "alisagrushkovska@gmail.com",
+  "ariaLabel": {
+    "burgerClose": "Закрити модальне меню",
+    "burgerOpen": "Відкрити модальне меню"
+  }
+}

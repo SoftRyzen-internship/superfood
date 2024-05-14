@@ -10,15 +10,9 @@ import HeroSection from '@/sections/HeroSection';
 import { client } from '../../../sanity/client';
 import ProductCard from '@/components/ui/ProductCard';
 import FAQSection from '@/sections/FAQSection';
-import ScrollLink from '@/components/ui/ScrollLink/';
-import Button from '@/components/ui/Button';
-import NavList from '@/components/common/NavList/';
-import OpenModalExampleBtn from '@/components/common/Modal/OpenModalExampleBtn';
-import MovingBaner from '@/components/ui/MovingBaner/MovingBaner';
-import BurgerMenu from '@/components/common/BurgerMenu';
 import Benefits from '@/sections/Benefits/Benefits';
 import SocialMedia from '@/components/ui/SocialMedia';
-import Contacts from '@/sections/Contacts';
+import Form from '@/components/ui/Form';
 
 // Log content to console
 getPolicy().then(content => console.log(content));
@@ -31,35 +25,9 @@ getReviews().then(content => console.log(content));
 export default function Home() {
   return (
     <main>
-      <BurgerMenu />
-      <div className="container text-center">ScrollLink</div>
-      <div className="container py-2 flex flex-wrap gap-2 items-center bg-gray-400">
-        <ScrollLink label="Primary" href="#sectionId" variant="primary" />
-        <ScrollLink label="Secondary" href="#sectionId" variant="secondary" />
-        <ScrollLink label="Navlink" href="#sectionId" variant="navlink" />
-        <ScrollLink
-          label="Primary2-Nav-To-Page"
-          href="policy"
-          variant="primary2"
-        />
-        <ScrollLink label="Policy" href="" variant="policy" />
-      </div>
-      <div className="container text-center">Button</div>
-      <div className="container py-2 flex flex-wrap gap-2 items-center bg-gray-400">
-        <Button label="ReadMore" variant="readmore" />
-        <Button label="Primary" variant="primary" />
-      </div>
-      <div className="container text-center">NavList</div>
-      <div className="container py-2 flex flex-wrap gap-2 items-center bg-gray-400">
-        <NavList />
-      </div>
-      <div className="container text-center">Modals</div>
-      <div className="container py-2 flex flex-wrap gap-2 items-center bg-gray-400">
-        <OpenModalExampleBtn />
-      </div>
       <HeroSection />
       <Benefits />
-      <CompanyAdvantageSection />
+
       <ProductCard
         img="/images/products/sprouted-grains-of-beans@2x.webp"
         imgBg="beans"
@@ -74,9 +42,10 @@ export default function Home() {
         link="/:productId"
         buttonText="детальніше"
       />
-      {/* <FAQSection /> */}
+      <CompanyAdvantageSection />
+      <FAQSection />
       <SocialMedia />
-      <Contacts />
+      <Form />
     </main>
   );
 }

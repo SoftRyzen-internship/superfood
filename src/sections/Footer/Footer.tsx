@@ -21,17 +21,40 @@ function Footer() {
             />
           </div>
           <hr className="w-full mt-4 mb-8 border-strokeGreen xl:hidden" />
-          <div className="flex flex-col pb-4  gap-4 text-center font-light text-white text-[14px] leading-[18.9px] md:leading-[19.6px] xl:font-[250] xl:text-start xl:pb-0 transition">
-            <a href={data.linkPolicy}>{data.namePolicy}</a>
+          <div className="flex flex-col pb-4  gap-4 text-center font-extralight text-lightGreen text-[14px] leading-[18.9px] md:leading-[19.6px] xl:font-[250] xl:text-start xl:pb-0 transition">
+            <a
+              href={data.linkPolicy}
+              className="hover:font-light hover:white transition"
+            >
+              {data.namePolicy}
+            </a>
             <p>{data.footerTextSec}</p>
             <div className="flex flex-col gap-3 md:flex-row justify-center md:gap-4 xl:gap-6">
               <p>{data.footerCreated}</p>
               <div className="flex justify-center gap-4">
-                <a href={data.linkGOIT}>
-                  <GOIT className="fill-white" width={64} height={19} />
+                <a
+                  href={data.linkGOIT}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  aria-label="GOIT website"
+                >
+                  <GOIT
+                    className="fill-lightGreen hover:fill-white"
+                    width={64}
+                    height={19}
+                  />
                 </a>
-                <a href={data.linkSoftRyzen}>
-                  <SoftRyzen className="fill-white" width={131} height={19}/>
+                <a
+                  href={data.linkSoftRyzen}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  aria-label="SoftRyzen website"
+                >
+                  <SoftRyzen
+                    className="fill-lightGreen hover:fill-white"
+                    width={131}
+                    height={19}
+                  />
                 </a>
               </div>
             </div>

@@ -22,6 +22,7 @@ getReviews().then(content => console.log(content));
 // Insert the return component calling `getContent()` below
 
 export default function Home() {
+  const productId = 2;
   return (
     <main>
       <HeroSection />
@@ -38,7 +39,7 @@ export default function Home() {
           'Антиоксиданти',
           'Клітковина',
         ]}
-        link="/:productId"
+        link={`products/${productId}`}
         buttonText="детальніше"
       />
       <CompanyAdvantageSection />

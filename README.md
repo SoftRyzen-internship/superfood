@@ -46,8 +46,6 @@
 | ----------- | ------- | ------------------------------------------------------- |
 | `path`      | --      | required, `contacts` or `footer` and styled is changing |
 | `className` | `""`    | optinal, `string` add tailwind styles                   |
-<<<<<<< HEAD
-=======
 
 - CardsBenefits
 
@@ -75,7 +73,13 @@
 | `descriptionItems` | -       | required, `string`,product description                         |
 | `link`             | -       | required, `string`, link to product page                       |
 | `buttonText`       | -       | required, `string`, text for button                            |
->>>>>>> dev
+
+- ProductPreference
+
+| Prop        | Default | Description                              |
+| ----------- | ------- | ---------------------------------------- |
+| `data`      | menu    | Taka data productPreference with massive :id: `number`, preference: `string`  |
+
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with
 [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).

@@ -1,0 +1,43 @@
+.burger {
+  background-image: url(/images/bg/burgerMenu/bg_ellipse_m@1x.webp),
+    url(/images/bg/hero/bg_yellow_m@1x.webp),
+    linear-gradient(to right, #f1fae1, #f1fae1);
+  background-repeat: no-repeat;
+  background-position:
+    left bottom,
+    center;
+  background-size: 329px, cover, cover;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    & {
+      background-image: url(/images/bg/burgerMenu/bg_ellipse_m@2x.webp),
+        url(/images/bg/hero/bg_yellow_m@2x.webp),
+        linear-gradient(to right, #f1fae1, #f1fae1);
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .burger {
+    background-image: url(/images/bg/burgerMenu/bg_ellipse_t@1x.webp),
+      url(/images/bg/hero/bg_yellow_t@1x.webp),
+      linear-gradient(to right, #f1fae1, #f1fae1);
+    background-repeat: no-repeat;
+    background-position:
+      left bottom,
+      center;
+    background-size: 698px, cover, cover;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      & {
+        background-image: url(/images/bg/burgerMenu/bg_ellipse_t@2x.webp),
+          url(/images/bg/hero/bg_yellow_t@2x.webp),
+          linear-gradient(to right, #f1fae1, #f1fae1);
+      }
+    }
+  }
+}

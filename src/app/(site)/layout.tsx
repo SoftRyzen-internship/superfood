@@ -3,6 +3,12 @@ import classNames from 'classnames';
 import { Roboto_Condensed } from 'next/font/google';
 import localFont from 'next/font/local';
 import './globals.css';
+import Footer from '@/layout/Footer';
+import Header from '@/layout/Header';
+
+import ScrollLink from '@/components/ui/ScrollLink';
+import Button from '@/components/ui/Button';
+import OpenModalExampleBtn from '@/components/common/Modal/OpenModalExampleBtn';
 
 const roboto = Roboto_Condensed({
   subsets: ['cyrillic', 'latin'],
@@ -60,8 +66,39 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="uk">
-      <body className={classNames(geologica.variable, roboto.variable, 'h-full min-h-screen')}>
+      <body
+        className={classNames(
+          geologica.variable,
+          roboto.variable,
+          'h-full min-h-screen'
+        )}
+      >
+        <Header />
         {children}
+        <Footer />
+
+        {/* Examples */}
+        <div className="container text-center">ScrollLink</div>
+        <div className="container py-2 flex flex-wrap gap-2 items-center bg-gray-400">
+          <ScrollLink label="Primary" href="#sectionId" variant="primary" />
+          <ScrollLink label="Secondary" href="#sectionId" variant="secondary" />
+          <ScrollLink label="Navlink" href="#sectionId" variant="navlink" />
+          <ScrollLink
+            label="Primary2-Nav-To-Page"
+            href="policy"
+            variant="primary2"
+          />
+          <ScrollLink label="Policy" href="" variant="policy" />
+        </div>
+        <div className="container text-center">Button</div>
+        <div className="container py-2 flex flex-wrap gap-2 items-center bg-gray-400">
+          <Button label="ReadMore" variant="readmore" />
+          <Button label="Primary" variant="primary" />
+        </div>
+        <div className="container text-center">Modals</div>
+        <div className="container py-2 flex flex-wrap gap-2 items-center bg-gray-400">
+          <OpenModalExampleBtn />
+        </div>
       </body>
     </html>
   );

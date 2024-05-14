@@ -20,9 +20,19 @@
 | ----------- | ----------- | --------------------------------------------------------------------------------- |
 | `label`     | --          | required, `string` button's text                                                  |
 | `variant`   | --          | required, `string` 'primary' see UiKIt (Buttons), 'readmore' for comments button; |
-| `type`      | `button`    | optinal, `string` 'button', 'submit'                                              |
-| `onCLick`   | `undefined` | optinal, `string` () => void, add the function                                    |
+| `type`      | `button`    | optinal, `string` 'button''submit'                                                |
+| `onCLick`   | `undefined` | optinal, `() => void` , add the function                                          |
 | `className` | `""`        | optinal, `string` add tailwind styles                                             |
+
+- Modal
+
+| Prop        | Default     | Description                                                                                                |
+| ----------- | ----------- | ---------------------------------------------------------------------------------------------------------- |
+| `children`  | --          | optional, `ReactNode` content of the modal window with own styles                                          |
+| `isOpen`    | --          | required, `boolean` - current state of modal                                                               |
+| `close`     | `undefined` | required, `() => void`, add the function for closeModal                                                    |
+| `variant`   | --          | required, `string` "comments" - for comments modal, "burger" - for burgerMenu, "simple" - for other modals |
+| `className` | `""`        | optinal, `string` add tailwind styles                                                                      |
 
 - Telephones
 
@@ -30,6 +40,8 @@
 | ----------- | ------- | ------------------------------------------------------- |
 | `path`      | --      | required, `contacts` or `footer` and styled is changing |
 | `className` | `""`    | optinal, `string` add tailwind styles                   |
+<<<<<<< HEAD
+=======
 
 - CardsBenefits
 
@@ -57,6 +69,7 @@
 | `descriptionItems` | -       | required, `string`,product description                         |
 | `link`             | -       | required, `string`, link to product page                       |
 | `buttonText`       | -       | required, `string`, text for button                            |
+>>>>>>> dev
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with
 [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).

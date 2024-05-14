@@ -12,8 +12,6 @@ import ProductCard from '@/components/ui/ProductCard';
 import FAQSection from '@/sections/FAQSection';
 import Benefits from '@/sections/Benefits/Benefits';
 import SocialMedia from '@/components/ui/SocialMedia';
-import ProductPreference from '@/components/ui/ProductPreference';
-import data from '@/data/productPreference.json'
 
 // Log content to console
 getPolicy().then(content => console.log(content));
@@ -44,7 +42,6 @@ export default function Home() {
         buttonText="детальніше"
       />
       <CompanyAdvantageSection />
-      <ProductPreference data={data}/>
       <FAQSection />
       <SocialMedia />
     </main>

@@ -7,12 +7,10 @@ import {
 
 import CompanyAdvantageSection from '@/sections/CompanyAdvantageSection/CompanyAdvantageSection';
 import HeroSection from '@/sections/HeroSection';
-import { client } from '../../../sanity/client';
 import ProductCard from '@/components/ui/ProductCard';
 import FAQSection from '@/sections/FAQSection';
 import Benefits from '@/sections/Benefits/Benefits';
 import SocialMedia from '@/components/ui/SocialMedia';
-import Slider from '@/components/common/Swiper/Swiper';
 
 // // Log content to console
 // getPolicy().then(content => console.log(content));
@@ -54,7 +52,6 @@ export default function Home() {
       <CompanyAdvantageSection />
       <FAQSection />
       <SocialMedia />
-      <Slider slides={slides} isProductsSlider={true} />
     </main>
   );
 }

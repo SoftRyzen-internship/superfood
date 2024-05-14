@@ -9,11 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
-<<<<<<< HEAD
-    "@hookform/resolvers": "^3.3.4",
-=======
     "@headlessui/react": "^2.0.3",
->>>>>>> dev
+    "@hookform/resolvers": "^3.3.4",
     "@sanity/client": "^6.17.2",
     "@sanity/image-url": "^1.0.2",
     "@sanity/vision": "^3.40.0",

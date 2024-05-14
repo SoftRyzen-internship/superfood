@@ -73,7 +73,7 @@ function Form() {
           isChecked={isChecked}
           setIsChecked={setIsChecked}
           register={register}
-          name={checkbox.label}
+          name={checkbox.name}
           error={errors}
         />
         <Button

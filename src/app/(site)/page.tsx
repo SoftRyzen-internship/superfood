@@ -51,7 +51,6 @@ export default function Home() {
       <SocialMedia />
 
       {/* Examples */}
-      <BurgerMenu />
       <div className="container text-center">ScrollLink</div>
       <div className="container py-2 flex flex-wrap gap-2 items-center bg-gray-400">
         <ScrollLink label="Primary" href="#sectionId" variant="primary" />
@@ -68,10 +67,6 @@ export default function Home() {
       <div className="container py-2 flex flex-wrap gap-2 items-center bg-gray-400">
         <Button label="ReadMore" variant="readmore" />
         <Button label="Primary" variant="primary" />
-      </div>
-      <div className="container text-center">NavList</div>
-      <div className="container py-2 flex flex-wrap gap-2 items-center bg-gray-400">
-        <NavList />
       </div>
       <div className="container text-center">Modals</div>
       <div className="container py-2 flex flex-wrap gap-2 items-center bg-gray-400">

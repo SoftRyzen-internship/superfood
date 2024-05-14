@@ -12,6 +12,7 @@ import ProductCard from '@/components/ui/ProductCard';
 import FAQSection from '@/sections/FAQSection';
 import Benefits from '@/sections/Benefits/Benefits';
 import SocialMedia from '@/components/ui/SocialMedia';
+import Slider from '@/components/common/Swiper/Swiper';
 
 // // Log content to console
 // getPolicy().then(content => console.log(content));
@@ -20,6 +21,15 @@ getPhones().then(content => console.log(content));
 // getReviews().then(content => console.log(content));
 
 // Insert the return component calling `getContent()` below
+
+const slides = [
+  { id: 1, content: 'slide' },
+  { id: 2, content: 'slide' },
+  { id: 3, content: 'slide' },
+  { id: 4, content: 'slide' },
+  { id: 5, content: 'slide' },
+  { id: 6, content: 'slide' },
+];
 
 export default function Home() {
   return (
@@ -44,6 +54,7 @@ export default function Home() {
       <CompanyAdvantageSection />
       <FAQSection />
       <SocialMedia />
+      <Slider slides={slides} isProductsSlider={true} />
     </main>
   );
 }

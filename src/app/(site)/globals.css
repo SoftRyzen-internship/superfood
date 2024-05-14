@@ -18,49 +18,6 @@ html {
   .section-title {
     @apply font-roboto text-green text-center text-[24px] font-bold leading-[27.6px] uppercase md:text-[40px] md:leading-[46px] xl:text-[68px] xl:leading-[78.2px];
   }
-
-  .bg-hero {
-    background-image: url('/images/bg/hero/bg_ellipse_m@1x.webp'),
-      url('/images/bg/hero/bg_yellow_m@1x.webp');
-    background-repeat: no-repeat;
-    background-position: left bottom;
-    background-size:
-      auto 356px,
-      cover;
-  }
-
-  .bg-hero-t {
-    background-image: url('/images/bg/hero/bg_ellipse_t@1x.webp'),
-      url('/images/bg/hero/bg_yellow_t@1x.webp');
-    background-size:
-      auto 621px,
-      cover;
-  }
-
-  .bg-hero-d {
-    background-image: url('/images/bg/hero/bg_ellipse_d@1x.webp'),
-      url('/images/bg/hero/bg_yellow_d@1x.webp');
-    background-size:
-      auto 841px,
-      cover;
-  }
-
-  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    .bg-hero {
-      background-image: url('/images/bg/hero/bg_ellipse_m@2x.webp'),
-        url('/images/bg/hero/bg_yellow_m@2x.webp');
-    }
-
-    .bg-hero-t {
-      background-image: url('/images/bg/hero/bg_ellipse_t@2x.webp'),
-        url('/images/bg/hero/bg_yellow_t@2x.webp');
-    }
-
-    .bg-hero-d {
-      background-image: url('/images/bg/hero/bg_ellipse_d@2x.webp'),
-        url('/images/bg/hero/bg_yellow_d@2x.webp');
-    }
-  }
 }
 
 @layer utilities {

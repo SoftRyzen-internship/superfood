@@ -12,7 +12,6 @@ import ProductCard from '@/components/ui/ProductCard';
 import FAQSection from '@/sections/FAQSection';
 import Benefits from '@/sections/Benefits/Benefits';
 import SocialMedia from '@/components/ui/SocialMedia';
-import Form from '@/components/ui/Form';
 
 // Log content to console
 getPolicy().then(content => console.log(content));
@@ -45,7 +44,6 @@ export default function Home() {
       <CompanyAdvantageSection />
       <FAQSection />
       <SocialMedia />
-      <Form />
     </main>
   );
 }

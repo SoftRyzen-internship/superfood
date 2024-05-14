@@ -14,7 +14,7 @@ function Checkbox({
   register,
   name,
 }: CheckboxProps) {
-  const privacyPolicy = register(name);
+  const privacyPolicy = register(name, { value: isChecked });
   return (
     <label className="relative flex items-center gap-3">
       <input

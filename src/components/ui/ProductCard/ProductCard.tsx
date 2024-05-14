@@ -36,14 +36,14 @@ function ProductCard({
           )}
         />
       </div>
-      <h3 className="text-roboto font-bold text-[22px] leading-[1.15] uppercase  text-white mb-3 md:text-lightLarge xl:mb-3.5 xl:text-3xl ">
+      <h3 className="font-roboto font-bold text-[22px] leading-[1.15] uppercase  text-white mb-3 md:text-lightLarge xl:mb-3.5 xl:text-3xl ">
         {name}
       </h3>
       <div className="mb-[38px] flex gap-x-3 gap-y-2 flex-wrap justify-center w-[312px] xl:mb-10">
         {descriptionItems.map((item, id) => (
           <span
             key={id}
-            className="text-roboto text-sm font-bold leading-[1.15] uppercase  text-accent xl:text-light"
+            className="font-roboto text-sm font-bold leading-[1.15] uppercase  text-accent xl:text-light"
           >
             {item}
           </span>

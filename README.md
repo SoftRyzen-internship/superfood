@@ -34,6 +34,12 @@
 | `variant`   | --          | required, `string` "comments" - for comments modal, "burger" - for burgerMenu, "simple" - for other modals |
 | `className` | `""`        | optinal, `string` add tailwind styles                                                                      |
 
+- ProductAction
+
+| Prop        | Default | Description                              |
+| ----------- | ------- | ---------------------------------------- |
+| `data`      | menu    | Taka data productAction with massive :id: `number`, action: `string`  |
+
 - Telephones
 
 | Prop        | Default | Description                                             |

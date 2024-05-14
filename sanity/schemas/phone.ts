@@ -35,7 +35,7 @@ export const phone = defineType({
         defineField({
           name: 'phone',
           type: 'string',
-          validation: (rule) => rule.required().regex(/^\+370\d{9}$/),
+          validation: (rule) => rule.required().regex(/^\+370\d{8}$/),
         }),
       ],
     }),

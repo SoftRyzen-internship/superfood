@@ -29,7 +29,7 @@ function Contacts() {
                 />
                 <a
                   href={ownerEmail}
-                  className="font-geologica font-light text-medium tracking-[-0.02em] text-black text-center block mb-8 md:text-start md:text-xl md:leading-[1.35] xl:text-large xl:mb-10"
+                  className="font-geologica font-light text-medium tracking-[-0.02em] text-black text-center transition-colors hover:text-green focus:text-green block mb-8 md:text-start md:text-xl md:leading-[1.35] xl:text-large xl:mb-10"
                 >
                   {ownerEmail}
                 </a>

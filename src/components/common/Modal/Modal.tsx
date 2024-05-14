@@ -32,7 +32,10 @@ function Modal({
       >
         <Dialog
           onClose={variant === 'burger' ? () => {} : close}
-          className="relative z-50 transition"
+          className={classNames(
+            'relative z-50 transition',
+            variant === 'burger' && 'xl:hidden'
+          )}
         >
           {/* The backdrop, rendered as a fixed sibling to the panel container */}
           <div

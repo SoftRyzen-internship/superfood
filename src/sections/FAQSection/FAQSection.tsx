@@ -4,7 +4,7 @@ import faq from '@/data/faqSection.json';
 
 function FAQSection() {
   return (
-    <section className="section relative overflow-hidden">
+    <section className="section relative overflow-x-clip">
       <div className="container">
         <h2 className="section-title mb-8 md:mb-10 xl:mb-[55px]">{faq.title}</h2>
         <AccordionList items={faq.items} openFirst={true} />

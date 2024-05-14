@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@headlessui/react": "^2.0.3",
+    "@hookform/resolvers": "^3.3.4",
     "@sanity/client": "^6.17.2",
     "@sanity/image-url": "^1.0.2",
     "@sanity/vision": "^3.40.0",
@@ -18,9 +19,11 @@
     "next-sanity": "^7.1.4",
     "react": "^18",
     "react-dom": "^18",
+    "react-hook-form": "^7.51.4",
     "react-scroll": "^1.9.0",
     "sanity": "^3.40.0",
-    "styled-components": "^6.1.9"
+    "styled-components": "^6.1.9",
+    "yup": "^1.4.0"
   },
   "devDependencies": {
     "@svgr/webpack": "^8.1.0",

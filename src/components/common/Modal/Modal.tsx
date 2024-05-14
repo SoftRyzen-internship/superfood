@@ -1,12 +1,15 @@
 'use client';
 
 import React from 'react';
+import { Fragment } from 'react';
 import { Dialog, DialogPanel, Transition } from '@headlessui/react';
 import classNames from 'classnames';
 
 import { ModalProps } from './Modal.types';
 
 import Icon from '@/../../public/icons/LowPartOfReview.svg';
+
+import styles from '../BurgerMenu/Burger.module.css';
 
 function Modal({
   children,
@@ -19,6 +22,7 @@ function Modal({
     <>
       <Transition
         show={isOpen}
+        as={Fragment}
         enter="duration-200 ease-out"
         enterFrom="opacity-0"
         enterTo="opacity-100"
@@ -26,17 +30,31 @@ function Modal({
         leaveFrom="opacity-100"
         leaveTo="opacity-0"
       >
-        <Dialog onClose={close} className="relative z-50 transition">
+        <Dialog
+          onClose={variant === 'burger' ? () => {} : close}
+          className={classNames(
+            'relative z-50 transition',
+            variant === 'burger' && 'xl:hidden'
+          )}
+        >
           {/* The backdrop, rendered as a fixed sibling to the panel container */}
-          <div className="fixed inset-0  bg-backdrop" aria-hidden="true" />
+          <div
+            className={classNames(
+              variant === 'burger'
+                ? classNames('fixed inset-0', styles.burger)
+                : 'fixed inset-0 bg-backdrop'
+            )}
+            aria-hidden="true"
+          />
           {/* Full-screen container to center the panel */}
-          <div className="fixed inset-0 flex w-screen items-center justify-center">
+          <div className="fixed inset-0 flex w-screen h-screen items-center justify-center overflow-y-auto">
             <DialogPanel
               className={classNames(
-                'bg-white relative',
-                variant === 'burger' && 'w-full h-full',
+                ' relative',
+
+                variant === 'burger' && 'w-full h-screen',
                 (variant === 'comments' || variant === 'simple') &&
-                  'max-w-[328px] max-h-[90%] rounded-xl md:max-w-[700px] xl:max-w-[800px]',
+                  'bg-white max-w-[328px] max-h-[90%] rounded-xl md:max-w-[700px] xl:max-w-[800px]',
                 className
               )}
             >

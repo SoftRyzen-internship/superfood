@@ -2,8 +2,7 @@
 
 import React, { useState } from 'react';
 import dynamic from 'next/dynamic';
-
-import BurgerIcon from '@/../public/icons/menu.svg';
+import BurgerIcon from '@/../public/icons/Menu.svg';
 const Modal = dynamic(() => import('@/components/common/Modal'), {
   ssr: false,
 });

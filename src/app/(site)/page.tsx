@@ -12,6 +12,7 @@ import ProductCard from '@/components/ui/ProductCard';
 import FAQSection from '@/sections/FAQSection';
 import Benefits from '@/sections/Benefits/Benefits';
 import SocialMedia from '@/components/ui/SocialMedia';
+import Form from '@/components/ui/Form';
 
 // Log content to console
 getPolicy().then(content => console.log(content));
@@ -22,6 +23,7 @@ getReviews().then(content => console.log(content));
 // Insert the return component calling `getContent()` below
 
 export default function Home() {
+  const productId = 2;
   return (
     <main>
       <HeroSection />
@@ -38,12 +40,13 @@ export default function Home() {
           'Антиоксиданти',
           'Клітковина',
         ]}
-        link="/:productId"
+        link={`products/${productId}`}
         buttonText="детальніше"
       />
       <CompanyAdvantageSection />
       <FAQSection />
       <SocialMedia />
+      <Form />
     </main>
   );
 }

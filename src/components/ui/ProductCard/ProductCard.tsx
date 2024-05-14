@@ -24,8 +24,8 @@ function ProductCard({
         <Image
           src={img}
           alt={alt}
-          width="263"
-          height="284"
+          width={263}
+          height={284}
           className={classNames(
             `${style.ProductBg} md:w-[327px] md:h-[352px] xl:w-[381px] xl:h-[409px]`,
             imgBg === 'beans' && `${style.ProductBgBeans}`,
@@ -36,7 +36,7 @@ function ProductCard({
           )}
         />
       </div>
-      <h3 className="font-roboto font-bold text-[22px] leading-[1.15] uppercase  text-white mb-3 md:text-lightLarge xl:mb-3.5 xl:text-3xl ">
+      <h3 className="text-roboto font-bold text-[22px] leading-[1.15] uppercase  text-white mb-3 md:text-lightLarge xl:mb-3.5 xl:text-3xl ">
         {name}
       </h3>
       <div className="mb-[38px] flex gap-x-3 gap-y-2 flex-wrap justify-center w-[312px] xl:mb-10">

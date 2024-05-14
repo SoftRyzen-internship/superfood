@@ -9,19 +9,19 @@
 }
 
 .ProductBgWheat {
-  background-image: url('/images/bg/bg_rye_malt_fermented@1x.webp');
+  background-image: url('/images/bg/bg_sprouted_grains_of_beans@1x.webp');
 }
 
 .ProductBgVegetables {
-  background-image: url('//images/bg/bg_vegetable_norm@1x.webp');
+  background-image: url('/images/bg/bg_sprouted_grains_of_beans@1x.webp');
 }
 
 .ProductBgCorn {
-  background-image: url('/images/bg/bg_sprouted_grains_of_cereal@1x.webp');
+  background-image: url('/images/bg/bg_sprouted_grains_of_beans@1x.webp');
 }
 
 .ProductBgSeaweed {
-  background-image: url('//images/bg/bg_green_formula@1x.webp');
+  background-image: url('/images/bg/bg_sprouted_grains_of_beans@1x.webp');
 }
 
 @media (min-device-pixel-ratio: 2),
@@ -32,20 +32,20 @@
   }
 
   .ProductBgWheat {
-    background-image: url('/images/bg/bg_rye_malt_fermented@2x.webp');
+    background-image: url('/images/bg/bg_sprouted_grains_of_beans@1x.webp');
   }
 
   .ProductBgVegetables {
-    background-image: url('//images/bg/bg_vegetable_norm@2x.webp');
+    background-image: url('/images/bg/bg_sprouted_grains_of_beans@1x.webp');
   }
 
   .ProductBgCorn {
-    background-image: url('/images/bg/bg_sprouted_grains_of_cereal@2x.webp');
+    background-image: url('/images/bg/bg_sprouted_grains_of_beans@1x.webp');
   }
-}
 
-.ProductBgSeaweed {
-  background-image: url('//images/bg/bg_green_formula@2x.webp');
+  .ProductBgSeaweed {
+    background-image: url('/images/bg/bg_sprouted_grains_of_beans@1x.webp');
+  }
 }
 
 @media screen and (min-width: 768px) {

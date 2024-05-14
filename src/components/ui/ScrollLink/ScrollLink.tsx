@@ -28,7 +28,7 @@ function LinkButton({
         variant === 'primary2' &&
           'text-white text-xl py-5 px-8 border border-solid border-white hover:text-green hover:bg-white',
         variant === 'navlink' &&
-          'text-green text-2xl font-roboto xl:geologica leading-[1.15] uppercase relative md:text-[40px] xl:text-base xl:font-extralight xl:normal-case xl:text-black  hover:text-green focus:text-green transition-colors after:block after:absolute after:bg-green after:w-full after:h-[1px] after:opacity-0 after:top-[22px] hover:after:opacity-100 focus:after:opacity-100 after:transition-opacity inline-block',
+          'text-green text-2xl font-roboto xl:font-geologica leading-[1.15] uppercase relative md:text-[40px] xl:text-base xl:font-extralight xl:normal-case xl:text-black  hover:text-green focus:text-green transition-colors after:block after:absolute after:bg-green after:w-full after:h-[1px] after:opacity-0 after:top-[22px] hover:after:opacity-100 focus:after:opacity-100 after:transition-opacity inline-block',
         variant === 'policy' &&
           'px-1 py-1  text-lightGreen text-sm font-light leading-[1.4] tracking-tight normal-case   xl:hover:text-green xl:focus:text-green transition-colors',
         className

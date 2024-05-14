@@ -4,6 +4,7 @@ import { Roboto_Condensed } from 'next/font/google';
 import localFont from 'next/font/local';
 import './globals.css';
 import Footer from '@/layout/Footer';
+import Header from '@/layout/Header';
 
 const roboto = Roboto_Condensed({
   subsets: ['cyrillic', 'latin'],
@@ -68,6 +69,7 @@ export default function RootLayout({
           'h-full min-h-screen'
         )}
       >
+        <Header />
         {children}
         <Footer />
       </body>

@@ -1,0 +1,18 @@
+.swiper-slide-prev,
+.swiper-slide-next {
+    background-color: aquamarine;
+    opacity: 0.5;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 592px;
+}
+
+/* .swiper-slide-prev {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+} */

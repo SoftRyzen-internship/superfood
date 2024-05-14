@@ -1,77 +1,53 @@
 'use client';
 
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import { Navigation, Pagination, EffectCoverflow } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import 'swiper/css/free-mode';
+import 'swiper/css/effect-coverflow';
+import './styles.css';
+interface Slide {
+  id: number;
+  content: string;
+}
 
-function ProductSwiper() {
+interface ProductSwiperProps {
+  slides: Slide[];
+}
+
+function ProductSwiper({ slides }: ProductSwiperProps) {
   return (
-    <Swiper
-      slidesPerView={1}
-      spaceBetween={30}
-      loop={true}
-      pagination={{
-        clickable: true,
-      }}
-      navigation={true}
-      modules={[Pagination, Navigation]}
-      className="h-[500px] relative"
-    >
-      <SwiperSlide>
-        {({ isActive, isNext, isPrev }) => (
-          <div className={isNext || isPrev ? 'absolute' : ''}>
-            Current slide is {isActive ? 'active' : 'not active'}
-          </div>
-        )}
-      </SwiperSlide>
-      <SwiperSlide>
-        {({ isActive, isNext, isPrev }) => (
-          <div className={isNext || isPrev ? 'absolute' : ''}>
-            Current slide is {isActive ? 'active' : 'not active'}
-          </div>
-        )}
-      </SwiperSlide>
-      <SwiperSlide>
-        {({ isActive, isNext, isPrev }) => (
-          <div className={isNext || isPrev ? 'absolute' : ''}>
-            Current slide is {isActive ? 'active' : 'not active'}
-          </div>
-        )}
-      </SwiperSlide>
-      <SwiperSlide>
-        {({ isActive, isNext, isPrev }) => (
-          <div className={isNext || isPrev ? 'absolute' : ''}>
-            Current slide is {isActive ? 'active' : 'not active'}
-          </div>
-        )}
-      </SwiperSlide>
-      <SwiperSlide>
-        {({ isActive, isNext, isPrev }) => (
-          <div className={isNext || isPrev ? 'absolute' : ''}>
-            Current slide is {isActive ? 'active' : 'not active'}
-          </div>
-        )}
-      </SwiperSlide>
-      <SwiperSlide>
-        {({ isActive, isNext, isPrev }) => (
-          <div className={isNext || isPrev ? 'absolute' : ''}>
-            Current slide is {isActive ? 'active' : 'not active'}
-          </div>
-        )}
-      </SwiperSlide>
-      <SwiperSlide>
-        {({ isActive, isNext, isPrev }) => (
-          <div className={isNext || isPrev ? 'absolute' : ''}>
-            Current slide is {isActive ? 'active' : 'not active'}
-          </div>
-        )}
-      </SwiperSlide>
-      {/* Добавьте свои слайды */}
-    </Swiper>
+    <div className="w-[100vw] relative">
+      {' '}
+      <Swiper
+        spaceBetween={133}
+        loop={true}
+        pagination={{
+          clickable: true,
+        }}
+        grabCursor={true}
+        centeredSlides={true}
+        modules={[Navigation]}
+        initialSlide={1}
+        navigation={true}
+        className="h-[626px] w-[100vw]"
+        effect={'freeMode'}
+        breakpoints={{
+          1280: {
+            slidesPerView: 3,
+          },
+        }}
+      >
+        {slides.map(slide => (
+          <SwiperSlide key={slide.id}>
+            <div className="w-[592px]">{slide.content}</div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
   );
 }
 export default ProductSwiper;

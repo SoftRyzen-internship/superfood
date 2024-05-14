@@ -1,10 +1,17 @@
 import Image from 'next/image';
 import Line from '@/../public/icons/Line.svg';
-import hfs from '@/data/heroFormulaicSection.json';
+import hfsData from '@/data/heroFormulaicSection.json';
 import ScrollLink from '@/components/ui/ScrollLink';
 import HeroFormulaicItem from '@/components/ui/HeroFormulaicItem';
+import { HeroFormulaicSectionProps } from './HeroFormulaicSection.types';
 
-function HeroFormulaicSection() {
+function HeroFormulaicSection({ productId }: HeroFormulaicSectionProps) {
+  const hfs = hfsData.find(item => item.id === productId);
+
+  if (!hfs) {
+    return null;
+  }
+
   return (
     <section className="pt-[120px] pb-[60px] md:pt-[152px] md:pb-[80px] xl:pt-[133px] xl:pb-[65px]">
       <div className="container xl:flex xl:flex-row-reverse xl:justify-between">

@@ -13,8 +13,6 @@ import CloseIcon from '@/../../public/icons/Close.svg';
 
 import data from '@/data/common.json';
 
-import styles from './Burger.module.css';
-
 function BurgerMenu({ close }: BurgerMenuProps) {
   const { main } = data.buttonsLabel;
   const { burgerClose } = data.ariaLabel;
@@ -25,12 +23,11 @@ function BurgerMenu({ close }: BurgerMenuProps) {
     >
       <div className="flex py-[30px] justify-between items-center mb-9 md:mb-[148px] md:py-[43px]">
         <Logo path="header" />
-        <button type="button" onClick={close}>
+        <button type="button" aria-label={burgerClose} onClick={close}>
           <CloseIcon
             width={24}
             height={24}
             className="w-6 h-6 md:w-10 md:h-10"
-            aria-label={burgerClose}
           />
         </button>
       </div>

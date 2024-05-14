@@ -1,4 +1,4 @@
-import { Tab, Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react';
+import { Tab, Disclosure, DisclosureButton, DisclosurePanel, Transition } from '@headlessui/react';
 import classNames from 'classnames';
 import Plus from '@/../public/icons/Plus.svg';
 import Minus from '@/../public/icons/Minus.svg';
@@ -20,11 +20,17 @@ function AccordionItem({ titleItem, description, openFirst = false, info }: Acco
               {selected ? <Minus width={22} height={22} /> : <Plus width={22} height={22} />}
             </div>
           </div>
-          {selected && (
-            <p className="font-geologica font-light text-black text-light tracking-[-0.32px] md:text-medium md:tracking-[-0.36px] xl:text-[20px] xl:tracking-[-0.4px] mt-4 xl:mt-3">
-              {description}
-            </p>
-          )}
+          <p
+            className={classNames(
+              'font-geologica font-light text-black text-light tracking-[-0.32px] md:text-medium md:tracking-[-0.36px] xl:text-[20px] xl:tracking-[-0.4px] mt-4 xl:mt-3',
+              {
+                'transition-all duration-500 ease-out opacity-0 h-0': !selected,
+                'transition-all duration-500 ease-out opacity-100 h-auto': selected,
+              }
+            )}
+          >
+            {description}
+          </p>
         </div>
       )}
     </Tab>
@@ -44,19 +50,28 @@ function AccordionItem({ titleItem, description, openFirst = false, info }: Acco
             {titleItem}
             <div>{open ? <Minus width={22} height={22} /> : <Plus width={22} height={22} />}</div>
           </DisclosureButton>
-          <DisclosurePanel className="font-geologica font-light text-black text-[14px] leading-[1.35] tracking-[-0.28px] mt-4 md:text-light md:tracking-[-0.32px] xl:text-medium xl:tracking-[-0.36px]">
-            {description}
-            {info?.map(item => (
-              <div
-                key={item.id}
-                className="font-geologica text-black text-[14px] leading-[1.35] tracking-[-0.28px] md:text-light md:tracking-[-0.32px] xl:text-medium xl:tracking-[-0.36px]"
-              >
-                <p className="font-medium mt-4 md:mt-3">
-                  {item.caption} <span className="font-light">{item.captionText}</span>
-                </p>
-              </div>
-            ))}
-          </DisclosurePanel>
+          <Transition
+            enter="duration-200 ease-out"
+            enterFrom="opacity-0 -translate-y-6"
+            enterTo="opacity-100 translate-y-0"
+            leave="duration-300 ease-out"
+            leaveFrom="opacity-100 translate-y-0"
+            leaveTo="opacity-0 -translate-y-6"
+          >
+            <DisclosurePanel className="font-geologica font-light text-black text-[14px] leading-[1.35] tracking-[-0.28px] mt-4 md:text-light md:tracking-[-0.32px] xl:text-medium xl:tracking-[-0.36px]">
+              {description}
+              {info?.map(item => (
+                <div
+                  key={item.id}
+                  className="font-geologica text-black text-[14px] leading-[1.35] tracking-[-0.28px] md:text-light md:tracking-[-0.32px] xl:text-medium xl:tracking-[-0.36px]"
+                >
+                  <p className="font-medium mt-4 md:mt-3">
+                    {item.caption} <span className="font-light">{item.captionText}</span>
+                  </p>
+                </div>
+              ))}
+            </DisclosurePanel>
+          </Transition>
         </div>
       )}
     </Disclosure>

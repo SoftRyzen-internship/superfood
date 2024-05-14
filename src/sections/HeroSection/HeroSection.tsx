@@ -1,10 +1,13 @@
 import Image from 'next/image';
 import ScrollLink from '@/components/ui/ScrollLink';
+import styles from './HeroSection.module.css';
 import heroSection from '@/data/heroSection.json';
 
 function HeroSection() {
   return (
-    <section className="bg-lightGreen bg-hero pt-[88px] pb-[30px] md:bg-hero-t md:pt-[152px] md:pb-[76px] xl:bg-hero-d xl:pt-[148px] xl:pb-[100px]">
+    <section
+      className={`bg-lightGreen ${styles.bgHero} pt-[88px] pb-[30px] md:pt-[152px] md:pb-[76px] xl:pt-[148px] xl:pb-[100px]`}
+    >
       <div className="container">
         <h1 className="title w-[328px] mx-auto mb-6 md:w-[597px] md:mb-10 xl:w-[755px] xl:mb-7">
           {heroSection.title}

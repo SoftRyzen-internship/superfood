@@ -1,3 +1,4 @@
+import HeroFormulaicSection from '@/sections/HeroFormulaicSection';
 import React from 'react';
 
 export interface ProductProps {
@@ -25,19 +26,16 @@ function Product({ params }: ProductProps) {
   const product = productDescr.find(item => item.id === filterId);
 
   return (
-    <div className="container pt-14">
-      <p className="text-xl text-center font-bold p-10">
-        Hero Product Id {params.id}
-      </p>
-      <div className="bg-lightGreen p-10">
-        <p>ProductDescription with id: {params.id}</p>
-        {product ? (
-          <p>{product.description}</p>
-        ) : (
-          <p className="bg-red">Product Not Found</p>
-        )}
+    <>
+      <HeroFormulaicSection productId={params.id} />
+      <div className="container pt-14">
+        <p className="text-xl text-center font-bold p-10">Hero Product Id {params.id}</p>
+        <div className="bg-lightGreen p-10">
+          <p>ProductDescription with id: {params.id}</p>
+          {product ? <p>{product.description}</p> : <p className="bg-red">Product Not Found</p>}
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 

@@ -7,28 +7,25 @@ import ScrollLink from '@/components/ui/ScrollLink';
 import PhoneContacts from '@/components/ui/PhoneContacts';
 import SocialMedia from '@/components/ui/SocialMedia';
 
+import { BurgerMenuProps } from './BurgerMenu.types';
+
 import CloseIcon from '@/../../public/icons/Close.svg';
 
 import data from '@/data/common.json';
 
 import styles from './Burger.module.css';
 
-export interface BurgerMenu {}
-
-function BurgerMenu({}: BurgerMenu) {
+function BurgerMenu({ close }: BurgerMenuProps) {
   const { main } = data.buttonsLabel;
   const { burgerClose } = data.ariaLabel;
 
   return (
     <div
-      className={classNames(
-        styles.burger,
-        'pt-[30px] pb-6 md:pt-[43px] md:pb-16 xl:hidden'
-      )}
+      className={classNames('container xl:hidden w-full h-full flex flex-col')}
     >
-      <div className="container relative">
-        <Logo path="header" classNames="mb-[67px] md:mb-[191px]" />
-        <button type="button" className="absolute top-0 right-4">
+      <div className="flex py-[30px] justify-between items-center mb-9 md:mb-[148px] md:py-[43px]">
+        <Logo path="header" />
+        <button type="button" onClick={close}>
           <CloseIcon
             width={24}
             height={24}
@@ -36,22 +33,26 @@ function BurgerMenu({}: BurgerMenu) {
             aria-label={burgerClose}
           />
         </button>
+      </div>
 
+      <div className="mb-[105px] md:mb-[265px] flex-auto">
         <div className="mb-10 md:mb-16">
           <NavList />
         </div>
 
-        <div className="text-center mb-[130px] md:mb-[281px]">
+        <div className="text-center">
           <ScrollLink label={main} href="#contacts" variant="secondary" />
         </div>
+      </div>
 
+      <div className="pb-6  md:pb-16 ">
         <PhoneContacts
-          location="footer"
-          classNames="self-center mb-3 md:text-[20px] md:font-light"
+          location="contacts"
+          classNames="justify-center  text-sm  md:text-[20px] md:font-light"
         />
         <a
           href="mailto:alisagrushkovska@gmail.com"
-          className="flex justify-center mb-6 font-geologica text-black font-light text-[14px] leading-[1.35] text-center  md:text-[20px] md:mb-8"
+          className="flex justify-center mb-6 te mt-3 font-geologica text-black font-light text-[14px] leading-[1.35] text-center  md:text-[20px] md:mb-8"
         >
           {data.email}
         </a>

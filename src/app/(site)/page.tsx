@@ -1,4 +1,9 @@
-import { getPolicy, getPhones, getProduct, getReviews } from '../../../sanity/requests';
+import {
+  getPolicy,
+  getPhones,
+  getProduct,
+  getReviews,
+} from '../../../sanity/requests';
 
 import CompanyAdvantageSection from '@/sections/CompanyAdvantageSection/CompanyAdvantageSection';
 import HeroSection from '@/sections/HeroSection';
@@ -25,6 +30,27 @@ getReviews().then(content => console.log(content));
 export default function Home() {
   return (
     <main>
+      <HeroSection />
+      <Benefits />
+      <CompanyAdvantageSection />
+      <ProductCard
+        img="/images/products/sprouted-grains-of-beans@2x.webp"
+        imgBg="beans"
+        alt="ПРОРОЩЕНІ ЗЕРНА БОБОВИХ"
+        name="ПРОРОЩЕНІ ЗЕРНА БОБОВИХ"
+        descriptionItems={[
+          'Джерело білка',
+          'Фолієва кислота',
+          'Антиоксиданти',
+          'Клітковина',
+        ]}
+        link="/:productId"
+        buttonText="детальніше"
+      />
+      <FAQSection />
+      <SocialMedia />
+
+      {/* Examples */}
       <BurgerMenu />
       <div className="container text-center">ScrollLink</div>
       <div className="container py-2 flex flex-wrap gap-2 items-center bg-gray-400">
@@ -51,20 +77,6 @@ export default function Home() {
       <div className="container py-2 flex flex-wrap gap-2 items-center bg-gray-400">
         <OpenModalExampleBtn />
       </div>
-      <HeroSection />
-      <Benefits />
-      <CompanyAdvantageSection />
-      <ProductCard
-        img="/images/products/sprouted-grains-of-beans@2x.webp"
-        imgBg="beans"
-        alt="ПРОРОЩЕНІ ЗЕРНА БОБОВИХ"
-        name="ПРОРОЩЕНІ ЗЕРНА БОБОВИХ"
-        descriptionItems={['Джерело білка', 'Фолієва кислота', 'Антиоксиданти', 'Клітковина']}
-        link="/:productId"
-        buttonText="детальніше"
-      />
-      <FAQSection />
-      <SocialMedia />
     </main>
   );
 }

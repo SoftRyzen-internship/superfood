@@ -40,7 +40,7 @@ function Contacts() {
               </div>
               <div>
                 <p
-                  className={`font-geologica font-light text-light tracking-[-0.02em] text-black p-6 rounded-xl bg-[#dcf2b4] w-[312px] relative ${style.lowPartOfReview} mx-auto mb-6 md:w-[303px] xl:mb-27px xl:ml-0`}
+                  className={`font-geologica font-light text-light tracking-[-0.02em] text-black p-6 rounded-xl bg-[#dcf2b4] w-[312px] relative ${style.lowPartOfReview}  mb-6 md:w-[303px] xl:mb-27px `}
                 >
                   {ownerText}
                 </p>

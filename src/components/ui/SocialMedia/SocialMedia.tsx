@@ -21,7 +21,7 @@ function SocialMedia({ section = 'menu', className }: SocialMediaProps) {
             href={link}
             target="_blank"
             rel="noopener noreferrer nofollow"
-            aria-label={`open ${name}`}
+            aria-label={`відкрити ${name}`}
             className={classNames(
               'rounded-full flex justify-center items-center transition-colors',
               section === 'menu' &&
@@ -37,14 +37,14 @@ function SocialMedia({ section = 'menu', className }: SocialMediaProps) {
                 width={24}
                 height={24}
                 className={iconClass}
-                aria-label="open facebook"
+                aria-label="відкрити facebook"
               />
             ) : (
               <Telegram
                 width={24}
                 height={24}
                 className={iconClass}
-                aria-label="open telegram"
+                aria-label="відкрити telegram"
               />
             )}
           </a>

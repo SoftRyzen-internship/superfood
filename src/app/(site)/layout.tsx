@@ -3,7 +3,9 @@ import classNames from 'classnames';
 import { Roboto_Condensed } from 'next/font/google';
 import localFont from 'next/font/local';
 import './globals.css';
-import ProductSwiper from '@/components/common/Swiper/ProductSwiper';
+import Footer from '@/layout/Footer';
+import Header from '@/layout/Header';
+
 const roboto = Roboto_Condensed({
   subsets: ['cyrillic', 'latin'],
   weight: '700',
@@ -74,10 +76,9 @@ export default function RootLayout({
           'h-full min-h-screen'
         )}
       >
+        <Header />
         {children}
-        <div className="w-[100vw] mx-[auto]">
-          <ProductSwiper slides={slides} />
-        </div>
+        <Footer />
       </body>
     </html>
   );

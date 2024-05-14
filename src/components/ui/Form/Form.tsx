@@ -9,7 +9,7 @@ import Checkbox from '../Checkbox';
 import Button from '../Button';
 import FormInput from '../FormInput';
 
-import { FormProps } from './Form.types';
+import form from '@/data/form.json';
 
 const schema = yup.object({
   name: yup
@@ -26,7 +26,13 @@ const schema = yup.object({
   privacyPolicy: yup.boolean().oneOf([true]).required(),
 });
 
-function Form({ title, text, formProps, buttonText }: FormProps) {
+function Form() {
+  const {
+    title,
+    text,
+    formProps: { inputs, checkbox },
+    buttonText,
+  } = form;
   const [isChecked, setIsChecked] = useState(false);
   const {
     register,
@@ -43,7 +49,7 @@ function Form({ title, text, formProps, buttonText }: FormProps) {
   };
   //модалки будуть коли створимо групу та логіку надсилання даних туди
   return (
-    <div className="max-w-[360px] py-[60px] px-4 bg-white md:w-[527px] md:rounded-xl	 md:py-12 md:px-16 xl:w-[592px] xl:py-14 xl:px-20">
+    <div className="max-w-[460px] py-[60px] px-4 bg-white mx-auto md:max-w-[527px] md:rounded-xl	 md:py-12 md:px-16 xl:max-w-[592px] xl:py-14 xl:px-20">
       <h3 className="font-roboto font-bold text-[22px] leading-[1.15] uppercase text-center text-black mb-3 md:text-lightLarge xl:text3xl ">
         {title}
       </h3>
@@ -51,7 +57,7 @@ function Form({ title, text, formProps, buttonText }: FormProps) {
         {text}
       </p>
       <form onSubmit={handleSubmit(onSubmit)}>
-        {formProps.map(({ name, type, placeholder, errorMessage }, index) => (
+        {inputs.map(({ name, type, placeholder, errorMessage }, index) => (
           <FormInput
             key={index}
             type={type}
@@ -63,11 +69,11 @@ function Form({ title, text, formProps, buttonText }: FormProps) {
           />
         ))}
         <Checkbox
-          label="Даю згоду на обробку персональних даних "
+          label={checkbox.label}
           isChecked={isChecked}
           setIsChecked={setIsChecked}
           register={register}
-          name="privacyPolicy"
+          name={checkbox.label}
           error={errors}
         />
         <Button

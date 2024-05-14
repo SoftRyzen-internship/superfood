@@ -14,21 +14,20 @@ function Checkbox({
   register,
   name,
 }: CheckboxProps) {
-  console.log(isChecked);
+  const privacyPolicy = register(name);
   return (
     <label className="relative flex items-center gap-3">
       <input
         type="checkbox"
-        checked={isChecked}
-        {...register(name, {
-          onchange: () => setIsChecked(!isChecked),
-          value: isChecked,
-        })}
-        onChange={() => setIsChecked(!isChecked)}
+        {...privacyPolicy}
+        onChange={e => {
+          privacyPolicy.onChange(e);
+          setIsChecked(!isChecked);
+        }}
         className={classNames(
           'appearance-none	border border-solid rounded-md border-[rgba(23,117,49,0.5)] w-5 h-5 outline-none cursor-pointer hover:border-green focus:border-green',
           isChecked && 'border-green hover:border-green focus:border-green',
-          error[name] && 'border-red '
+          error[name] && 'border-red hover:border-red focus:border-red'
         )}
       />
       <span className="font-geologica font-light text-sm leading-[1.35] tracking-[-0.02em] text-black xl:text-light">

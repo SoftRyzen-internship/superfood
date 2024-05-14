@@ -6,3 +6,9 @@
   height: 24px;
   right: 24px;
 }
+
+.error,
+.error:hover,
+.error:focus {
+  border-color: #ff0000;
+}

@@ -26,7 +26,7 @@ function FormInput({
         {...register(name)}
         className={classNames(
           'font-geologica font-light text-light tracking-[-0.02em] text-black rounded-xl py-5 px-6 w-full h-[62px] bg-input mb-1 border border-solid	border-transparent outline-none  relative	 placeholder:text-grey hover:border-strokeLightGreen focus:border-strokeLightGreen',
-          error[name] && 'border-red'
+          error[name] && style.error
         )}
       />
       {error[name] && <span className="text-red">{errorMessage}</span>}

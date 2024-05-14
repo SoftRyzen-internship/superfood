@@ -9,7 +9,7 @@ import { ModalProps } from './Modal.types';
 
 import Icon from '@/../../public/icons/LowPartOfReview.svg';
 
-import styles from '../BurgerMenu/Burger.module.css';
+import styles from '../BurgerMenu/BurgerMenu.module.css';
 
 function Modal({
   children,

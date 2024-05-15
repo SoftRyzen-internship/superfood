@@ -2,15 +2,15 @@ import Image from 'next/image';
 
 import PhoneContacts from '@/components/ui/PhoneContacts';
 import SocialMedia from '@/components/ui/SocialMedia';
-
-import contacts from '@/data/contacts.json';
-
-import style from './Contacts.module.css';
 import Form from '@/components/ui/Form';
 
+import contacts from '@/data/contacts.json';
+import common from '@/data/common.json';
+
+import style from './Contacts.module.css';
+
 function Contacts() {
-  const { title, ownerEmail, owner, ownerImage, ownerText, ownerPosition } =
-    contacts;
+  const { title, owner, ownerImage, ownerText, ownerPosition } = contacts;
   return (
     <>
       <section id="contacts" className={`bg-lightGreen ${style.contactsBg}`}>
@@ -28,10 +28,10 @@ function Contacts() {
                   classNames="mb-4 justify-center md:justify-start"
                 />
                 <a
-                  href={ownerEmail}
+                  href={`mailto:${common.email}`}
                   className="font-geologica font-light text-medium tracking-[-0.02em] text-black text-center transition-colors hover:text-green focus:text-green block mb-8 md:text-start md:text-xl md:leading-[1.35] xl:text-large xl:mb-10"
                 >
-                  {ownerEmail}
+                  {common.email}
                 </a>
                 <SocialMedia
                   section="contacts"

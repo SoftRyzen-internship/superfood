@@ -7,9 +7,9 @@ export const review = defineType({
     type: 'document',
     fields: [
                 defineField({
-                    name: 'name',
+                    name: 'reviewer',
                     type: 'string',
-                    validation: (rule) => rule.required().max(50),   
+                    validation: (rule) => rule.required().max(30),   
                 }),
                 defineField({
                     name: 'comment',

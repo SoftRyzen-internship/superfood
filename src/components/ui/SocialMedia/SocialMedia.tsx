@@ -27,7 +27,7 @@ function SocialMedia({ section = 'menu', className }: SocialMediaProps) {
               section === 'menu' &&
                 'w-10 h-10 bg-white hover:bg-strokeGreen  focus:bg-strokeGreen   md:w-[72px] md:h-[72px]',
               section === 'contacts' &&
-                'w-16 h-16 bg-strokeGreen white hover:bg-strokeGreen  focus:bg-strokeGreen  md:w-[72px] md:h-[72px]',
+                'w-16 h-16 bg-strokeGreen white hover:bg-white focus:bg-white  md:w-[72px] md:h-[72px]',
               section === 'footer' &&
                 'w-14 h-14 bg-strokeGreen hover:bg-white focus:bg-white xl:w-[72px] xl:h-[72px]'
             )}

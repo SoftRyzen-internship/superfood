@@ -6,26 +6,34 @@
       {
         "name": "name",
         "type": "text",
-        "placeholder": "Ваші ім’я та прізвище*",
-        "errorMessage": "Будь ласка, введіть коректне ім’я  "
+        "placeholder": "Ваші ім’я та прізвище*"
       },
       {
         "name": "phone",
         "type": "text",
-        "placeholder": "Ваш телефон*",
-        "errorMessage": "Недійсний номер телефону  "
+        "placeholder": "Ваш телефон*"
       },
       {
         "name": "email",
         "type": "email",
-        "placeholder": "Ваша пошта",
-        "errorMessage": "Недійсна адреса  "
+        "placeholder": "Ваша пошта"
       }
     ],
     "checkbox": {
       "label": "Даю згоду на обробку персональних даних",
       "name": "privacyPolicy"
     }
+  },
+  "validationMessages": {
+    "min": "Це поле повинно містити більше ніж 2 символи",
+    "max": "Це поле не повинно містити більше ніж 30 символи",
+    "namePattern": {
+      "letters": "Це поле повинно містити тільки українські або англійські букви",
+      "symbols": "Це поле може містити тільки такі такі символи: - '"
+    },
+    "phonePattern": "Недійсний номер телефону",
+    "emailPattern": "Недійсна адреса ",
+    "required": "Це поле є обов'язковим до заповнення"
   },
   "buttonText": "Залишити заявку"
 }

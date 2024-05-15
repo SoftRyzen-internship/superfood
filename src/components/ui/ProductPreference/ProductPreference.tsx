@@ -1,6 +1,6 @@
 import React from 'react';
 import { DataProps } from './ProductPreference.types';
-import Svg from '@/../public/icons/BenefitsGoodsLeaf.svg';
+import Svg from '../../../../public/icons/BenefitsGoodsLeaf.svg';
 
 function ProductPreference({ data }: { data: DataProps }) {
   return (

@@ -3,8 +3,8 @@ import PhoneContacts from '@/components/ui/PhoneContacts';
 import SocialMedia from '@/components/ui/SocialMedia';
 import React from 'react';
 import data from '@/data/footer.json';
-import GOIT from '@/../public/icons/GoItLogo.svg';
-import SoftRyzen from '@/../public/icons/SoftRyzenLogo.svg';
+import GOIT from '../../../public/icons/GoItLogo.svg';
+import SoftRyzen from '../../../public/icons/SoftRyzenLogo.svg';
 import MovingBaner from '@/components/ui/MovingBaner/MovingBaner';
 
 function Footer() {

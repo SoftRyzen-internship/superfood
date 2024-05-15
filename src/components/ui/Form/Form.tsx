@@ -7,6 +7,7 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import Checkbox from '../Checkbox';
 import Button from '../Button';
 import FormInput from '../FormInput';
+import FormModal from '../FormModal';
 
 import { convertFormDataToString } from '@/utils/convertFormDataToString';
 import { sendData } from '@/utils/telegram';
@@ -14,7 +15,6 @@ import { sendData } from '@/utils/telegram';
 import { schema } from '@/utils/shema';
 
 import form from '@/data/form.json';
-import FormModal from '../FormModal';
 
 function Form() {
   const {

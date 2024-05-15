@@ -11,7 +11,7 @@ import 'swiper/css/effect-coverflow';
 import './Swiper.module.css';
 
 import Chevron from '@/../public/icons/Chevron.svg';
-import { ProductSwiperProps } from './Swiper.types';
+import { ProductSwiperProps } from './Slider.types';
 
 function Slider({ slides, isProductsSlider }: ProductSwiperProps) {
   return (

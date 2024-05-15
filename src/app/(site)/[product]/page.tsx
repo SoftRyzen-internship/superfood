@@ -11,14 +11,6 @@ export function generateStaticParams() {
   return data.productSlugs.map(product => ({ params: { product } }));
 }
 
-export async function getStaticPaths() {
-  const paths = generateStaticParams();
-  return {
-    paths,
-    fallback: false,
-  };
-}
-
 const productDescr = [
   {
     id: 1,

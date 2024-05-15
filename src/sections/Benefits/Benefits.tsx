@@ -4,11 +4,11 @@ import classNames from 'classnames';
 import CardsBenefits from '@/components/ui/CardsBenefits/CardsBenefits';
 import { IconsBenefits } from './Benefits.types';
 
-import BenefitsLightning from '../../../public/icons/BenefitsLightning.svg';
-import BenefitsPlant from '../../../public/icons/BenefitsPlant.svg';
-import BenefitsVagetables from '../../../public/icons/BenefitsVagetables.svg';
+import BenefitsLightning from '@/../public/icons/BenefitsLightning.svg';
+import BenefitsPlant from '@/../public/icons/BenefitsPlant.svg';
+import BenefitsVagetables from '@/../public/icons/BenefitsVagetables.svg';
 
-import data from '../../data/Benefits.json';
+import data from '@/data/Benefits.json';
 
 function Benefits() {
 

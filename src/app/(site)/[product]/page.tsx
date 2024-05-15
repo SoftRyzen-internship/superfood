@@ -2,6 +2,7 @@ import HeroFormulaicSection from '@/sections/HeroFormulaicSection';
 import React from 'react';
 
 import data from '@/data/common.json';
+import PreferenceAction from '@/sections/PreferenceAction';
 
 export interface ProductProps {
   params: { product: string };
@@ -59,6 +60,7 @@ function Product({ params }: ProductProps) {
           {products && <p>{products.description}</p>}
         </div>
       </div>
+      <PreferenceAction productId={product}/>
     </>
   );
 }

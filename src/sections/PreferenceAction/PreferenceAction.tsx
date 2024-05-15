@@ -6,8 +6,8 @@ import dataAction from '@/data/productAction.json';
 import { PreferenceActionProps } from './PreferenceAction.types';
 
 function PreferenceAction({ productId }: PreferenceActionProps) {
-  const pd = dataPreference.find(item => item.id === Number(productId));
-  const ad = dataAction.find(item => item.id === Number(productId));
+  const pd = dataPreference.find(item => item.id === productId);
+  const ad = dataAction.find(item => item.id === productId);
 
   if (!pd || !ad) {
     return null;

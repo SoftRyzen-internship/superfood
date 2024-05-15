@@ -7,7 +7,7 @@
       "alt": "продукт овочева норма",
       "name": "овочева норма",
       "descriptionItems": ["Інулін", "Нарингенін", "Хром", "Люцерна"],
-      "link": "string"
+      "link": "vegetables"
     },
     {
       "img": "/images/heroFormulaic/grains@2x.webp",
@@ -21,7 +21,7 @@
         "Мікро-елементи",
         "макро-елементи "
       ],
-      "link": "string"
+      "link": "grains"
     },
     {
       "img": "/images/heroFormulaic/beans@2x.webp",
@@ -34,7 +34,7 @@
         "Антиоксиданти",
         "Клітковина"
       ],
-      "link": "string"
+      "link": "beans"
     },
     {
       "img": "/images/heroFormulaic/green_formula@2x.webp",
@@ -42,7 +42,7 @@
       "alt": "продукт Зелена формула",
       "name": "Зелена формула",
       "descriptionItems": ["Хлорофіл", "Йод", "Астаксантин", "Селен"],
-      "link": "string"
+      "link": "green_formula"
     },
     {
       "img": "/images/heroFormulaic/solod@2x.webp",
@@ -56,7 +56,7 @@
         "Мікро-елементи",
         "макро-елементи "
       ],
-      "link": "string"
+      "link": "solod"
     }
   ],
   "buttonText": "детальніше"

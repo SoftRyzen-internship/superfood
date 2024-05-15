@@ -1,9 +1,4 @@
-interface formDataTypes {
-  name: string;
-  phone: string;
-  privacyPolicy: string;
-  email?: string;
-}
+import { formDataTypes } from "@/types/formData";
 
 export const convertFormDataToString = ({
   name,

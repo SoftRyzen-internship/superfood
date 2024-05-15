@@ -10,7 +10,6 @@ import HeroSection from '@/sections/HeroSection';
 import ProductCard from '@/components/ui/ProductCard';
 import FAQSection from '@/sections/FAQSection';
 import Benefits from '@/sections/Benefits/Benefits';
-import SocialMedia from '@/components/ui/SocialMedia';
 import Contacts from '@/sections/Contacts';
 
 // Log content to console
@@ -42,7 +41,6 @@ export default function Home() {
       />
       <CompanyAdvantageSection />
       <FAQSection />
-      <SocialMedia />
       <Contacts />
     </main>
   );

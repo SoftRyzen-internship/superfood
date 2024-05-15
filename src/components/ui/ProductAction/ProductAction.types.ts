@@ -1,9 +1,4 @@
-export type ProdActionProps = {
-    id: number,
-    action: string;
-  };
-  
-export type DataProps = {
-    productAction: ProdActionProps[];
-}
+export type ActionProps = {
+  actions: string[];
+};
   

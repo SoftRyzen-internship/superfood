@@ -10,7 +10,7 @@ import 'swiper/css/free-mode';
 import 'swiper/css/effect-coverflow';
 import './Swiper.module.css';
 
-import Chevron from '../../../../public/icons/Chevron.svg';
+import Chevron from '@/../public/icons/Chevron.svg';
 interface Slide {
   id: number;
   content: string;

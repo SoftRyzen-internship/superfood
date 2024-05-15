@@ -1,6 +1,6 @@
 'use client';
 import React, { useState } from 'react';
-import Icon from '@/../../public/icons/LowPartOfReview.svg';
+import Icon from '@/../public/icons/LowPartOfReview.svg';
 import styles from './CardComments.module.css';
 import { CardCommentsProps } from './CardComments.types';
 

@@ -2,7 +2,6 @@
 import { useState } from 'react';
 
 import { useForm } from 'react-hook-form';
-import * as yup from 'yup';
 import { yupResolver } from '@hookform/resolvers/yup';
 
 import Modal from '@/components/common/Modal';
@@ -14,22 +13,9 @@ import CloseIcon from '/public/icons/Close.svg';
 import { convertFormDataToString } from '@/utils/convertFormDataToString';
 import { sendData } from '@/utils/telegram';
 
-import form from '@/data/form.json';
+import { schema } from '@/utils/shema';
 
-const schema = yup.object({
-  name: yup
-    .string()
-    .min(2)
-    .max(30)
-    .matches(/^[a-zA-Zа-яА-я '-]+$/)
-    .required(),
-  phone: yup
-    .string()
-    .matches(/(?=.*\+[0-9]{3}\s?[0-9]{2}\s?[0-9]{3}\s?[0-9]{4,5}$)/gm)
-    .required(),
-  email: yup.string().email(),
-  privacyPolicy: yup.boolean().oneOf([true]).required(),
-});
+import form from '@/data/form.json';
 
 function Form() {
   const {
@@ -61,6 +47,10 @@ function Form() {
         privacyPolicy: isChecked,
       });
       await sendData(formData);
+      sessionStorage.setItem(
+        'formData',
+        JSON.stringify({ ...data, privacyPolicy: isChecked })
+      );
       reset();
       setIsChecked(false);
       setOpenSuccessModal(true);
@@ -79,7 +69,7 @@ function Form() {
           {text}
         </p>
         <form onSubmit={handleSubmit(onSubmit)}>
-          {inputs.map(({ name, type, placeholder, errorMessage }, index) => (
+          {inputs.map(({ name, type, placeholder }, index) => (
             <FormInput
               key={index}
               type={type}
@@ -87,7 +77,6 @@ function Form() {
               register={register}
               name={name}
               error={errors}
-              errorMessage={errorMessage}
             />
           ))}
           <Checkbox

@@ -1,4 +1,5 @@
 import HeroFormulaicSection from '@/sections/HeroFormulaicSection';
+import PreferenceAction from '@/sections/PreferenceAction';
 import React from 'react';
 
 import ProductDescription from '@/components/ui/ProductDescription';
@@ -17,7 +18,7 @@ function Product({ params }: ProductProps) {
         <div className="container">
           <ProductDescription productId={filterId} />
         </div>
-      </section>
+      </div>
     </>
   );
 }

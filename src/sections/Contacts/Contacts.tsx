@@ -9,8 +9,14 @@ import style from './Contacts.module.css';
 import Form from '@/components/ui/Form';
 
 function Contacts() {
-  const { title, ownerEmail, owner, ownerImage, ownerText, ownerPosition } =
-    contacts;
+  const {
+    title,
+    ownerEmail: { email, link },
+    owner,
+    ownerImage,
+    ownerText,
+    ownerPosition,
+  } = contacts;
   return (
     <>
       <section id="contacts" className={`bg-lightGreen ${style.contactsBg}`}>
@@ -28,10 +34,10 @@ function Contacts() {
                   classNames="mb-4 justify-center md:justify-start"
                 />
                 <a
-                  href={ownerEmail}
+                  href={link}
                   className="font-geologica font-light text-medium tracking-[-0.02em] text-black text-center transition-colors hover:text-green focus:text-green block mb-8 md:text-start md:text-xl md:leading-[1.35] xl:text-large xl:mb-10"
                 >
-                  {ownerEmail}
+                  {email}
                 </a>
                 <SocialMedia
                   section="contacts"

@@ -1,29 +1,29 @@
+'use client';
+
 import React, { useState } from 'react';
+import dynamic from 'next/dynamic';
 
 import Button from '../Button';
-import Modal from '@/components/common/Modal';
+const Modal = dynamic(() => import('@/components/common/Modal'), {
+  ssr: false,
+});
 
 import CloseIcon from '@/../public/icons/Close.svg';
 
 import commonData from '@/data/common.json';
 import data from '@/data/productDescription.json';
+import { Description } from '../ProductDescription/ProductDescription.types';
 
-export interface Description {
-  id: number;
-  text: {
-    key: number;
-    part: string;
-  }[];
-}
-
-export interface ReadMoreBtnProps {}
-
-function ReadMoreBtn({ description }: Description) {
+function ReadMoreBtn({
+  description,
+}: {
+  description: Description | undefined;
+}) {
   const { burgerClose } = commonData.ariaLabel;
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div>
+    <div className="md:hidden">
       <Button
         label="Читати далі"
         variant="readmore"

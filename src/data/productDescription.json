@@ -2,7 +2,7 @@
   "productDescriptionTitle": "Опис товару",
   "productDescriptionList": [
     {
-      "id": 1,
+      "id": "green_formula",
       "text": [
         {
           "key": 1,
@@ -27,7 +27,7 @@
       ]
     },
     {
-      "id": 2,
+      "id": "beans",
       "text": [
         {
           "key": 1,
@@ -48,7 +48,7 @@
       ]
     },
     {
-      "id": 3,
+      "id": "solod",
       "text": [
         {
           "key": 1,
@@ -69,7 +69,7 @@
       ]
     },
     {
-      "id": 4,
+      "id": "vegetable",
       "text": [
         {
           "key": 1,
@@ -90,7 +90,7 @@
       ]
     },
     {
-      "id": 5,
+      "id": "grains",
       "text": [
         {
           "key": 1,

@@ -1,4 +1,5 @@
 import HeroFormulaicSection from '@/sections/HeroFormulaicSection';
+import PreferenceAction from '@/sections/PreferenceAction';
 import React from 'react';
 
 export interface ProductProps {
@@ -34,6 +35,7 @@ function Product({ params }: ProductProps) {
           <p>ProductDescription with id: {params.id}</p>
           {product ? <p>{product.description}</p> : <p className="bg-red">Product Not Found</p>}
         </div>
+        <PreferenceAction/>
       </div>
     </>
   );

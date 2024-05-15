@@ -3,8 +3,8 @@ import PhoneContacts from '@/components/ui/PhoneContacts';
 import SocialMedia from '@/components/ui/SocialMedia';
 import React from 'react';
 import data from '@/data/footer.json';
-import GOIT from '../../../public/icons/GoItLogo.svg';
-import SoftRyzen from '../../../public/icons/SoftRyzenLogo.svg';
+import GOIT from '@/../public/icons/GoItLogo.svg';
+import SoftRyzen from '@/../public/icons/SoftRyzenLogo.svg';
 import MovingBaner from '@/components/ui/MovingBaner/MovingBaner';
 
 function Footer() {
@@ -24,7 +24,7 @@ function Footer() {
           <div className="flex flex-col pb-4  gap-4 text-center font-extralight text-lightGreen text-[14px] leading-[18.9px] md:leading-[19.6px] xl:font-[250] xl:text-start xl:pb-0 transition">
             <a
               href={data.linkPolicy}
-              className="hover:font-light hover:white transition"
+              className="hover:text-white transition"
             >
               {data.namePolicy}
             </a>

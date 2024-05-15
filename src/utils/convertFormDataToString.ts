@@ -1,11 +1,11 @@
-import { formDataTypes } from "@/types/formData";
+import { formDataType } from '@/types/formData';
 
 export const convertFormDataToString = ({
   name,
   email = '',
   phone,
   privacyPolicy,
-}: formDataTypes) => {
+}: formDataType) => {
   return `
   \nІм'я та прізвище: ${name}
   \nНомер телефону: ${phone}

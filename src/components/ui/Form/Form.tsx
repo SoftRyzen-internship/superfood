@@ -9,7 +9,7 @@ import Button from '../Button';
 import FormInput from '../FormInput';
 import FormModal from '../FormModal';
 
-import { formDataTypes } from '@/types/formData';
+import { formDataType } from '@/types/formData';
 
 import { convertFormDataToString } from '@/utils/convertFormDataToString';
 import { sendData } from '@/utils/telegram';
@@ -41,7 +41,7 @@ function Form() {
     resolver: yupResolver(schema),
   });
 
-  const onSubmit = async (data: formDataTypes) => {
+  const onSubmit = async (data: formDataType) => {
     try {
       const formData = convertFormDataToString({
         ...data,

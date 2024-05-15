@@ -1,4 +1,4 @@
-export interface formDataTypes {
+export interface formDataType {
   name: string;
   phone: string;
   privacyPolicy: boolean;

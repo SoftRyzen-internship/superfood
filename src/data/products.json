@@ -1,0 +1,63 @@
+{
+  "title": "",
+  "products": [
+    {
+      "img": "/images/heroFormulaic/vegetable@2x.webp",
+      "imgBg": "vegetables",
+      "alt": "продукт овочева норма",
+      "name": "овочева норма",
+      "descriptionItems": ["Інулін", "Нарингенін", "Хром", "Люцерна"],
+      "link": "vegetables"
+    },
+    {
+      "img": "/images/heroFormulaic/grains@2x.webp",
+      "imgBg": "corn",
+      "alt": "продукт ПРОРОЩЕНІ ЗЕРНА злакових",
+      "name": "ПРОРОЩЕНІ ЗЕРНА злакових",
+      "descriptionItems": [
+        "Вітаміни",
+        "Амінокислоти",
+        "Полісахариди",
+        "Мікро-елементи",
+        "макро-елементи "
+      ],
+      "link": "grains"
+    },
+    {
+      "img": "/images/heroFormulaic/beans@2x.webp",
+      "imgBg": "beans",
+      "alt": "продукт ПРОРОЩЕНІ ЗЕРНА БОБОВИХ",
+      "name": "ПРОРОЩЕНІ ЗЕРНА БОБОВИХ",
+      "descriptionItems": [
+        "Джерело білка",
+        "Фолієва кислота",
+        "Антиоксиданти",
+        "Клітковина"
+      ],
+      "link": "beans"
+    },
+    {
+      "img": "/images/heroFormulaic/green_formula@2x.webp",
+      "imgBg": "seaweed",
+      "alt": "продукт Зелена формула",
+      "name": "Зелена формула",
+      "descriptionItems": ["Хлорофіл", "Йод", "Астаксантин", "Селен"],
+      "link": "green_formula"
+    },
+    {
+      "img": "/images/heroFormulaic/solod@2x.webp",
+      "imgBg": "wheat",
+      "alt": "продукт СОЛОД ЖИТНІЙ ФЕРМЕНТОВАНИЙ",
+      "name": "СОЛОД ЖИТНІЙ ФЕРМЕНТОВАНИЙ",
+      "descriptionItems": [
+        "Вітаміни",
+        "Амінокислоти",
+        "Мінерали",
+        "Мікро-елементи",
+        "макро-елементи "
+      ],
+      "link": "solod"
+    }
+  ],
+  "buttonText": "детальніше"
+}

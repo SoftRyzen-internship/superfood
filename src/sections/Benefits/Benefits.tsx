@@ -8,7 +8,7 @@ import BenefitsLightning from '@/../public/icons/BenefitsLightning.svg';
 import BenefitsPlant from '@/../public/icons/BenefitsPlant.svg';
 import BenefitsVagetables from '@/../public/icons/BenefitsVagetables.svg';
 
-import data from '@/data/Benefits.json';
+import data from '@/data/benefits.json';
 
 function Benefits() {
 

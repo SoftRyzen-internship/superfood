@@ -8,18 +8,10 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import 'swiper/css/free-mode';
 import 'swiper/css/effect-coverflow';
-import './styles.css';
+import './Swiper.module.css';
 
-import Chevron from '../../../../public/icons/Chevron.svg';
-interface Slide {
-  id: number;
-  content: string;
-}
-
-interface ProductSwiperProps {
-  slides: Slide[];
-  isProductsSlider: boolean;
-}
+import Chevron from '@/../public/icons/Chevron.svg';
+import { ProductSwiperProps } from './Slider.types';
 
 function Slider({ slides, isProductsSlider }: ProductSwiperProps) {
   return (

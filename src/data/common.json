@@ -8,5 +8,6 @@
   "ariaLabel": {
     "burgerClose": "Закрити модальне меню",
     "burgerOpen": "Відкрити модальне меню"
-  }
+  },
+  "productSlugs": ["beans", "grains", "green_formula", "solod", "vegetable"]
 }

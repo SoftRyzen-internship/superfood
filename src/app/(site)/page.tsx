@@ -48,7 +48,7 @@ export default function Home() {
           'Антиоксиданти',
           'Клітковина',
         ]}
-        link={`products/${productId}`}
+        link={`formula`}
         buttonText="детальніше"
       />
       <CompanyAdvantageSection />

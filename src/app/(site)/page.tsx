@@ -13,8 +13,6 @@ import Benefits from '@/sections/Benefits/Benefits';
 import SocialMedia from '@/components/ui/SocialMedia';
 import Contacts from '@/sections/Contacts';
 
-import ProductDescription from '@/components/ui/ProductDescription';
-
 // // Log content to console
 // getPolicy().then(content => console.log(content));
 getPhones().then(content => console.log(content));
@@ -37,10 +35,6 @@ export default function Home() {
   return (
     <main>
       <HeroSection />
-      <div className="container bg-input py-5">
-        <ProductDescription productId={0} />
-      </div>
-
       <Benefits />
 
       <ProductCard

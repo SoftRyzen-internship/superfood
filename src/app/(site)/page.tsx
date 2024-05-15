@@ -15,10 +15,10 @@ import SocialMedia from '@/components/ui/SocialMedia';
 import Form from '@/components/ui/Form';
 
 // Log content to console
-getPolicy().then(content => console.log(content));
-getPhones().then(content => console.log(content));
-getProduct().then(content => console.log(content));
-getReviews().then(content => console.log(content));
+// getPolicy().then(content => console.log(content[0].description[0].children));
+// getPhones().then(content => console.log(content));
+// getProduct().then(content => console.log(content));
+// getReviews().then(content => console.log(content));
 
 // Insert the return component calling `getContent()` below
 

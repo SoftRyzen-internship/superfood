@@ -9,7 +9,7 @@ function Logo({ path, classNames: additionalClasses }: LogoProps) {
   const logoSizes =
     path === 'header'
       ? 'text-base leading-[19.2px] font-extrabold text-black md:text-[22px] leading-[26.4px] hover:text-green smOnly:leading-[19.2px] '
-      : 'text-[22px] leading-[26.4px] font-extrabold text-strokeGreen hover:text-white ';
+      : 'text-[22px] leading-[26.4px] font-extrabold text-white hover:text-white hover:font-black';
 
   const logoClasses = classNames( 
     'cursor-pointer inline-block uppercase transition',

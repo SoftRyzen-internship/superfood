@@ -24,7 +24,7 @@ function Footer() {
           <div className="flex flex-col pb-4  gap-4 text-center font-extralight text-lightGreen text-[14px] leading-[18.9px] md:leading-[19.6px] xl:font-[250] xl:text-start xl:pb-0 transition">
             <a
               href={data.linkPolicy}
-              className="hover:text-white transition"
+              className="hover:font-light hover:white transition"
             >
               {data.namePolicy}
             </a>

@@ -13,7 +13,6 @@ import Benefits from '@/sections/Benefits/Benefits';
 import SocialMedia from '@/components/ui/SocialMedia';
 import Contacts from '@/sections/Contacts';
 
-<
 // Log content to console
 // getPolicy().then(content => console.log(content[0].description[0].children));
 // getPhones().then(content => console.log(content));

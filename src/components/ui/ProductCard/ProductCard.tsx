@@ -18,21 +18,15 @@ function ProductCard({
   buttonText,
 }: ProductCardProps) {
   return (
-    //не добавила клас контейнеру бо буде на слайді
     <div className="bg-darkGreen flex flex-col items-center w-full main">
       <div className={` relative  mb-4 flex justify-center md:mb-5 `}>
         <Image
           src={img}
           alt={alt}
-          width={263}
+          width={264}
           height={284}
           className={classNames(
-            `${style.ProductBg} md:w-[327px] md:h-[352px] xl:w-[381px] xl:h-[409px]`,
-            imgBg === 'beans' && `${style.ProductBgBeans}`,
-            imgBg === 'wheat' && `${style.ProductBgWheat}`,
-            imgBg === 'vegetables' && `${style.ProductBgVegetables}`,
-            imgBg === 'corn' && `${style.ProductBgCorn}`,
-            imgBg === 'seaweed' && `${style.ProductBgSeaweed}`
+            `md:w-[328px] md:h-[352px] xl:w-[381px] xl:h-[409px]`
           )}
         />
       </div>
@@ -49,7 +43,12 @@ function ProductCard({
           </span>
         ))}
       </div>
-      <LinkButton label={buttonText} href={link} variant="primary2" />
+      <LinkButton
+        label={buttonText}
+        href={link}
+        variant="primary2"
+        className="smOnly:w-full md:w-[205px]"
+      />
     </div>
   );
 }

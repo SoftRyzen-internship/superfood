@@ -8,10 +8,10 @@ function FormInput({
   type,
   placeholder,
   error,
-  errorMessage,
   name,
   register,
 }: FormInputProps) {
+  console.log(error[name]);
   return (
     <label
       className={classNames(
@@ -29,7 +29,7 @@ function FormInput({
           error[name] && style.error
         )}
       />
-      {error[name] && <span className="text-red">{errorMessage}</span>}
+      {error[name] && <span className="text-red">{error[name].message}</span>}
     </label>
   );
 }

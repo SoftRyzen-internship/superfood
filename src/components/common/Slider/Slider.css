@@ -30,10 +30,9 @@
 
 .custom-next,
 .custom-prev {
-    width: 32px;
-    height: 32px;
+    padding: 12px;
     border-radius: 50%;
-    border: 1px solid rgba(255, 255, 255, 0.16);
+    border: 1px solid currentColor;
 
 }
 

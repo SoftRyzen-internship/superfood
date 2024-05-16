@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <a href="https://superfood.vercel.app/"><img src="/public/images/og-image/ogp-image.jpg" alt="Superfood" width="200"></a>
+  <a href="https://superfood.vercel.app/"><img src="/public/images/og-image/ogp-image.jpg" alt="Superfood"></a>
   <br>
 Superfood
   <br>
@@ -12,9 +12,9 @@ modern stack that provides scalability, performance, and ease of maintenance.
 The synergy between these technologies enables fast development, an excellent
 developer experience, and flexibility in content management and presentations. .
 
-<!-- TABLE OF CONTENTS -->
+## Table of Contents
+
 <details>
-  <summary>Table of Contents</summary>
   <ul>
     <li><a href="#features">Features</a></li>
     <li><a href="#getting-started">Getting Started</a></li>
@@ -63,10 +63,11 @@ $ npm run dev
 > [see this guide](https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/)
 > or use `node` from the command prompt.
 
-<!-- TABLE OF CONTENTS -->
+## Components API
+
 <details>
-  <summary>Table of Contents</summary>
-  - Logo
+
+- Logo
 
 | Prop        | Default | Description                                           |
 | ----------- | ------- | ----------------------------------------------------- |
@@ -152,18 +153,16 @@ $ npm run dev
 
 ## Technologies
 
-![Next](https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![Next](https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)[https://nextjs.org/]
 
-![TypeScript](https://img.shields.io/badge/TypeScript-black?style=for-the-badge&logo=typescript)
+![TypeScript](https://img.shields.io/badge/TypeScript-black?style=for-the-badge&logo=typescript)[https://www.typescriptlang.org/]
 
-![Static Badge](https://img.shields.io/badge/tailwind-black?style=for-the-badge&logo=tailwindcss)
+![Tailwind CSS](https://img.shields.io/badge/tailwind-black?style=for-the-badge&logo=tailwindcss)[https://tailwindcss.com/]
 
-![Static Badge](https://img.shields.io/badge/sanity-black?style=for-the-badge&logo=sanity)
+![Sanity](https://img.shields.io/badge/sanity-black?style=for-the-badge&logo=sanity)[https://www.sanity.io/]
 
-![Static Badge](https://img.shields.io/badge/React_Hook_Form-black?style=for-the-badge&logo=React%20Hook%20Form&link=https%3A%2F%2Freact-hook-form.com%2F)
+![React hook form](https://img.shields.io/badge/react_hook_form-black?style=for-the-badge&logo=react%20hook%20form&labelColor=grey)[https://react-hook-form.com/]
 
-![Static Badge](https://img.shields.io/badge/swiper-black?style=for-the-badge&logo=swiper&logoColor=blue&link=https%3A%2F%2Fswiperjs.com%2F)
+![Swiper](https://img.shields.io/badge/swiper-black?style=for-the-badge&logo=swiper&logoColor=blue)[https://swiperjs.com/]
 
-![Static Badge](https://img.shields.io/badge/headlessui-black?style=for-the-badge&logo=headlessui&logoColor=blue&link=https%3A%2F%2Fheadlessui.com%2F)
-
-![Static Badge](https://img.shields.io/badge/React_Hook_Form-black?style=for-the-badge&logo=React%20Hook%20Form&labelColor=white)
+![Headless UI](https://img.shields.io/badge/headlessui-black?style=for-the-badge&logo=headlessui&logoColor=blue)[https://headlessui.com/]

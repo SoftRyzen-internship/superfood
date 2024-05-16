@@ -18,7 +18,7 @@ function ProductCard({
   buttonText,
 }: ProductCardProps) {
   return (
-    <div className="bg-darkGreen flex flex-col items-center w-full main">
+    <div className="flex flex-col items-center w-full main">
       <div className={` relative  mb-4 flex justify-center md:mb-5 `}>
         <Image
           src={img}

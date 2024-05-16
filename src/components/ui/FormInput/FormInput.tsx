@@ -11,7 +11,6 @@ function FormInput({
   name,
   register,
 }: FormInputProps) {
-  console.log(error[name]);
   return (
     <label
       className={classNames(

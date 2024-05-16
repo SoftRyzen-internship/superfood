@@ -10,14 +10,20 @@ import 'swiper/css/free-mode';
 import 'swiper/css/effect-coverflow';
 
 import { SliderProps } from './Slider.types';
-import './Slider.module.css';
+import './Slider.css';
 
 import Chevron from '@/../public/icons/Chevron.svg';
 
 function Slider({ slides, isProductsSlider }: SliderProps) {
+  const slidesToShowTabl = isProductsSlider ? 1 : 2;
+  const slidesToShowDesc = isProductsSlider ? 1.99 : 3;
+  const gapToShowDesc = isProductsSlider ? '120px' : '24px';
   return (
-    <div className="w-[100vw] relative mx-[auto]">
-      {' '}
+    <div
+      className={classNames('relative', 'mx-[auto]', {
+        'w-[100vw]': isProductsSlider,
+      })}
+    >
       <Swiper
         loop={true}
         pagination={{
@@ -33,36 +39,55 @@ function Slider({ slides, isProductsSlider }: SliderProps) {
         }}
         className="w-[100%] mb-[64px] md:mb-[40px] xl:mb-[56px]"
         breakpoints={{
-          1280: {
-            slidesPerView: 1.9,
-            spaceBetween: '130px',
+          768: {
+            slidesPerView: slidesToShowTabl,
           },
-          1440: {
+          1280: {
+            slidesPerView: slidesToShowDesc,
+            spaceBetween: gapToShowDesc,
+          },
+          1560: {
             slidesPerView: 3,
           },
         }}
       >
         {slides.map(slide => (
-          <SwiperSlide key={slide.id}>
-            <div className="w-[592px]">{slide.content}</div>
+          <SwiperSlide
+            key={slide.id}
+            className={classNames({
+              product: isProductsSlider,
+            })}
+          >
+            {slide.content}
           </SwiperSlide>
         ))}
       </Swiper>
       <div
         className={classNames({
           'flex gap-[16px] justify-center': true,
-          'xl:absolute top-[50%] left-[50%] xl:gap-[477px] xl:transform xl:translate-x-[-50%] xl:translate-y-[-50%] z-50':
+          'md:absolute top-[35%] left-[50%] md:gap-[477px] md:transform md:translate-x-[-50%] md:translate-y-[-50%] z-50':
             isProductsSlider,
         })}
       >
-        <button className="custom-prev border-inherit">
+        <button
+          className={classNames('custom-prev', 'border-inherit', {
+            'stroke-white text-[#ffffff29]': isProductsSlider,
+            'stroke-[#1F7437]  text-[#1f743752]': !isProductsSlider,
+          })}
+        >
           <Chevron />
         </button>
-        <button className="custom-next border-inherit">
+        <button
+          className={classNames('custom-next', 'border-inherit', {
+            'stroke-white text-[#ffffff29]': isProductsSlider,
+            'stroke-[#1F7437] text-[#1f743752]': !isProductsSlider,
+          })}
+        >
           <Chevron />
         </button>
       </div>
     </div>
   );
 }
+
 export default Slider;

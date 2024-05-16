@@ -47,6 +47,8 @@ const productDescr = [
   },
 ];
 
+getProduct().then(content => console.log(content));
+
 async function Product({ params }: ProductProps) {
   const product = params.product;
 

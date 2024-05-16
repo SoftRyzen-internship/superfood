@@ -1,3 +1,4 @@
+'use client';
 import Image from 'next/image';
 import ScrollLink from '@/components/ui/ScrollLink';
 import HeroFormulaicItem from '@/components/ui/HeroFormulaicItem';
@@ -13,6 +14,7 @@ function HeroFormulaicSection({ productId, productData }: HeroFormulaicSectionPr
   if (!hfs || !productData) {
     return null;
   }
+  console.log(productData);
 
   return (
     <section className="pt-[120px] pb-[60px] md:pt-[152px] md:pb-[80px] xl:pt-[133px] xl:pb-[65px]">

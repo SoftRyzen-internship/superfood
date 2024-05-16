@@ -10,7 +10,7 @@ import 'swiper/css/free-mode';
 import 'swiper/css/effect-coverflow';
 
 import { SliderProps } from './Slider.types';
-import styles from './Slider.module.css';
+import './Slider.module.css';
 
 import Chevron from '@/../public/icons/Chevron.svg';
 

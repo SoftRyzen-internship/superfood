@@ -1,5 +1,6 @@
-import HeroFormulaicSection from '@/sections/HeroFormulaicSection';
 import React from 'react';
+import HeroFormulaicSection from '@/sections/HeroFormulaicSection';
+import { getPhones } from '../../../../sanity/requests';
 
 import data from '@/data/common.json';
 
@@ -52,12 +53,8 @@ function Product({ params }: ProductProps) {
     <>
       <HeroFormulaicSection productId={product} />
       <div className="container pt-14">
-        <p className="text-xl text-center font-bold p-10">
-          Hero Product slug {product}
-        </p>
-        <div className="bg-lightGreen p-10">
-          {products && <p>{products.description}</p>}
-        </div>
+        <p className="text-xl text-center font-bold p-10">Hero Product slug {product}</p>
+        <div className="bg-lightGreen p-10">{products && <p>{products.description}</p>}</div>
       </div>
     </>
   );

@@ -1,0 +1,68 @@
+.lowPartOfReview::after {
+  content: '';
+  mask: url('/icons/LowPartOfReview.svg');
+  -webkit-mask: url('/icons/LowPartOfReview.svg');
+  background-color: #dcf2b4;
+  position: absolute;
+  bottom: -16px;
+  left: 40px;
+  width: 31px;
+  height: 21px;
+}
+
+.contactsBg {
+  background-image: url('/images/bg/hero/bg_yellow_m@1x.webp');
+  background-size: cover;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .contactsBg {
+    background-image: url('/images/bg/hero/bg_yellow_m@2x.webp');
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contactsBg {
+    background-image: url('/images/bg/hero/bg_yellow_t@1x.webp');
+    background-size: cover;
+  }
+
+  .vegetablesBg {
+    background-image: url(/images/bg/contacts/bg_contacts@1x.webp);
+    background-repeat: no-repeat;
+    background-size: 306px 395px;
+    background-repeat: no-repeat;
+    background-position: left 456px;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .contactsBg {
+      background-image: url('/images/bg/hero/bg_yellow_t@2x.webp');
+    }
+    .vegetablesBg {
+      background-image: url(/images/bg/contacts/bg_contacts@2x.webp);
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .contactsBg {
+    background-image: url('/images/bg/hero/bg_yellow_d@1x.webp');
+  }
+
+  .vegetablesBg {
+    background-position: 488px 165px;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .contactsBg {
+      background-image: url('/images/bg/hero/bg_yellow_d@2x.webp');
+    }
+  }
+}

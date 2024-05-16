@@ -1,0 +1,36 @@
+.swiper-slide-prev,
+.swiper-slide-next {
+    opacity: 0.5;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 592px;
+}
+
+.swiper-slide-prev,
+.swiper-slide-next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-next,
+.custom-prev {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+
+}
+
+.custom-prev {
+    transform: rotate(180deg);
+}
+
+.btn-wrapper {
+    transform: translateX(50%);
+    transform: translateY(50%);
+}

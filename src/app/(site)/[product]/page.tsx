@@ -2,7 +2,10 @@ import React from 'react';
 import HeroFormulaicSection from '@/sections/HeroFormulaicSection';
 import { getProduct } from '../../../../sanity/requests';
 
+import ProductDescription from '@/components/ui/ProductDescription';
+
 import data from '@/data/common.json';
+import ActionActiveComponents from '@/components/ui/ActionActiveComponents';
 
 export interface ProductProps {
   params: { product: string };
@@ -53,10 +56,12 @@ async function Product({ params }: ProductProps) {
   return (
     <>
       <HeroFormulaicSection productId={product} productData={content} />
-      <div className="container pt-14">
-        <p className="text-xl text-center font-bold p-10">Hero Product slug {product}</p>
-        <div className="bg-lightGreen p-10">{products && <p>{products.description}</p>}</div>
-      </div>
+      <section className="bg-input py-5">
+        <div className="container">
+          <ProductDescription productId={product} />
+          <ActionActiveComponents productId={product} />
+        </div>
+      </section>
     </>
   );
 }

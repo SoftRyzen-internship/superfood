@@ -13,9 +13,20 @@
 .swiper-slide-prev,
 .swiper-slide-next {
     display: flex;
-    justify-content: center;
     align-items: center;
 }
+
+@media screen and (min-width:1280px) and (max-width: 1739.9px) {
+    .swiper-slide-prev.product {
+        justify-content: end;
+    }
+
+    .swiper-slide-next.product {
+        justify-content: start;
+    }
+}
+
+
 
 .custom-next,
 .custom-prev {

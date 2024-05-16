@@ -10,11 +10,12 @@ import 'swiper/css/free-mode';
 import 'swiper/css/effect-coverflow';
 
 import { SliderProps } from './Slider.types';
-import './Slider.module.css';
+import './Slider.css';
 
 import Chevron from '@/../public/icons/Chevron.svg';
 
 function Slider({ slides, isProductsSlider }: SliderProps) {
+  const slidesToShow = isProductsSlider ? 1.9 : 3;
   return (
     <div className="w-[100vw] relative mx-[auto]">
       {' '}
@@ -34,16 +35,21 @@ function Slider({ slides, isProductsSlider }: SliderProps) {
         className="w-[100%] mb-[64px] md:mb-[40px] xl:mb-[56px]"
         breakpoints={{
           1280: {
-            slidesPerView: 1.9,
+            slidesPerView: slidesToShow,
             spaceBetween: '130px',
           },
-          1440: {
+          1560: {
             slidesPerView: 3,
           },
         }}
       >
         {slides.map(slide => (
-          <SwiperSlide key={slide.id}>
+          <SwiperSlide
+            key={slide.id}
+            className={classNames({
+              product: isProductsSlider,
+            })}
+          >
             <div className="w-[592px]">{slide.content}</div>
           </SwiperSlide>
         ))}
@@ -51,7 +57,7 @@ function Slider({ slides, isProductsSlider }: SliderProps) {
       <div
         className={classNames({
           'flex gap-[16px] justify-center': true,
-          'xl:absolute top-[50%] left-[50%] xl:gap-[477px] xl:transform xl:translate-x-[-50%] xl:translate-y-[-50%] z-50':
+          'md:absolute top-[50%] left-[50%] md:gap-[477px] md:transform md:translate-x-[-50%] md:translate-y-[-50%] z-50':
             isProductsSlider,
         })}
       >
@@ -65,4 +71,5 @@ function Slider({ slides, isProductsSlider }: SliderProps) {
     </div>
   );
 }
+
 export default Slider;

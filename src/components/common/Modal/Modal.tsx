@@ -50,7 +50,7 @@ function Modal({
           <div className="fixed inset-0 flex w-screen h-screen items-center justify-center overflow-y-auto">
             <DialogPanel
               className={classNames(
-                ' relative',
+                ' relative overflow-hidden overflow-y-auto',
 
                 variant === 'burger' && 'w-full h-screen',
                 (variant === 'comments' || variant === 'simple') &&

@@ -53,6 +53,7 @@ const config: Config = {
         button: '#177531',
         red: '#FF0000',
         backdrop: 'rgba(0, 0, 0, 0.65)',
+        textBody: '#4D4843',
       },
     },
   },

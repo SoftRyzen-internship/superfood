@@ -42,11 +42,11 @@ function Slider({ slides, isProductsSlider }: SliderProps) {
           },
         }}
       >
-        {slides.map(slide => (
+        {/* {slides.map(slide => (
           <SwiperSlide key={slide.id}>
             <div className="w-[592px]">{slide.content}</div>
           </SwiperSlide>
-        ))}
+        ))} */}
       </Swiper>
       <div
         className={classNames({
@@ -65,4 +65,5 @@ function Slider({ slides, isProductsSlider }: SliderProps) {
     </div>
   );
 }
+
 export default Slider;

@@ -1,9 +1,8 @@
-<h1 align="center">
-  <br> Superfood </br>
+## Superfood
+
   <a href="https://superfood.vercel.app/">
     <img src="/public/images/og-image/ogp-image.jpg" alt="Superfood" />
   </a>
-</h1>
 
 Superfood - the site of a Ukrainian company that offers superfoods for your
 health. It is built with Next.js, Tailwind CSS, TypeScript — a powerful and
@@ -227,8 +226,3 @@ $ npm run dev
       </ul>
 
 ## Contributes
-
-|
-[<img src="https://cdn-icons-png.flaticon.com/128/3135/3135715.png" width="100px;"/><br /><sub><b>Svitlana Zhovanik</b></sub>](https://github.com/SvitlanaZhovanik)<br />
-|
-[<img src="https://cdn-icons-png.flaticon.com/128/3135/3135789.png" width="100px;"/><br /><sub><b>Daryna Karmazin</b></sub>](https://github.com/darynakarmazin)<br />

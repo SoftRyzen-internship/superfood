@@ -1,20 +1,17 @@
-'use client';
 import Image from 'next/image';
 import ScrollLink from '@/components/ui/ScrollLink';
 import HeroFormulaicItem from '@/components/ui/HeroFormulaicItem';
 import Line from '@/../public/icons/Line.svg';
 import hfsData from '@/data/heroFormulaicSection.json';
 import { HeroFormulaicSectionProps } from './HeroFormulaicSection.types';
-import data from '@/data/test.json';
 
 function HeroFormulaicSection({ productId, productData }: HeroFormulaicSectionProps) {
   const hfs = hfsData.find(item => item.id === productId);
-  const price = data.find(item => item.product === productId);
+  const price = productData.find(item => item.slug.current === productId);
 
-  if (!hfs || !productData) {
+  if (!hfs) {
     return null;
   }
-  console.log(productData);
 
   return (
     <section className="pt-[120px] pb-[60px] md:pt-[152px] md:pb-[80px] xl:pt-[133px] xl:pb-[65px]">

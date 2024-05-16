@@ -15,7 +15,7 @@ import './Slider.css';
 import Chevron from '@/../public/icons/Chevron.svg';
 
 function Slider({ slides, isProductsSlider }: SliderProps) {
-  const slidesToShow = isProductsSlider ? 1.9 : 3;
+  const slidesToShow = isProductsSlider ? 1.99 : 3;
   return (
     <div className="w-[100vw] relative mx-[auto]">
       {' '}
@@ -57,14 +57,24 @@ function Slider({ slides, isProductsSlider }: SliderProps) {
       <div
         className={classNames({
           'flex gap-[16px] justify-center': true,
-          'md:absolute top-[50%] left-[50%] md:gap-[477px] md:transform md:translate-x-[-50%] md:translate-y-[-50%] z-50':
+          'md:absolute top-[35%] left-[50%] md:gap-[477px] md:transform md:translate-x-[-50%] md:translate-y-[-50%] z-50':
             isProductsSlider,
         })}
       >
-        <button className="custom-prev border-inherit">
+        <button
+          className={classNames('custom-prev', 'border-inherit', {
+            'stroke-white text-[#ffffff29]': isProductsSlider,
+            'stroke-[#1F7437]  text-[#1f743752]': !isProductsSlider,
+          })}
+        >
           <Chevron />
         </button>
-        <button className="custom-next border-inherit">
+        <button
+          className={classNames('custom-next', 'border-inherit', {
+            'stroke-white text-[#ffffff29]': isProductsSlider,
+            'stroke-[#1F7437] text-[#1f743752]': !isProductsSlider,
+          })}
+        >
           <Chevron />
         </button>
       </div>

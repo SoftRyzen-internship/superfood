@@ -11,6 +11,7 @@ import ProductCard from '@/components/ui/ProductCard';
 import FAQSection from '@/sections/FAQSection';
 import Benefits from '@/sections/Benefits/Benefits';
 import Contacts from '@/sections/Contacts';
+import Reviews from '@/sections/Reviews/Reviews';
 
 // Log content to console
 // getPolicy().then(content => console.log(content[0].description[0].children));
@@ -40,6 +41,7 @@ export default function Home() {
         buttonText="детальніше"
       />
       <CompanyAdvantageSection />
+      <Reviews/>
       <FAQSection />
       <Contacts />
     </main>

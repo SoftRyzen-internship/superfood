@@ -1,6 +1,6 @@
 import React from 'react';
 import HeroFormulaicSection from '@/sections/HeroFormulaicSection';
-import { getPhones } from '../../../../sanity/requests';
+import { getProduct } from '../../../../sanity/requests';
 
 import data from '@/data/common.json';
 
@@ -44,14 +44,15 @@ const productDescr = [
   },
 ];
 
-function Product({ params }: ProductProps) {
+async function Product({ params }: ProductProps) {
   const product = params.product;
 
   const products = productDescr.find(item => item.slug === product);
+  const content = await getProduct();
 
   return (
     <>
-      <HeroFormulaicSection productId={product} />
+      <HeroFormulaicSection productId={product} productData={content} />
       <div className="container pt-14">
         <p className="text-xl text-center font-bold p-10">Hero Product slug {product}</p>
         <div className="bg-lightGreen p-10">{products && <p>{products.description}</p>}</div>

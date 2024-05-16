@@ -1,0 +1,27 @@
+[
+  {
+    "_id": "0144f18b-476f-491f-b226-adf4ea83f72b",
+    "product": "beans",
+    "price": 229
+  },
+  {
+    "_id": "29d74c6e-600a-4caa-b737-0b72b8519a76",
+    "product": "solod",
+    "price": 116
+  },
+  {
+    "_id": "6e5c8ac9-0283-4b9e-8f81-a546dbc3895d",
+    "product": "green_formula",
+    "price": 556
+  },
+  {
+    "_id": "d4a7f9d8-33d6-45ce-a75d-23d94d46d70e",
+    "product": "grains",
+    "price": 170
+  },
+  {
+    "_id": "d62f9581-be9e-4670-b188-19bb0aee656d",
+    "product": "vegetable",
+    "price": 380
+  }
+]

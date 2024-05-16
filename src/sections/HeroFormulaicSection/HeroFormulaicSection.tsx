@@ -1,14 +1,16 @@
 import Image from 'next/image';
-import Line from '@/../public/icons/Line.svg';
-import hfsData from '@/data/heroFormulaicSection.json';
 import ScrollLink from '@/components/ui/ScrollLink';
 import HeroFormulaicItem from '@/components/ui/HeroFormulaicItem';
+import Line from '@/../public/icons/Line.svg';
+import hfsData from '@/data/heroFormulaicSection.json';
 import { HeroFormulaicSectionProps } from './HeroFormulaicSection.types';
+import data from '@/data/test.json';
 
-function HeroFormulaicSection({ productId }: HeroFormulaicSectionProps) {
+function HeroFormulaicSection({ productId, productData }: HeroFormulaicSectionProps) {
   const hfs = hfsData.find(item => item.id === productId);
+  const price = data.find(item => item.product === productId);
 
-  if (!hfs) {
+  if (!hfs || !productData) {
     return null;
   }
 
@@ -28,7 +30,7 @@ function HeroFormulaicSection({ productId }: HeroFormulaicSectionProps) {
             {hfs.title}
           </h1>
           <div className="font-roboto text-black font-bold uppercase text-[18px] leading-[1.30] flex gap-2 items-center mb-6 md:text-[20px] md:mb-8 xl:text-[26px] xl:gap-3 xl:mb-10">
-            <p className="md:mr-2 xl:mr-0">{hfs.price}</p>
+            <p className="md:mr-2 xl:mr-0">{price?.price} ₴</p>
             <Line width={1} height={16} className="w-px h-3 stroke-button md:h-4 md:stroke-grey" />
             <p className="text-grey">{hfs.weight}</p>
           </div>

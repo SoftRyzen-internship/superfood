@@ -37,7 +37,7 @@ function PolicySection({ content }: PolicyContentProps) {
             ))}
           </div>
         ) : (
-          <p>Loading...</p>
+          <div className="font-roboto text-green text-[38px] text-center">Завантаження...</div>
         )}
       </div>
     </section>

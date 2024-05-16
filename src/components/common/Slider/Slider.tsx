@@ -19,7 +19,11 @@ function Slider({ slides, isProductsSlider }: SliderProps) {
   const slidesToShowDesc = isProductsSlider ? 1.99 : 3;
   const gapToShowDesc = isProductsSlider ? '120px' : '24px';
   return (
-    <div className="w-[100vw] relative mx-[auto]">
+    <div
+      className={classNames('relative', 'mx-[auto]', {
+        'w-[100vw]': isProductsSlider,
+      })}
+    >
       <Swiper
         loop={true}
         pagination={{

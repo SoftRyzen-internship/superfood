@@ -7,6 +7,10 @@ export interface ProductProps {
   params: { product: string };
 }
 
+export const dynamicParams = false;
+export const dynamic = 'error';
+export const revalidate = false;
+
 export function generateStaticParams() {
   return data.productSlugs.map(product => ({ params: { product } }));
 }

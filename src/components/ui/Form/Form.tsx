@@ -3,6 +3,7 @@ import { useState } from 'react';
 
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
+import useFormPersist from 'react-hook-form-persist';
 
 import Checkbox from '../Checkbox';
 import Button from '../Button';
@@ -13,7 +14,7 @@ import { formDataType } from '@/types/formData';
 
 import { convertFormDataToString } from '@/utils/convertFormDataToString';
 import { sendData } from '@/utils/telegram';
-import { schema } from '@/utils/shema';
+import { schema } from '@/utils/schema';
 
 import form from '@/data/form.json';
 
@@ -36,9 +37,17 @@ function Form() {
     register,
     handleSubmit,
     formState: { errors },
+    watch,
+    setValue,
     reset,
   } = useForm({
     resolver: yupResolver(schema),
+  });
+
+  useFormPersist('formData', {
+    watch,
+    setValue,
+    exclude: ['privacyPolicy'],
   });
 
   const onSubmit = async (data: formDataType) => {
@@ -48,10 +57,6 @@ function Form() {
         privacyPolicy: isChecked,
       });
       await sendData(formData);
-      sessionStorage.setItem(
-        'formData',
-        JSON.stringify({ ...data, privacyPolicy: isChecked })
-      );
       reset();
       setIsChecked(false);
       setOpenSuccessModal(true);
@@ -59,6 +64,7 @@ function Form() {
       setOpenErrorModal(true);
     }
   };
+
   return (
     <>
       <div className="max-w-[460px] py-[60px] px-4 bg-white mx-auto md:max-w-[527px] md:rounded-xl	 md:py-12 md:px-16 xl:max-w-[592px] xl:py-14 xl:px-20">

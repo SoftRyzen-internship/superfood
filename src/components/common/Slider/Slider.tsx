@@ -10,11 +10,12 @@ import 'swiper/css/free-mode';
 import 'swiper/css/effect-coverflow';
 
 import { SliderProps } from './Slider.types';
-import './Slider.module.css';
+import './Slider.css';
 
 import Chevron from '@/../public/icons/Chevron.svg';
 
 function Slider({ slides, isProductsSlider }: SliderProps) {
+  const slidesToShow = isProductsSlider ? 1.9 : 3;
   return (
     <div className="w-[100vw] relative mx-[auto]">
       {' '}
@@ -34,7 +35,7 @@ function Slider({ slides, isProductsSlider }: SliderProps) {
         className="w-[100%] mb-[64px] md:mb-[40px] xl:mb-[56px]"
         breakpoints={{
           1280: {
-            slidesPerView: 1.9,
+            slidesPerView: slidesToShow,
             spaceBetween: '130px',
           },
           1440: {
@@ -65,4 +66,5 @@ function Slider({ slides, isProductsSlider }: SliderProps) {
     </div>
   );
 }
+
 export default Slider;

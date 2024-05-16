@@ -11,6 +11,7 @@ import ProductCard from '@/components/ui/ProductCard';
 import FAQSection from '@/sections/FAQSection';
 import Benefits from '@/sections/Benefits/Benefits';
 import Contacts from '@/sections/Contacts';
+import Products from '@/sections/Products';
 
 // Log content to console
 // getPolicy().then(content => console.log(content[0].description[0].children));
@@ -24,7 +25,7 @@ export default function Home() {
     <main>
       <HeroSection />
       <Benefits />
-
+      {/* <Products /> */}
       <ProductCard
         img="/images/products/sprouted-grains-of-beans@2x.webp"
         imgBg="beans"

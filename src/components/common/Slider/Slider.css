@@ -13,16 +13,28 @@
 .swiper-slide-prev,
 .swiper-slide-next {
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
+@media screen and (min-width:1280px) and (max-width: 1560px) {
+    .swiper-slide-prev.product {
+        position: relative;
+        left: 6%;
+    }
+
+    .swiper-slide-next.product {
+        position: relative;
+        right: 6%;
+    }
+}
+
+
+
 .custom-next,
 .custom-prev {
-    width: 32px;
-    height: 32px;
+    padding: 12px;
     border-radius: 50%;
-    border: 1px solid rgba(255, 255, 255, 0.16);
+    border: 1px solid currentColor;
 
 }
 

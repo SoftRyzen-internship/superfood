@@ -12,11 +12,12 @@ import FAQSection from '@/sections/FAQSection';
 import Benefits from '@/sections/Benefits/Benefits';
 import Contacts from '@/sections/Contacts';
 import Reviews from '@/sections/Reviews/Reviews';
+import Products from '@/sections/Products';
 
 // Log content to console
 // getPolicy().then(content => console.log(content[0].description[0].children));
 // getPhones().then(content => console.log(content));
-// getProduct().then(content => console.log(content));
+getProduct().then(content => console.log(content));
 // getReviews().then(content => console.log(content));
 
 export default function Home() {
@@ -25,21 +26,7 @@ export default function Home() {
     <main>
       <HeroSection />
       <Benefits />
-
-      <ProductCard
-        img="/images/products/sprouted-grains-of-beans@2x.webp"
-        imgBg="beans"
-        alt="ПРОРОЩЕНІ ЗЕРНА БОБОВИХ"
-        name="ПРОРОЩЕНІ ЗЕРНА БОБОВИХ"
-        descriptionItems={[
-          'Джерело білка',
-          'Фолієва кислота',
-          'Антиоксиданти',
-          'Клітковина',
-        ]}
-        link={`formula`}
-        buttonText="детальніше"
-      />
+      <Products />
       <CompanyAdvantageSection />
       <Reviews/>
       <FAQSection />

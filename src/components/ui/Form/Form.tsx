@@ -52,10 +52,7 @@ function Form() {
 
   const onSubmit = async (data: formDataType) => {
     try {
-      const formData = convertFormDataToString({
-        ...data,
-        privacyPolicy: isChecked,
-      });
+      const formData = convertFormDataToString(data);
       await sendData(formData);
       reset();
       setIsChecked(false);

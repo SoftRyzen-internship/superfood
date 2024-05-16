@@ -1,9 +1,9 @@
-export interface Slide {
+interface Slide {
   id: number;
-  content: string;
+  content: ReactNode;
 }
 
-export interface ProductSwiperProps {
+export interface SliderProps {
   slides: Slide[];
   isProductsSlider: boolean;
 }

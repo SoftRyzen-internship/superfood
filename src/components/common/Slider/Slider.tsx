@@ -1,6 +1,6 @@
 'use client';
 import classNames from 'classnames';
-import { Navigation, Pagination, EffectCoverflow } from 'swiper/modules';
+import { Navigation } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -8,12 +8,13 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import 'swiper/css/free-mode';
 import 'swiper/css/effect-coverflow';
-import './Swiper.module.css';
+
+import { SliderProps } from './Slider.types';
+import styles from './Slider.module.css';
 
 import Chevron from '@/../public/icons/Chevron.svg';
-import { ProductSwiperProps } from './Slider.types';
 
-function Slider({ slides, isProductsSlider }: ProductSwiperProps) {
+function Slider({ slides, isProductsSlider }: SliderProps) {
   return (
     <div className="w-[100vw] relative mx-[auto]">
       {' '}
@@ -30,7 +31,7 @@ function Slider({ slides, isProductsSlider }: ProductSwiperProps) {
           nextEl: '.custom-next',
           prevEl: '.custom-prev',
         }}
-        className="h-[626px] w-[100%] mb-[64px] md:mb-[40px] xl:mb-[56px]"
+        className="w-[100%] mb-[64px] md:mb-[40px] xl:mb-[56px]"
         breakpoints={{
           1280: {
             slidesPerView: 1.9,

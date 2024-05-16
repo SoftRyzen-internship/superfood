@@ -1,6 +1,6 @@
 export interface ProductCardProps {
   img: string;
-  imgBg: 'beans' | 'wheat' | 'vegetables' | 'corn' | 'seaweed';
+  imgBg: string;
   alt: string;
   name: string;
   descriptionItems: string[];

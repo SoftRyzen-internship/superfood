@@ -15,10 +15,11 @@ import './Slider.css';
 import Chevron from '@/../public/icons/Chevron.svg';
 
 function Slider({ slides, isProductsSlider }: SliderProps) {
-  const slidesToShow = isProductsSlider ? 1.99 : 3;
+  const slidesToShowTabl = isProductsSlider ? 1 : 2;
+  const slidesToShowDesc = isProductsSlider ? 1.99 : 3;
+  const gapToShowDesc = isProductsSlider ? '120px' : '24px';
   return (
     <div className="w-[100vw] relative mx-[auto]">
-      {' '}
       <Swiper
         loop={true}
         pagination={{
@@ -34,9 +35,12 @@ function Slider({ slides, isProductsSlider }: SliderProps) {
         }}
         className="w-[100%] mb-[64px] md:mb-[40px] xl:mb-[56px]"
         breakpoints={{
+          768: {
+            slidesPerView: slidesToShowTabl,
+          },
           1280: {
-            slidesPerView: slidesToShow,
-            spaceBetween: '130px',
+            slidesPerView: slidesToShowDesc,
+            spaceBetween: gapToShowDesc,
           },
           1560: {
             slidesPerView: 3,
@@ -50,7 +54,7 @@ function Slider({ slides, isProductsSlider }: SliderProps) {
               product: isProductsSlider,
             })}
           >
-            <div className="w-[592px]">{slide.content}</div>
+            {slide.content}
           </SwiperSlide>
         ))}
       </Swiper>

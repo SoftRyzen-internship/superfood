@@ -1,7 +1,8 @@
-aaaaaaaaa<h1 align="center"> <br>
-<a href="https://superfood.vercel.app/"><img src="/public/images/og-image/ogp-image.jpg" alt="Superfood"></a>
-<br> Superfood <br>
-
+<h1 align="center">
+  <a href="https://superfood.vercel.app/">
+    <img src="/public/images/og-image/ogp-image.jpg" alt="Superfood" />
+  </a>
+  <br> Superfood </br>
 </h1>
 
 Superfood - the site of a Ukrainian company that offers superfoods for your
@@ -142,10 +143,89 @@ $ npm run dev
 
 ## Technologies
 
-<a href='https://nextjs.org/' ><img src='https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white' alt='Next' /></a>
-<a href='https://www.typescriptlang.org/' ><img src='https://img.shields.io/badge/TypeScript-black?style=for-the-badge&logo=typescript' alt='TypeScript' /></a>
-<a href='https://tailwindcss.com/' ><img src='https://img.shields.io/badge/tailwind-black?style=for-the-badge&logo=tailwindcss' alt='Tailwind CSS' /></a>
-<a href='https://www.sanity.io/' ><img src='https://img.shields.io/badge/sanity-black?style=for-the-badge&logo=sanity' alt='Sanity' /></a>
-<a href='https://react-hook-form.com/' ><img src='https://img.shields.io/badge/react_hook_form-black?style=for-the-badge&logo=react%20hook%20form&labelColor=grey' alt='React hook form' /></a>
-<a href='https://swiperjs.com/' ><img src='https://img.shields.io/badge/swiper-black?style=for-the-badge&logo=swiper&logoColor=blue' alt='Swiper' /></a>
-<a href='https://headlessui.com/' ><img src='https://img.shields.io/badge/headlessui-black?style=for-the-badge&logo=headlessui&logoColor=blue' alt='Headless UI' /></a>
+  <ul>
+        <li>
+          <a
+            href="https://nextjs.org/"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+          >
+            <img
+              src="https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white"
+              alt="Next"
+            />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.typescriptlang.org/"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+          >
+            <img
+              src="https://img.shields.io/badge/TypeScript-black?style=for-the-badge&logo=typescript"
+              alt="TypeScript"
+            />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://tailwindcss.com/"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+          >
+            <img
+              src="https://img.shields.io/badge/tailwind-black?style=for-the-badge&logo=tailwindcss"
+              alt="Tailwind CSS"
+            />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.sanity.io/"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+          >
+            <img
+              src="https://img.shields.io/badge/sanity-black?style=for-the-badge&logo=sanity"
+              alt="Sanity"
+            />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://react-hook-form.com/"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+          >
+            <img
+              src="https://img.shields.io/badge/react_hook_form-black?style=for-the-badge&logo=react%20hook%20form&labelColor=grey"
+              alt="React hook form"
+            />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://swiperjs.com/"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+          >
+            <img
+              src="https://img.shields.io/badge/swiper-black?style=for-the-badge&logo=swiper&logoColor=blue"
+              alt="Swiper"
+            />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://headlessui.com/"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+          >
+            <img
+              src="https://img.shields.io/badge/headlessui-black?style=for-the-badge&logo=headlessui&logoColor=blue"
+              alt="Headless UI"
+            />
+          </a>
+        </li>
+      </ul>

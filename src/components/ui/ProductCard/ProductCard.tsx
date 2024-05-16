@@ -18,7 +18,7 @@ function ProductCard({
   buttonText,
 }: ProductCardProps) {
   return (
-    <div className="flex flex-col items-center w-full main">
+    <div className="flex flex-col items-center w-full main h-[480px] md:h-[555px] xl:h-[626px]">
       <div className={` relative  mb-4 flex justify-center md:mb-5 `}>
         <Image
           src={img}
@@ -33,22 +33,24 @@ function ProductCard({
       <h3 className="font-roboto font-bold text-[22px] leading-[1.15] uppercase  text-white mb-3 md:text-lightLarge xl:mb-3.5 xl:text-3xl ">
         {name}
       </h3>
-      <div className="mb-[38px] flex gap-x-3 gap-y-2 flex-wrap justify-center w-[312px] xl:mb-10">
-        {descriptionItems.map((item, id) => (
-          <span
-            key={id}
-            className="font-roboto text-sm font-bold leading-[1.15] uppercase  text-accent xl:text-light"
-          >
-            {item}
-          </span>
-        ))}
+      <div className="flex flex-col items-center justify-between h-[144px] xl:h-[148px]">
+        <div className="flex gap-x-3 gap-y-2 flex-wrap justify-center w-[312px]">
+          {descriptionItems.map((item, id) => (
+            <span
+              key={id}
+              className="font-roboto text-sm font-bold leading-[1.15] uppercase  text-accent xl:text-light"
+            >
+              {item}
+            </span>
+          ))}
+        </div>
+        <LinkButton
+          label={buttonText}
+          href={link}
+          variant="primary2"
+          className="smOnly:w-full md:w-[205px]"
+        />
       </div>
-      <LinkButton
-        label={buttonText}
-        href={link}
-        variant="primary2"
-        className="smOnly:w-full md:w-[205px]"
-      />
     </div>
   );
 }

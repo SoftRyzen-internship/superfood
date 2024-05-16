@@ -2,7 +2,7 @@ import { ReactNode } from 'react';
 
 interface Slide {
   id: number;
-  content: any[];
+  content: ReactNode;
 }
 
 export interface SliderProps {

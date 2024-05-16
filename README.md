@@ -1,8 +1,8 @@
 <h1 align="center">
+  <br> Superfood </br>
   <a href="https://superfood.vercel.app/">
     <img src="/public/images/og-image/ogp-image.jpg" alt="Superfood" />
   </a>
-  <br> Superfood </br>
 </h1>
 
 Superfood - the site of a Ukrainian company that offers superfoods for your
@@ -11,18 +11,24 @@ modern stack that provides scalability, performance, and ease of maintenance.
 The synergy between these technologies enables fast development, an excellent
 developer experience, and flexibility in content management and presentations. .
 
-## Table of Contents
-
-- [Features](#features)
-- [Getting Started](#getting-started)
-- [Technologies](#technologies)
-- [Components API](#components-api)
-- [Contributors](#contributors)
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li><a href="#features">Features</a></li>
+    <li><a href="#getting-started">Getting Started</a></li>
+    <li><a href="#technologies">Technologies</a></li>
+    <li><a href="#components-api">Components API</a></li>
+    <li><a href="#contributors">Contributors</a></li>
+  </ol>
+</details>
 
 ## Features
 
 - Next.js offers server-side rendering and static site generation, ensuring fast
   and SEO-friendly pages.
+
+- Next.js provides a simple and intuitive routing system, making navigation
+  within your application simple.
 
 - Tailwind CSS promotes a utility-first approach for quick and customized
   styling.
@@ -58,6 +64,8 @@ $ npm run dev
 > or use `node` from the command prompt.
 
 ## Components API
+
+<details><summary>Show</summary>
 
 - Logo
 
@@ -141,14 +149,14 @@ $ npm run dev
 | ------ | ------- | ---------------------------------------------------------------------------- |
 | `data` | menu    | Taka data productPreference with massive :id: `number`, preference: `string` |
 
+</details>
+
 ## Technologies
 
   <ul>
         <li>
           <a
             href="https://nextjs.org/"
-            target="_blank"
-            rel="noopener noreferrer nofollow"
           >
             <img
               src="https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white"
@@ -159,8 +167,6 @@ $ npm run dev
         <li>
           <a
             href="https://www.typescriptlang.org/"
-            target="_blank"
-            rel="noopener noreferrer nofollow"
           >
             <img
               src="https://img.shields.io/badge/TypeScript-black?style=for-the-badge&logo=typescript"
@@ -171,8 +177,6 @@ $ npm run dev
         <li>
           <a
             href="https://tailwindcss.com/"
-            target="_blank"
-            rel="noopener noreferrer nofollow"
           >
             <img
               src="https://img.shields.io/badge/tailwind-black?style=for-the-badge&logo=tailwindcss"
@@ -183,8 +187,6 @@ $ npm run dev
         <li>
           <a
             href="https://www.sanity.io/"
-            target="_blank"
-            rel="noopener noreferrer nofollow"
           >
             <img
               src="https://img.shields.io/badge/sanity-black?style=for-the-badge&logo=sanity"
@@ -195,8 +197,6 @@ $ npm run dev
         <li>
           <a
             href="https://react-hook-form.com/"
-            target="_blank"
-            rel="noopener noreferrer nofollow"
           >
             <img
               src="https://img.shields.io/badge/react_hook_form-black?style=for-the-badge&logo=react%20hook%20form&labelColor=grey"
@@ -207,8 +207,6 @@ $ npm run dev
         <li>
           <a
             href="https://swiperjs.com/"
-            target="_blank"
-            rel="noopener noreferrer nofollow"
           >
             <img
               src="https://img.shields.io/badge/swiper-black?style=for-the-badge&logo=swiper&logoColor=blue"
@@ -219,8 +217,6 @@ $ npm run dev
         <li>
           <a
             href="https://headlessui.com/"
-            target="_blank"
-            rel="noopener noreferrer nofollow"
           >
             <img
               src="https://img.shields.io/badge/headlessui-black?style=for-the-badge&logo=headlessui&logoColor=blue"
@@ -229,3 +225,10 @@ $ npm run dev
           </a>
         </li>
       </ul>
+
+## Contributes
+
+|
+[<img src="https://cdn-icons-png.flaticon.com/128/3135/3135715.png" width="100px;"/><br /><sub><b>Svitlana Zhovanik</b></sub>](https://github.com/SvitlanaZhovanik)<br />
+|
+[<img src="https://cdn-icons-png.flaticon.com/128/3135/3135789.png" width="100px;"/><br /><sub><b>Daryna Karmazin</b></sub>](https://github.com/darynakarmazin)<br />

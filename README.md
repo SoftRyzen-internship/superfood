@@ -1,9 +1,7 @@
-<h1 align="center">
-  <br>
-  <a href="https://superfood.vercel.app/"><img src="/public/images/og-image/ogp-image.jpg" alt="Superfood"></a>
-  <br>
-Superfood
-  <br>
+aaaaaaaaa<h1 align="center"> <br>
+<a href="https://superfood.vercel.app/"><img src="/public/images/og-image/ogp-image.jpg" alt="Superfood"></a>
+<br> Superfood <br>
+
 </h1>
 
 Superfood - the site of a Ukrainian company that offers superfoods for your
@@ -14,16 +12,11 @@ developer experience, and flexibility in content management and presentations. .
 
 ## Table of Contents
 
-<details>
-  <ul>
-    <li><a href="#features">Features</a></li>
-    <li><a href="#getting-started">Getting Started</a></li>
-    <li><a href="#technologies">Technologies</a></li>
-    <li><a href="#components-api">Components API</a></li>
-    <li><a href="#Contributors">Contributors</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ul>
-</details>
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Technologies](#technologies)
+- [Components API](#components-api)
+- [Contributors](#contributors)
 
 ## Features
 
@@ -64,8 +57,6 @@ $ npm run dev
 > or use `node` from the command prompt.
 
 ## Components API
-
-<details>
 
 - Logo
 
@@ -149,20 +140,12 @@ $ npm run dev
 | ------ | ------- | ---------------------------------------------------------------------------- |
 | `data` | menu    | Taka data productPreference with massive :id: `number`, preference: `string` |
 
-</details>
-
 ## Technologies
 
-![Next](https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)[https://nextjs.org/]
-
-![TypeScript](https://img.shields.io/badge/TypeScript-black?style=for-the-badge&logo=typescript)[https://www.typescriptlang.org/]
-
-![Tailwind CSS](https://img.shields.io/badge/tailwind-black?style=for-the-badge&logo=tailwindcss)[https://tailwindcss.com/]
-
-![Sanity](https://img.shields.io/badge/sanity-black?style=for-the-badge&logo=sanity)[https://www.sanity.io/]
-
-![React hook form](https://img.shields.io/badge/react_hook_form-black?style=for-the-badge&logo=react%20hook%20form&labelColor=grey)[https://react-hook-form.com/]
-
-![Swiper](https://img.shields.io/badge/swiper-black?style=for-the-badge&logo=swiper&logoColor=blue)[https://swiperjs.com/]
-
-![Headless UI](https://img.shields.io/badge/headlessui-black?style=for-the-badge&logo=headlessui&logoColor=blue)[https://headlessui.com/]
+<a href='https://nextjs.org/' ><img src='https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white' alt='Next' /></a>
+<a href='https://www.typescriptlang.org/' ><img src='https://img.shields.io/badge/TypeScript-black?style=for-the-badge&logo=typescript' alt='TypeScript' /></a>
+<a href='https://tailwindcss.com/' ><img src='https://img.shields.io/badge/tailwind-black?style=for-the-badge&logo=tailwindcss' alt='Tailwind CSS' /></a>
+<a href='https://www.sanity.io/' ><img src='https://img.shields.io/badge/sanity-black?style=for-the-badge&logo=sanity' alt='Sanity' /></a>
+<a href='https://react-hook-form.com/' ><img src='https://img.shields.io/badge/react_hook_form-black?style=for-the-badge&logo=react%20hook%20form&labelColor=grey' alt='React hook form' /></a>
+<a href='https://swiperjs.com/' ><img src='https://img.shields.io/badge/swiper-black?style=for-the-badge&logo=swiper&logoColor=blue' alt='Swiper' /></a>
+<a href='https://headlessui.com/' ><img src='https://img.shields.io/badge/headlessui-black?style=for-the-badge&logo=headlessui&logoColor=blue' alt='Headless UI' /></a>

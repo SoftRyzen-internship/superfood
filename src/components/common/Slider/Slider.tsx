@@ -38,13 +38,18 @@ function Slider({ slides, isProductsSlider }: SliderProps) {
             slidesPerView: slidesToShow,
             spaceBetween: '130px',
           },
-          1440: {
+          1560: {
             slidesPerView: 3,
           },
         }}
       >
         {slides.map(slide => (
-          <SwiperSlide key={slide.id}>
+          <SwiperSlide
+            key={slide.id}
+            className={classNames({
+              product: isProductsSlider,
+            })}
+          >
             <div className="w-[592px]">{slide.content}</div>
           </SwiperSlide>
         ))}
@@ -52,7 +57,7 @@ function Slider({ slides, isProductsSlider }: SliderProps) {
       <div
         className={classNames({
           'flex gap-[16px] justify-center': true,
-          'xl:absolute top-[50%] left-[50%] xl:gap-[477px] xl:transform xl:translate-x-[-50%] xl:translate-y-[-50%] z-50':
+          'md:absolute top-[50%] left-[50%] md:gap-[477px] md:transform md:translate-x-[-50%] md:translate-y-[-50%] z-50':
             isProductsSlider,
         })}
       >

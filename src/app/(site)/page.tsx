@@ -25,7 +25,7 @@ export default function Home() {
     <main>
       <HeroSection />
       <Benefits />
-      {/* <Products /> */}
+      <Products />
       <ProductCard
         img="/images/products/sprouted-grains-of-beans@2x.webp"
         imgBg="beans"

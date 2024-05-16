@@ -34,7 +34,7 @@
     background-repeat: no-repeat;
     background-size: 306px 395px;
     background-repeat: no-repeat;
-    background-position: center left;
+    background-position: left 456px;
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -55,7 +55,7 @@
   }
 
   .vegetablesBg {
-    background-position: 596px 165px;
+    background-position: 488px 165px;
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -66,51 +66,3 @@
     }
   }
 }
-
-/* 
-@media screen and (min-width: 768px) {
-  .contactsSection {
-    display: grid;
-    grid-template-areas:
-      'title title '
-      'phone owner '
-      'email owner '
-      'socialMedia owner '
-      ' form form';
-  }
-
-  .contactsTitle {
-    grid-area: title;
-  }
-
-  .contactsPhone {
-    grid-area: phone;
-  }
-
-  .contactsEmail {
-    grid-area: email;
-  }
-
-  .contactsSocialMedia {
-    grid-area: socialMedia;
-  }
-
-  .contactsOwner {
-    grid-area: owner;
-  }
-
-  .contactsForm {
-    grid-area: form;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .contactsSection {
-    grid-template-areas:
-      'title form '
-      'phone form '
-      'email form'
-      'socialMedia form '
-      ' owner form';
-  }
-} */

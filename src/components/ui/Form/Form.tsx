@@ -3,12 +3,13 @@ import { useState } from 'react';
 
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
+import useFormPersist from 'react-hook-form-persist';
 
 import Checkbox from '../Checkbox';
 import Button from '../Button';
 import FormInput from '../FormInput';
 
-import { schema } from '@/utils/shema';
+import { schema } from '@/utils/schema';
 
 import form from '@/data/form.json';
 
@@ -24,16 +25,18 @@ function Form() {
     register,
     handleSubmit,
     formState: { errors },
+    watch,
+    setValue,
     reset,
   } = useForm({
     resolver: yupResolver(schema),
   });
+  useFormPersist('formData', {
+    watch,
+    setValue,
+    exclude: ['privacyPolicy'],
+  });
   const onSubmit = (data: any) => {
-    console.log({ ...data, privacyPolicy: isChecked });
-    sessionStorage.setItem(
-      'formData',
-      JSON.stringify({ ...data, privacyPolicy: isChecked })
-    );
     reset();
     setIsChecked(false);
   };

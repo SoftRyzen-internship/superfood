@@ -1,6 +1,3 @@
-import { useEffect } from 'react';
-import LinkButton from '../ScrollLink/ScrollLink';
-
 import { ActionActiveComponentsProps } from './ActionActiveComponents.types';
 
 import action from '@/data/actionActiveComponents.json';
@@ -24,7 +21,7 @@ function ActionActiveComponents({ productId }: ActionActiveComponentsProps) {
           rel="noopener noreferrer nofollow"
           className="inline-block px-6 py-4 text-center font-geologica font-bold text-light uppercase text-green border border-solid border-[rgba(23,117,49,0.5)] rounded-full w-full transition-colors hover:bg-green hover:text-white focus:bg-green focus:text-white md:w-[250px] "
         >
-          {action.buttonText}
+          {action.linkText}
         </a>
       </div>
     )

@@ -16,6 +16,8 @@
     align-items: center;
 }
 
+
+
 @media screen and (min-width:1280px) and (max-width: 1560px) {
     .swiper-slide-prev.product {
         position: relative;
@@ -35,7 +37,13 @@
     padding: 12px;
     border-radius: 50%;
     border: 1px solid currentColor;
+}
 
+.custom-prev:hover,
+.custom-prev:focus,
+.custom-next:hover,
+.custom-next:focus {
+    background-color: #209A41;
 }
 
 .custom-prev {

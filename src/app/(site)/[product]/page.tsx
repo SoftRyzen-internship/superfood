@@ -4,6 +4,7 @@ import React from 'react';
 import ProductDescription from '@/components/ui/ProductDescription';
 
 import data from '@/data/common.json';
+import ActionActiveComponents from '@/components/ui/ActionActiveComponents';
 
 export interface ProductProps {
   params: { product: string };
@@ -26,6 +27,7 @@ function Product({ params }: ProductProps) {
       <section className="bg-input py-5">
         <div className="container">
           <ProductDescription productId={product} />
+          <ActionActiveComponents productId={product} />
         </div>
       </section>
     </>

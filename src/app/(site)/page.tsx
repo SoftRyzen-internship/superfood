@@ -11,6 +11,7 @@ import ProductCard from '@/components/ui/ProductCard';
 import FAQSection from '@/sections/FAQSection';
 import Benefits from '@/sections/Benefits/Benefits';
 import Contacts from '@/sections/Contacts';
+import Reviews from '@/sections/Reviews/Reviews';
 import Products from '@/sections/Products';
 
 // Log content to console
@@ -27,6 +28,7 @@ export default function Home() {
       <Benefits />
       <Products />
       <CompanyAdvantageSection />
+      <Reviews/>
       <FAQSection />
       <Contacts />
     </main>

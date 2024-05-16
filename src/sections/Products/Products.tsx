@@ -1,7 +1,7 @@
 import Slider from '@/components/common/Slider/Slider';
 import ProductCard from '@/components/ui/ProductCard';
 import { products } from '@/data/products.json';
-console.log(products);
+import styles from './Products.module.css';
 const slides = products.map((product, i) => ({
   id: i,
   content: (
@@ -17,7 +17,11 @@ const slides = products.map((product, i) => ({
   ),
 }));
 function Products() {
-  return <Slider slides={slides} isProductsSlider={true} />;
+  return (
+    <section id="products" className={`bg-green ${styles.container}`}>
+      <Slider slides={slides} isProductsSlider={true} />
+    </section>
+  );
 }
 
 export default Products;

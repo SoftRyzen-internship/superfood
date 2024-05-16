@@ -38,13 +38,18 @@ function Slider({ slides, isProductsSlider }: SliderProps) {
             slidesPerView: slidesToShow,
             spaceBetween: '130px',
           },
-          1440: {
+          1740: {
             slidesPerView: 3,
           },
         }}
       >
         {slides.map(slide => (
-          <SwiperSlide key={slide.id}>
+          <SwiperSlide
+            key={slide.id}
+            className={classNames({
+              product: isProductsSlider,
+            })}
+          >
             <div className="w-[592px]">{slide.content}</div>
           </SwiperSlide>
         ))}

@@ -6,18 +6,18 @@ const slides = products.map((product, i) => ({
   id: i,
   content: (
     <ProductCard
-      img={product.alt}
+      img={product.img}
       imgBg={product.imgBg}
       alt={product.alt}
       name={product.name}
       descriptionItems={product.descriptionItems}
       link={product.link}
-      buttonText=""
+      buttonText="детальніше"
     />
   ),
 }));
 function Products() {
-  <Slider slides={slides} isProductsSlider={true} />;
+  return <Slider slides={slides} isProductsSlider={true} />;
 }
 
 export default Products;

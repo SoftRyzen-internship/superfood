@@ -12,7 +12,7 @@ import 'swiper/css/effect-coverflow';
 import { SliderProps } from './Slider.types';
 import styles from './Slider.module.css';
 
-import Chevron from '../../../../public/icons/Chevron.svg';
+import Chevron from '@/../public/icons/Chevron.svg';
 
 function Slider({ slides, isProductsSlider }: SliderProps) {
   return (

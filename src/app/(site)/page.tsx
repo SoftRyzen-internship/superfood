@@ -16,7 +16,7 @@ import Products from '@/sections/Products';
 // Log content to console
 // getPolicy().then(content => console.log(content[0].description[0].children));
 // getPhones().then(content => console.log(content));
-// getProduct().then(content => console.log(content));
+getProduct().then(content => console.log(content));
 // getReviews().then(content => console.log(content));
 
 export default function Home() {

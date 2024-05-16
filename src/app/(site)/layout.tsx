@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     siteName: 'СУПЕРФУДИ',
     images: [
       {
-        url: 'https://github.com/darynakarmazin/carp-travel/raw/main/src/og-image/og-image.png',
+        url: '/og-image/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'СУПЕРФУДИ',

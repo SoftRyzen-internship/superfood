@@ -19,7 +19,7 @@ function ActionActiveComponents({ productId }: ActionActiveComponentsProps) {
           href={product.link}
           target="_blank"
           rel="noopener noreferrer nofollow"
-          className="inline-block px-6 py-4 text-center font-geologica font-bold text-light uppercase text-green border border-solid border-[rgba(23,117,49,0.5)] rounded-full w-full transition-colors hover:bg-green hover:text-white focus:bg-green focus:text-white md:w-[250px] "
+          className="inline-block px-6 py-4 text-center font-geologica font-bold text-light uppercase text-green border border-solid border-[rgba(23,117,49,0.5)] rounded-full w-full transition-colors cursor-pointer hover:bg-green hover:text-white focus:bg-green focus:text-white md:w-[250px] "
         >
           {action.linkText}
         </a>

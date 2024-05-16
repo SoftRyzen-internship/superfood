@@ -27,6 +27,7 @@ function BurgerMenu({ close }: BurgerMenuProps) {
           <CloseIcon
             width={24}
             height={24}
+            stroke="#1F7437"
             className="w-6 h-6 md:w-10 md:h-10"
           />
         </button>

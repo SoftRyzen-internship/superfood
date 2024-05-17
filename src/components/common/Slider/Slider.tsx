@@ -16,7 +16,7 @@ import Chevron from '@/../public/icons/Chevron.svg';
 
 function Slider({ slides, isProductsSlider }: SliderProps) {
   const slidesToShowTabl = isProductsSlider ? 1 : 2;
-  const slidesToShowDesc = isProductsSlider ? 2 : 3;
+  const slidesToShowDesc = isProductsSlider ? 1.99 : 3;
   const gapToShowDesc = isProductsSlider ? '120px' : '24px';
   const centeredSlides = isProductsSlider ? true : false;
   return (
@@ -46,9 +46,11 @@ function Slider({ slides, isProductsSlider }: SliderProps) {
           1280: {
             slidesPerView: slidesToShowDesc,
             spaceBetween: gapToShowDesc,
+            centeredSlides: centeredSlides,
           },
           1560: {
             slidesPerView: 3,
+            centeredSlides: centeredSlides,
           },
         }}
       >

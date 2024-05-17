@@ -17,7 +17,6 @@ developer experience, and flexibility in content management and presentations. .
     <li><a href="#getting-started">Getting Started</a></li>
     <li><a href="#technologies">Technologies</a></li>
     <li><a href="#components-api">Components API</a></li>
-    <li><a href="#contributors">Contributors</a></li>
   </ol>
 </details>
 
@@ -224,5 +223,3 @@ $ npm run dev
           </a>
         </li>
       </ul>
-
-## Contributes

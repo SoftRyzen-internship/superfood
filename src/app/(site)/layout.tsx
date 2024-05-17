@@ -91,7 +91,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="uk">
-      <body
+      <body   
         className={classNames(
           geologica.variable,
           roboto.variable,

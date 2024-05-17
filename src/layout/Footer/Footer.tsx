@@ -1,3 +1,4 @@
+'use client'
 import Logo from '@/components/ui/Logo';
 import PhoneContacts from '@/components/ui/PhoneContacts';
 import SocialMedia from '@/components/ui/SocialMedia';
@@ -6,8 +7,11 @@ import data from '@/data/footer.json';
 import GOIT from '@/../public/icons/GoItLogo.svg';
 import SoftRyzen from '@/../public/icons/SoftRyzenLogo.svg';
 import MovingBaner from '@/components/ui/MovingBaner/MovingBaner';
+import { usePathname } from 'next/navigation';
 
 function Footer() {
+  const pathname = usePathname()
+  const isPolicyPage = pathname === '/policy';
   return (
     <>
       <footer className="bg-green flex flex-col py-6 pb-4 text-center justify-center xl:py-10 transition">
@@ -23,10 +27,10 @@ function Footer() {
           <hr className="w-full mt-4 mb-8 border-strokeGreen xl:hidden" />
           <div className="flex flex-col pb-4  gap-4 text-center font-extralight text-lightGreen text-[14px] leading-[18.9px] md:leading-[19.6px] xl:font-[250] xl:text-start xl:pb-0 transition">
             <a
-              href={data.linkPolicy}
+              href={isPolicyPage? data.linkMain : data.linkPolicy}
               className="hover:text-white transition"
             >
-              {data.namePolicy}
+              {isPolicyPage? data.nameHomePage : data.namePolicy}
             </a>
             <p>{data.footerTextSec}</p>
             <div className="flex flex-col gap-3 md:flex-row justify-center md:gap-4 xl:gap-6">

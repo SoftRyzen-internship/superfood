@@ -21,7 +21,7 @@ function Reviews() {
   }));
 
   return (
-    <section className={`section bg-lightGreen ${styles.reviewsBg}`}>
+    <section id="reviews" className={`section bg-lightGreen ${styles.reviewsBg}`}>
       <div className="container overflow-hidden">
         <h2 className="section-title pb-[76px]">Відгуки про суперфуд</h2>
         <Slider slides={slides} isProductsSlider={false}/>

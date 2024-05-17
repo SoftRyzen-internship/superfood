@@ -5,28 +5,28 @@ import localFont from 'next/font/local';
 import './globals.css';
 import Footer from '@/layout/Footer';
 import Header from '@/layout/Header';
+import data from '@/data/metadata.json';
+import { env } from 'process';
 
 export const metadata: Metadata = {
-  title: 'СУПЕРФУДИ',
-  description:
-    'Суперфуди - Збагачують організм біодоступними корисними речовинами, сприяють природному детоксу та повноцінно живлять на клітинному рівні.',
-  keywords: 'Суперфуди, природа, здоровʼє',
+  title: data.title,
+  description: data.description,
+  keywords: data.keywords,
   icons: {
-    icon: '/favicon.png',
+    icon: data.icon,
   },
   openGraph: {
     type: 'website',
-    url: 'https://superfood.vercel.app/',
-    title: 'СУПЕРФУДИ - Сила природи для вашого здоровʼя',
-    description:
-      'Суперфуди - Збагачують організм біодоступними корисними речовинами, сприяють природному детоксу та повноцінно живлять на клітинному рівні.',
-    siteName: 'СУПЕРФУДИ',
+    url: env.BASE_APP_URL,
+    title: data.ogTitle,
+    description: data.ogDescription,
+    siteName: data.ogSiteName,
     images: [
       {
-        url: '/og-image/og-image.jpg',
+        url: data.image.url,
         width: 1200,
         height: 630,
-        alt: 'СУПЕРФУДИ',
+        alt: data.image.url,
       },
     ],
   },

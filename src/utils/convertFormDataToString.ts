@@ -2,13 +2,12 @@ import { formDataType } from '@/types/formData';
 
 export const convertFormDataToString = ({
   name,
-  email = '',
   phone,
-  privacyPolicy,
+  email = '',
 }: formDataType) => {
   return `
-  \nІм'я та прізвище: ${name}
-  \nНомер телефону: ${phone}
-  \nПошта: ${email ? email : 'Не надано'}
+  Ім'я та прізвище: ${name}
+  %0AНомер телефону: ${phone} 
+  %0AПошта: ${email ? email : 'Не надано'}
   `;
 };

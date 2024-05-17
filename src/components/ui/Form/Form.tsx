@@ -72,10 +72,9 @@ function Form() {
           {text}
         </p>
         <form onSubmit={handleSubmit(onSubmit)}>
-          {inputs.map(({ name, type, placeholder }, index) => (
+          {inputs.map(({ name, placeholder }, index) => (
             <FormInput
               key={index}
-              type={type}
               placeholder={placeholder}
               register={register}
               name={name}

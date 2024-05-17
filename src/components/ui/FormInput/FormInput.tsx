@@ -4,13 +4,7 @@ import { FormInputProps } from './FormInput.types';
 
 import style from './FormInput.module.css';
 
-function FormInput({
-  type,
-  placeholder,
-  error,
-  name,
-  register,
-}: FormInputProps) {
+function FormInput({ placeholder, error, name, register }: FormInputProps) {
   return (
     <label
       className={classNames(
@@ -19,7 +13,6 @@ function FormInput({
       )}
     >
       <input
-        type={type}
         autoComplete="off"
         placeholder={placeholder}
         {...register(name)}

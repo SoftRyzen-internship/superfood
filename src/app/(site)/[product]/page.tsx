@@ -17,11 +17,12 @@ export const dynamic = 'error';
 export const revalidate = false;
 
 export function generateStaticParams() {
-  return data.productSlugs.map(product => ({ params: { product } }));
+  return data.productSlugs.map(product => {
+    return { product };
+  });
 }
 
-async function Product({ params }: ProductProps) {
-  const product = params.product;
+async function Product({ params: { product } }: ProductProps) {
   const content = await getProduct();
 
   return (
@@ -30,7 +31,7 @@ async function Product({ params }: ProductProps) {
       <section className="bg-input py-5">
         <div className="container">
           <ProductDescription productId={product} />
-          <PreferenceAction productId={product}/>
+          <PreferenceAction productId={product} />
           <ActionActiveComponents productId={product} />
         </div>
       </section>

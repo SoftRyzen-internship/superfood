@@ -18,6 +18,7 @@ function Slider({ slides, isProductsSlider }: SliderProps) {
   const slidesToShowTabl = isProductsSlider ? 1 : 2;
   const slidesToShowDesc = isProductsSlider ? 1.99 : 3;
   const gapToShowDesc = isProductsSlider ? '120px' : '24px';
+  const centeredSlides = isProductsSlider ? true : false;
   return (
     <div
       className={classNames('relative', 'mx-[auto]', {
@@ -30,7 +31,6 @@ function Slider({ slides, isProductsSlider }: SliderProps) {
           clickable: true,
         }}
         grabCursor={true}
-        centeredSlides={true}
         modules={[Navigation]}
         initialSlide={1}
         navigation={{
@@ -41,13 +41,16 @@ function Slider({ slides, isProductsSlider }: SliderProps) {
         breakpoints={{
           768: {
             slidesPerView: slidesToShowTabl,
+            centeredSlides: centeredSlides,
           },
           1280: {
             slidesPerView: slidesToShowDesc,
             spaceBetween: gapToShowDesc,
+            centeredSlides: centeredSlides,
           },
           1560: {
             slidesPerView: 3,
+            centeredSlides: centeredSlides,
           },
         }}
       >

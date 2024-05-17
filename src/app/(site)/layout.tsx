@@ -26,7 +26,7 @@ export const metadata: Metadata = {
         url: data.image.url,
         width: 1200,
         height: 630,
-        alt: data.image.url,
+        alt: data.image.alt,
       },
     ],
   },

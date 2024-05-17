@@ -1,5 +1,5 @@
 import React from 'react';
-import { getProduct } from '../../../../sanity/requests';
+import { getProduct } from '@/../sanity/requests';
 import HeroFormulaicSection from '@/sections/HeroFormulaicSection';
 import DescriptionSection from '@/sections/DescriptionSection';
 import data from '@/data/common.json';

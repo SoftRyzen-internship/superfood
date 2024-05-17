@@ -1,6 +1,3 @@
-export type ProdPreferenceProps = {
-  id: number;
-  preference: string;
+export type ProdPrefernceProps = {
+  preferences: string[];
 };
-
-export type DataProps = ProdPreferenceProps[];

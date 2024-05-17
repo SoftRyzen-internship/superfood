@@ -6,3 +6,5 @@ NEXT_PUBLIC_SANITY_DATASET="production"
 
 NEXT_PUBLIC_TELEGRAM_BASE_URL="https://api.telegram.org/bot6758194750:AAE1vGGfsHJWBmAsiUw46u7Gnx0uTAwhSqs/"
 NEXT_PUBLIC_TELEGRAM_CHAT_ID="-4274694677"
+
+BASE_APP_URL="https://superfood.vercel.app/"

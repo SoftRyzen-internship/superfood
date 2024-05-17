@@ -2,6 +2,9 @@
   "namePolicy": "Політика конфіденційності",
   "linkPolicy": "/policy",
 
+  "nameHomePage": "Головна",
+  "linkMain": "/",
+
   "nameGOIT": "GOIT",
   "linkGOIT": "https://goit.global/ua/",
 

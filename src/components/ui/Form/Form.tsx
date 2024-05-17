@@ -18,6 +18,8 @@ import { schema } from '@/utils/schema';
 
 import form from '@/data/form.json';
 
+import style from './Form.module.css';
+
 function Form() {
   const {
     title,
@@ -93,7 +95,7 @@ function Form() {
             label={buttonText}
             variant="primary"
             type="submit"
-            className=" mx-auto mt-8 block"
+            className={style.buttonCenter}
           />
         </form>
       </div>

@@ -1,8 +1,9 @@
 import Slider from '@/components/common/Slider/Slider';
 import ProductCard from '@/components/ui/ProductCard';
-import { products } from '@/data/products.json';
+import productCards from '@/data/products.json';
 import styles from './Products.module.css';
 
+const { products } = productCards;
 const slides = products.map((product, i) => ({
   id: i,
   content: (

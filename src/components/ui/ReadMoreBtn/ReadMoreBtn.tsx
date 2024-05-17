@@ -36,7 +36,7 @@ function ReadMoreBtn({
           <h2 className="font-roboto font-bold text-lg text-green leading-[1.3] mb-4 uppercase md:text-xl xl:text-[26px]">
             {data.productDescriptionTitle}
           </h2>
-          <ul className="font-geologica font-light text-sm text-black leading-[1.3] tracking-tight  md:text-base md:text-lg">
+          <ul className="font-geologica font-light text-sm text-black leading-[1.3] tracking-tight  md:text-base xl:text-lg">
             {description?.text.map(item => (
               <li key={item.key} className="mb-3">
                 {item.part}

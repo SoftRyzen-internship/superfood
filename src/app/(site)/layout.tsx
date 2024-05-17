@@ -8,14 +8,17 @@ import Header from '@/layout/Header';
 import data from '@/data/metadata.json';
 import { env } from 'process';
 
+const BASE_APP_URL = process.env.BASE_APP_URL as string;
+
 export const metadata: Metadata = {
+  metadataBase: new URL(BASE_APP_URL),
   title: data.title,
   description: data.description,
   keywords: data.keywords,
   icons: data.icons,
   openGraph: {
     type: 'website',
-    url: env.BASE_APP_URL,
+    url: BASE_APP_URL,
     title: data.ogTitle,
     description: data.ogDescription,
     siteName: data.ogSiteName,

@@ -12,9 +12,7 @@ export const metadata: Metadata = {
   title: data.title,
   description: data.description,
   keywords: data.keywords,
-  icons: {
-    icon: data.icon,
-  },
+  icons: data.icons,
   openGraph: {
     type: 'website',
     url: env.BASE_APP_URL,

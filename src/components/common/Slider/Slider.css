@@ -1,5 +1,5 @@
-.swiper-slide-prev,
-.swiper-slide-next {
+.swiper-slide-prev.product,
+.swiper-slide-next.product {
     opacity: 0.5;
 }
 

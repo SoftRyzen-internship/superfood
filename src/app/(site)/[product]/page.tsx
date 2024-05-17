@@ -1,9 +1,7 @@
 import React from 'react';
 import { getProduct } from '../../../../sanity/requests';
 import HeroFormulaicSection from '@/sections/HeroFormulaicSection';
-import ProductDescription from '@/components/ui/ProductDescription';
-import ActionActiveComponents from '@/components/ui/ActionActiveComponents';
-
+import DescriptionSection from '@/sections/DescriptionSection';
 import data from '@/data/common.json';
 
 export interface ProductProps {
@@ -25,12 +23,7 @@ async function Product({ params }: ProductProps) {
   return (
     <>
       <HeroFormulaicSection productId={product} productData={content} />
-      <section className="bg-input py-5">
-        <div className="container">
-          <ProductDescription productId={product} />
-          <ActionActiveComponents productId={product} />
-        </div>
-      </section>
+      <DescriptionSection productId={product} />
     </>
   );
 }

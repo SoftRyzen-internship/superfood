@@ -1,4 +1,6 @@
-{
+[
+  {
+    "id": "green_formula",
     "productAction": [
       {
         "id": 1,
@@ -42,4 +44,4 @@
       }
     ]
   }
-  
+]

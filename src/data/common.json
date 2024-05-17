@@ -2,7 +2,8 @@
   "buttonsLabel": {
     "main": "Залишити заявку",
     "primary": "Детальніше",
-    "secondary": "Читати більше"
+    "secondary": "Читати більше",
+    "secondary2": "Згорнути"
   },
   "email": "alisagrushkovska@gmail.com",
   "ariaLabel": {

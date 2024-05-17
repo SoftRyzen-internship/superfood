@@ -48,25 +48,27 @@ function Modal({
           />
           {/* Full-screen container to center the panel */}
           <div className="fixed inset-0 flex w-screen h-screen items-center justify-center overflow-y-auto">
-            <DialogPanel
-              className={classNames(
-                ' relative',
+            <div>
+              <DialogPanel
+                className={classNames(
+                  ' relative overflow-hidden overflow-y-auto',
 
-                variant === 'burger' && 'w-full h-screen',
-                (variant === 'comments' || variant === 'simple') &&
-                  'bg-white max-w-[328px] max-h-[90%] rounded-xl md:max-w-[700px] xl:max-w-[800px]',
-                className
-              )}
-            >
-              {children}
+                  variant === 'burger' && 'w-full h-screen',
+                  (variant === 'comments' || variant === 'simple') &&
+                    'bg-white max-w-[328px] max-h-[90%] rounded-xl md:max-w-[700px] xl:max-w-[800px]',
+                  className
+                )}
+              >
+                {children}
+              </DialogPanel>
               {variant === 'comments' && (
                 <Icon
                   width={31}
                   height={21}
-                  className="absolute bottom-[-21px] left-10  w-[31px] h-[21px]"
+                  className="relative top-[-0.3px] left-10  w-[31px] h-[21px]"
                 />
               )}
-            </DialogPanel>
+            </div>
           </div>
         </Dialog>
       </Transition>

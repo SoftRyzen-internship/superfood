@@ -1,0 +1,56 @@
+.swiper-slide-prev.product,
+.swiper-slide-next.product {
+    opacity: 0.5;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 592px;
+}
+
+.swiper-slide-prev,
+.swiper-slide-next {
+    display: flex;
+    align-items: center;
+}
+
+
+
+@media screen and (min-width:1280px) and (max-width: 1560px) {
+    .swiper-slide-prev.product {
+        position: relative;
+        left: 6%;
+    }
+
+    .swiper-slide-next.product {
+        position: relative;
+        right: 6%;
+    }
+}
+
+
+
+.custom-next,
+.custom-prev {
+    padding: 12px;
+    border-radius: 50%;
+    border: 1px solid currentColor;
+}
+
+.custom-prev:hover,
+.custom-prev:focus,
+.custom-next:hover,
+.custom-next:focus {
+    background-color: #209A41;
+}
+
+.custom-prev {
+    transform: rotate(180deg);
+}
+
+.btn-wrapper {
+    transform: translateX(50%);
+    transform: translateY(50%);
+}

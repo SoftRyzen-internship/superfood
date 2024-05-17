@@ -1,0 +1,37 @@
+.reviewsBg {
+    background-image: url('/images/bg/hero/bg_yellow_m@1x.webp');
+    background-size: cover;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .reviewsBg {
+      background-image: url('/images/bg/hero/bg_yellow_m@2x.webp');
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .reviewsBg {
+      background-image: url('/images/bg/hero/bg_yellow_t@1x.webp');
+      background-size: cover;
+    }
+    }
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      .reviewsBg {
+        background-image: url('/images/bg/hero/bg_yellow_t@2x.webp');
+      }
+    }
+  @media screen and (min-width: 1280px) {
+    .reviewsBg {
+      background-image: url('/images/bg/hero/bg_yellow_d@1x.webp');
+    }
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      .reviewsBg {
+        background-image: url('/images/bg/hero/bg_yellow_d@2x.webp');
+      }
+    }
+  }
+  

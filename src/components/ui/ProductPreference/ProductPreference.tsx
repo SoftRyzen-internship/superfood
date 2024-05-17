@@ -1,14 +1,14 @@
 import React from 'react';
-import { DataProps } from './ProductPreference.types';
+import {ProdPrefernceProps } from './ProductPreference.types';
 import Svg from '@/../public/icons/BenefitsGoodsLeaf.svg';
 
-function ProductPreference({ data }: { data: DataProps }) {
+function ProductPreference({ preferences }: ProdPrefernceProps) {
   return (
     <ul className='flex flex-col gap-4 xl:gap-3'>
-      {data.productPreference.map(product => (
-        <li key={product.id} className='flex gap-2 font-geologica font-light text-black text-[16px] leading-[21.6px] md:gap-3 xl:text-[18px] xl:leading-[24.3px] transition'>
+      {preferences.map((preference, index) => (
+        <li key={index} className='flex gap-2 font-geologica font-light text-black text-[16px] leading-[21.6px] md:gap-3 xl:text-[18px] xl:leading-[24.3px] transition'>
           <Svg /> 
-          {product.preference}
+          {preference}
         </li>
       ))}
     </ul>
@@ -16,3 +16,4 @@ function ProductPreference({ data }: { data: DataProps }) {
 }
 
 export default ProductPreference;
+

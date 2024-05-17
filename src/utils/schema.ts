@@ -19,8 +19,7 @@ export const schema = yup.object({
     .required(required)
     .min(2, min)
     .max(30, max)
-    .matches(/[А-ЯҐЄІЇа-яґєіїA-Za-z\s'-]+/, namePattern.symbols)
-    .matches(/^[А-ЯҐЄІЇа-яґєіїA-Za-z\s]+$/, namePattern.letters),
+    .matches(/^[a-zA-Zа-яА-Я\s'-]+$/, namePattern),
   phone: yup
     .string()
     .required(required)

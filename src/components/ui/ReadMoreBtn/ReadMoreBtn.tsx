@@ -20,12 +20,13 @@ function ReadMoreBtn({
   description: Description | undefined;
 }) {
   const { burgerClose } = commonData.ariaLabel;
+  const { secondary, secondary2 } = commonData.buttonsLabel;
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div className="md:hidden">
       <Button
-        label="Читати далі"
+        label={secondary}
         variant="readmore"
         className="mt-4"
         onClick={() => setIsOpen(true)}
@@ -44,7 +45,7 @@ function ReadMoreBtn({
           </ul>
 
           <Button
-            label="Закрити"
+            label={secondary2}
             variant="readmore"
             className="mt-4"
             onClick={() => setIsOpen(false)}

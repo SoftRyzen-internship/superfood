@@ -1,14 +1,18 @@
-## Superfood
+# Superfood
 
   <a href="https://superfood.vercel.app/">
     <img src="/public/images/og-image/ogp-image.jpg" alt="Superfood" />
   </a>
 
+## 
+
 Superfood - the site of a Ukrainian company that offers superfoods for your
 health. It is built with Next.js, Tailwind CSS, TypeScript — a powerful and
 modern stack that provides scalability, performance, and ease of maintenance.
 The synergy between these technologies enables fast development, an excellent
-developer experience, and flexibility in content management and presentations. .
+developer experience, and flexibility in content management and presentations. 
+
+##
 
 <details>
   <summary>Table of Contents</summary>
@@ -197,7 +201,7 @@ $ npm run dev
             href="https://react-hook-form.com/"
           >
             <img
-              src="https://img.shields.io/badge/react_hook_form-black?style=for-the-badge&logo=react%20hook%20form&labelColor=grey"
+              src="https://img.shields.io/badge/react_hook_form-black?style=for-the-badge&logo=react%20hook%20form"
               alt="React hook form"
             />
           </a>

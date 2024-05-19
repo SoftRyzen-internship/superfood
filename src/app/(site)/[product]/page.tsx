@@ -7,6 +7,8 @@ import PreferenceAction from '@/components/ui/PreferenceAction';
 import ActionActiveComponents from '@/components/ui/ActionActiveComponents';
 
 import data from '@/data/common.json';
+import Contacts from '@/sections/Contacts';
+import Products from '@/sections/Products';
 
 export interface ProductProps {
   params: { product: string };
@@ -35,6 +37,8 @@ async function Product({ params: { product } }: ProductProps) {
           <ActionActiveComponents productId={product} />
         </div>
       </section>
+      <Products />
+      <Contacts />
     </>
   );
 }

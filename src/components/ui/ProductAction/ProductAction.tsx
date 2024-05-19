@@ -7,7 +7,7 @@ function ProductAction({ actions }: ActionProps) {
       {actions.map((action, index) => (
         <li
           key={index}
-          className="font-geologica font-light text-black border border-strokeGreen rounded-lg py-2 px-3 text-[14px] leading-[18.9px] transition xl:font-[250] xl:text-[16] xl:leading-[22.4px]"
+          className="font-geologica font-light text-black border border-strokeGreen rounded-lg py-2 px-3 text-[14px] leading-[18.9px] transition smOnly:w-full xl:font-[250] xl:text-[16] xl:leading-[22.4px]"
         >
           {action}
         </li>

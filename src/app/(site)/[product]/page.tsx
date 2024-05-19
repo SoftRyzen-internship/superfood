@@ -2,6 +2,8 @@ import React from 'react';
 import { getProduct } from '@/../sanity/requests';
 import HeroFormulaicSection from '@/sections/HeroFormulaicSection';
 import DescriptionSection from '@/sections/DescriptionSection';
+import Contacts from '@/sections/Contacts';
+import Products from '@/sections/Products';
 import data from '@/data/common.json';
 
 export interface ProductProps {
@@ -13,17 +15,20 @@ export const dynamic = 'error';
 export const revalidate = false;
 
 export function generateStaticParams() {
-  return data.productSlugs.map(product => ({ params: { product } }));
+  return data.productSlugs.map(product => {
+    return { product };
+  });
 }
 
-async function Product({ params }: ProductProps) {
-  const product = params.product;
+async function Product({ params: { product } }: ProductProps) {
   const content = await getProduct();
 
   return (
     <>
       <HeroFormulaicSection productId={product} productData={content} />
       <DescriptionSection productId={product} />
+      <Products />
+      <Contacts />
     </>
   );
 }

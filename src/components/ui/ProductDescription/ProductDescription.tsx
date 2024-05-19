@@ -36,7 +36,7 @@ function ProductDescription({ productId }: ProductDescriptionProps) {
       {productDescription && (
         <ul
           ref={textRef}
-          className="font-geologica font-light text-sm text-black leading-[1.3] tracking-tight line-clamp-[14] md:line-clamp-none md:text-base md:text-lg"
+          className="font-geologica font-light text-sm text-black leading-[1.3] tracking-tight line-clamp-[14] md:line-clamp-none md:text-base xl:text-lg"
         >
           {productDescription.text.map(item => (
             <li key={item.key} className="mb-4">

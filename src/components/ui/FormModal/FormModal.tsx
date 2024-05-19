@@ -1,9 +1,13 @@
+import classNames from 'classnames';
+
 import Modal from '@/components/common/Modal';
 import CloseIcon from '/public/icons/Close.svg';
 import Button from '../Button';
 
 import { FormModalProps } from './FormModal.types';
-import classNames from 'classnames';
+
+import data from '@/data/form.json';
+const { ariaLabelCloseIcon } = data;
 
 function FormModal({
   open,
@@ -21,9 +25,9 @@ function FormModal({
       className="px-4  pb-8 md:px-10 md:pb-10 md:w-[526px] xl:px-[102px] xl:w-[677px]"
     >
       <CloseIcon
-        aria-label="закрити діалогове вікно"
+        aria-label={ariaLabelCloseIcon}
         onClick={handleClose}
-        className="ml-auto w-6 h-6 mb-6 absolute right-4 top-6 md:right-6"
+        className="ml-auto w-6 h-6 mb-6 absolute right-4 top-6 stroke-green md:right-6 md:w-10 md:h-10"
       />
       <h3
         className={classNames(

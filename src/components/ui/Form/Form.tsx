@@ -18,6 +18,8 @@ import { schema } from '@/utils/schema';
 
 import form from '@/data/form.json';
 
+import style from './Form.module.css';
+
 function Form() {
   const {
     title,
@@ -72,10 +74,9 @@ function Form() {
           {text}
         </p>
         <form onSubmit={handleSubmit(onSubmit)}>
-          {inputs.map(({ name, type, placeholder }, index) => (
+          {inputs.map(({ name, placeholder }, index) => (
             <FormInput
               key={index}
-              type={type}
               placeholder={placeholder}
               register={register}
               name={name}
@@ -94,7 +95,7 @@ function Form() {
             label={buttonText}
             variant="primary"
             type="submit"
-            className=" mx-auto mt-8 block"
+            className={style.buttonCenter}
           />
         </form>
       </div>

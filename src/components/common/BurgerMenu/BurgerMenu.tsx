@@ -39,7 +39,12 @@ function BurgerMenu({ close }: BurgerMenuProps) {
         </div>
 
         <div className="text-center">
-          <ScrollLink label={main} href="#contacts" variant="secondary" />
+          <ScrollLink
+            label={main}
+            href="#contacts"
+            variant="secondary"
+            onClick={close}
+          />
         </div>
       </div>
 

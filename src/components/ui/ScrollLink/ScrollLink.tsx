@@ -11,13 +11,13 @@ function LinkButton({
   href,
   variant,
   className = '',
-  onClick,
+  // onClick,
   ...rest
 }: LinkButtonProps) {
   return (
     <Link
       {...rest}
-      onClick={onClick}
+      // onClick={onClick}
       href={`/${href}`}
       className={classNames(
         ' text-center font-bold font-geologica uppercase rounded-full inline-block transition-colors cursor-pointer',

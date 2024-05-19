@@ -1,7 +1,7 @@
 # Superfood
 
   <a href="https://superfood.vercel.app/">
-    <img src="/public/images/og-image/ogp-image.jpg" alt="Superfood" />
+    <img src="/public/images/og-image/og-image.jpg" alt="Superfood" />
   </a>
 
 ##

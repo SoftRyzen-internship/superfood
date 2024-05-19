@@ -4,17 +4,17 @@
     <img src="/public/images/og-image/ogp-image.jpg" alt="Superfood" />
   </a>
 
-## 
+##
 
 Superfood - the site of a Ukrainian company that offers superfoods for your
 health. It is built with Next.js, Tailwind CSS, TypeScript — a powerful and
 modern stack that provides scalability, performance, and ease of maintenance.
 The synergy between these technologies enables fast development, an excellent
-developer experience, and flexibility in content management and presentations. 
+developer experience, and flexibility in content management and presentations.
 
 ##
 
-<details>
+<!-- <details> -->
   <summary>Table of Contents</summary>
   <ol>
     <li><a href="#features">Features</a></li>
@@ -22,7 +22,7 @@ developer experience, and flexibility in content management and presentations.
     <li><a href="#technologies">Technologies</a></li>
     <li><a href="#components-api">Components API</a></li>
   </ol>
-</details>
+<!-- </details> -->
 
 ## Features
 

@@ -5,7 +5,7 @@ import ScrollLink from '@/components/ui/ScrollLink/';
 import navList from '@/data/navlist.json';
 
 export interface NavListProps {
-  close: () => void;
+  close?: () => void;
 }
 
 function NavList({ close }: NavListProps) {

@@ -35,7 +35,7 @@ function BurgerMenu({ close }: BurgerMenuProps) {
 
       <div className="mb-[105px] md:mb-[265px] flex-auto">
         <div className="mb-10 md:mb-16">
-          <NavList close={close} />
+          <NavList />
         </div>
 
         <div className="text-center">

@@ -47,7 +47,11 @@ function Modal({
             aria-hidden="true"
           />
           {/* Full-screen container to center the panel */}
-          <div className="fixed inset-0 flex w-screen h-screen items-center justify-center overflow-y-auto">
+          <div
+            className={
+              'fixed inset-0 flex w-screen h-screen flex-col items-center justify-center overflow-y-auto'
+            }
+          >
             <DialogPanel
               className={classNames(
                 ' relative overflow-hidden overflow-y-auto',
@@ -59,14 +63,12 @@ function Modal({
               )}
             >
               {children}
-              {variant === 'comments' && (
-                <Icon
-                  width={31}
-                  height={21}
-                  className="absolute bottom-[-21px] left-10  w-[31px] h-[21px]"
-                />
-              )}
             </DialogPanel>
+            {variant === 'comments' && (
+              <div className="w-[328px] pl-[24px] md:w-[700px] xl:w-[800px]">
+                <Icon width={31} height={21} className="w-[31px] h-[21px] " />
+              </div>
+            )}
           </div>
         </Dialog>
       </Transition>

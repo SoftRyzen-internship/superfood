@@ -20,12 +20,13 @@ function ReadMoreBtn({
   description: Description | undefined;
 }) {
   const { burgerClose } = commonData.ariaLabel;
+  const { secondary, secondary2 } = commonData.buttonsLabel;
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div className="md:hidden">
       <Button
-        label="Читати далі"
+        label={secondary}
         variant="readmore"
         className="mt-4"
         onClick={() => setIsOpen(true)}
@@ -35,7 +36,7 @@ function ReadMoreBtn({
           <h2 className="font-roboto font-bold text-lg text-green leading-[1.3] mb-4 uppercase md:text-xl xl:text-[26px]">
             {data.productDescriptionTitle}
           </h2>
-          <ul className="font-geologica font-light text-sm text-black leading-[1.3] tracking-tight  md:text-base md:text-lg">
+          <ul className="font-geologica font-light text-sm text-black leading-[1.3] tracking-tight  md:text-base xl:text-lg">
             {description?.text.map(item => (
               <li key={item.key} className="mb-3">
                 {item.part}
@@ -44,7 +45,7 @@ function ReadMoreBtn({
           </ul>
 
           <Button
-            label="Закрити"
+            label={secondary2}
             variant="readmore"
             className="mt-4"
             onClick={() => setIsOpen(false)}

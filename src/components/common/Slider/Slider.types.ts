@@ -1,7 +1,7 @@
 import { ReactNode } from 'react';
 
 interface Slide {
-  id: number;
+  id: number | string;
   content: ReactNode;
 }
 

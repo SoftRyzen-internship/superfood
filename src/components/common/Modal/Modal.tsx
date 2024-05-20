@@ -54,7 +54,7 @@ function Modal({
           >
             <DialogPanel
               className={classNames(
-                'relative overflow-hidden overflow-y-auto',
+                ' relative overflow-hidden',
 
                 variant === 'burger' && 'w-full h-screen',
                 (variant === 'comments' || variant === 'simple') &&

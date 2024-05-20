@@ -5,7 +5,10 @@ import Line from '@/../public/icons/Line.svg';
 import hfsData from '@/data/heroFormulaicSection.json';
 import { HeroFormulaicSectionProps } from './HeroFormulaicSection.types';
 
-function HeroFormulaicSection({ productId, productData }: HeroFormulaicSectionProps) {
+function HeroFormulaicSection({
+  productId,
+  productData,
+}: HeroFormulaicSectionProps) {
   const hfs = hfsData.find(item => item.id === productId);
   const price = productData.find(item => item.slug.current === productId);
 
@@ -30,7 +33,11 @@ function HeroFormulaicSection({ productId, productData }: HeroFormulaicSectionPr
           </h1>
           <div className="font-roboto text-black font-bold uppercase text-[18px] leading-[1.30] flex gap-2 items-center mb-6 md:text-[20px] md:mb-8 xl:text-[26px] xl:gap-3 xl:mb-10">
             <p className="md:mr-2 xl:mr-0">{price?.price} ₴</p>
-            <Line width={1} height={16} className="w-px h-3 stroke-button md:h-4 md:stroke-grey" />
+            <Line
+              width={1}
+              height={16}
+              className="w-px h-3 stroke-button md:h-4 md:stroke-grey"
+            />
             <p className="text-grey">{hfs.weight}</p>
           </div>
           <h3 className="font-roboto text-black font-bold uppercase text-[18px] leading-[1.30] mb-3 md:text-[20px] xl:text-[26px]">
@@ -43,7 +50,8 @@ function HeroFormulaicSection({ productId, productData }: HeroFormulaicSectionPr
           <div className="">
             <ScrollLink
               label={hfs.label}
-              href={hfs.to}
+              і
+              href={`${productId}#contacts`}
               variant={'primary'}
               className={
                 'w-full text-[20px] leading-[1.25] md:text-[20px] md:leading-[1.25] md:w-[274px] xl:w-[274px] xl:text-[20px] xl:leading-[1.25]'

@@ -6,7 +6,8 @@ import Button from '../Button';
 
 import { FormModalProps } from './FormModal.types';
 
-import { ariaLabelCloseIcon } from '@/data/form.json';
+import data from '@/data/form.json';
+const { ariaLabelCloseIcon } = data;
 
 function FormModal({
   open,

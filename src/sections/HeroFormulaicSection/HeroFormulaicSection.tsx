@@ -50,7 +50,6 @@ function HeroFormulaicSection({
           <div className="">
             <ScrollLink
               label={hfs.label}
-              і
               href={`${productId}#contacts`}
               variant={'primary'}
               className={

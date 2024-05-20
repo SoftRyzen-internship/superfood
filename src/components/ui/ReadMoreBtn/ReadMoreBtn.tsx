@@ -14,7 +14,11 @@ import commonData from '@/data/common.json';
 import data from '@/data/productDescription.json';
 import { Description } from '../ProductDescription/ProductDescription.types';
 
-function ReadMoreBtn({ description }: { description: Description | undefined }) {
+function ReadMoreBtn({
+  description,
+}: {
+  description: Description | undefined;
+}) {
   const { burgerClose } = commonData.ariaLabel;
   const { secondary, secondary2 } = commonData.buttonsLabel;
   const [isOpen, setIsOpen] = useState(false);
@@ -53,7 +57,12 @@ function ReadMoreBtn({ description }: { description: Description | undefined }) 
           aria-label={burgerClose}
           onClick={() => setIsOpen(false)}
         >
-          <CloseIcon width={24} height={24} stroke="#CADAB0" className="w-6 h-6 md:w-10 md:h-10" />
+          <CloseIcon
+            width={24}
+            height={24}
+            stroke="#CADAB0"
+            className="w-6 h-6 md:w-10 md:h-10"
+          />
         </button>
       </Modal>
     </div>

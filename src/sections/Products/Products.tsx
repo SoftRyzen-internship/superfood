@@ -20,7 +20,10 @@ const slides = products.map((product, i) => ({
 }));
 function Products() {
   return (
-    <section id="products" className={`bg-green ${styles.container}`}>
+    <section
+      id="products"
+      className={`bg-green overflow-hidden ${styles.container}`}
+    >
       <Slider slides={slides} isProductsSlider={true} />
     </section>
   );

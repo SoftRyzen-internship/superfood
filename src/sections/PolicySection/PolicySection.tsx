@@ -1,44 +1,17 @@
-import { PolicyContentProps } from './PolicySection.types';
+import { PortableText } from '@portabletext/react';
+import CustomComponents from '@/components/ui/CustomComponents';
+import { PolicyProps } from './PolicySection.types';
 
-function PolicySection({ content }: PolicyContentProps) {
-  let counter = 0;
-
+function PolicySection({ content, title }: PolicyProps) {
   return (
     <section className="pt-[140px] pb-12 md:pt-[192px] md:pb-20 xl:pt-[212px]">
       <div className="container md:px-[70px] xl:px-[136px]">
-        {content ? (
-          <div key={content._id}>
-            <h1 className="font-roboto text-green text-[18px] font-bold leading-[1.30] uppercase mb-10 md:text-[24px] md:leading-[1.15] md:text-center md:mb-14 md:w-[580px] xl:w-full xl:text-[30px] xl:mb-16">
-              {content.title}
-            </h1>
-            {content.description.map((item, index) => (
-              <div key={index}>
-                {item.children.map(child => {
-                  const element =
-                    counter % 2 === 0 ? (
-                      <p
-                        key={counter}
-                        className="font-geologica text-textBody font-light text-[14px] leading-[1.35] tracking-[-0.28px] mb-8 md:text-[16px] md:tracking-[-0.32px] md:mb-10 xl:text-[18px] xl:tracking-[-0.36px]"
-                      >
-                        {child.text}
-                      </p>
-                    ) : (
-                      <h2
-                        key={counter}
-                        className="font-roboto text-green text-[14px] font-bold leading-[1.15] uppercase mb-4 md:text-[16px] md:leading-[1.30] xl:text-[20px] xl:mb-6"
-                      >
-                        {child.text}
-                      </h2>
-                    );
-                  counter++;
-                  return element;
-                })}
-              </div>
-            ))}
-          </div>
-        ) : (
-          <div className="font-roboto text-green text-[38px] text-center">Завантаження...</div>
-        )}
+        <h1 className="font-roboto text-green text-[18px] font-bold leading-[1.30] uppercase mb-10 md:text-[24px] md:leading-[1.15] md:text-center md:mb-14 md:w-[580px] xl:w-full xl:text-[30px] xl:mb-16">
+          {title}
+        </h1>
+        <div className="prose-h2:font-roboto prose-h2:text-green prose-h2:text-[14px] prose-h2:font-bold prose-h2:leading-[1.15] prose-h2:uppercase prose-h2:mb-4 md:prose-h2:text-[16px] md:prose-h2:leading-[1.30] xl:prose-h2:text-[20px] xl:prose-h2:mb-6 prose-p:font-geologica prose-p:text-textBody prose-p:font-light prose-p:text-[14px] prose-p:leading-[1.35] prose-p:tracking-[-0.28px] prose-p:mb-8 md:prose-p:text-[16px] md:prose-p:tracking-[-0.32px] md:prose-p:mb-10 xl:prose-p:text-[18px] xl:prose-p:tracking-[-0.36px] prose-ul:font-geologica prose-ul:text-textBody prose-ul:font-light prose-ul:list-disc prose-ul:pl-6 prose-ul:text-[14px] prose-ul:leading-[1.35] prose-ul:tracking-[-0.28px] md:prose-ul:text-[16px] md:prose-ul:tracking-[-0.32px] xl:prose-ul:text-[18px] xl:prose-ul:tracking-[-0.36px] prose-a:font-geologica prose-a:text-green prose-a:font-light prose-a:text-[14px] prose-a:leading-[1.35] prose-a:tracking-[-0.28px] md:prose-a:text-[16px] md:prose-a:tracking-[-0.32px] xl:prose-a:text-[18px] xl:prose-a:tracking-[-0.36px]">
+          <PortableText value={content} components={CustomComponents} />
+        </div>
       </div>
     </section>
   );

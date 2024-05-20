@@ -26,9 +26,7 @@ function ProductDescription({ productId }: ProductDescriptionProps) {
     }
   }, [productId]);
 
-  const productDescription = data.productDescriptionList.find(
-    item => item.id === productId
-  );
+  const productDescription = data.productDescriptionList.find(item => item.id === productId);
 
   return (
     <div className="bg-white rounded-xl px-4 py-6 border border-strokeLightGreen md:px-6 xl:px-8">
@@ -41,7 +39,7 @@ function ProductDescription({ productId }: ProductDescriptionProps) {
           className="font-geologica font-light text-sm text-black leading-[1.3] tracking-tight line-clamp-[14] md:line-clamp-none md:text-base xl:text-lg"
         >
           {productDescription.text.map(item => (
-            <li key={item.key} className="mb-3">
+            <li key={item.key} className="mb-4">
               {item.part}
             </li>
           ))}

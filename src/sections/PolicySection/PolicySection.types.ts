@@ -1,15 +1,6 @@
-export interface Description {
-  children: {
-    text: string;
-  }[];
-}
+import { PortableTextBlock } from 'sanity';
 
-export interface PolicyContent {
-  _id: string;
+export type PolicyProps = {
+  content: PortableTextBlock[];
   title: string;
-  description: Description[];
-}
-
-export interface PolicyContentProps {
-  content: PolicyContent | null;
-}
+};

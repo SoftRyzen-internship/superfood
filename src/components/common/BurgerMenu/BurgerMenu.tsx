@@ -35,11 +35,16 @@ function BurgerMenu({ close }: BurgerMenuProps) {
 
       <div className="mb-[105px] md:mb-[265px] flex-auto">
         <div className="mb-10 md:mb-16">
-          <NavList />
+          <NavList close={close} />
         </div>
 
         <div className="text-center">
-          <ScrollLink label={main} href="#contacts" variant="secondary" />
+          <ScrollLink
+            label={main}
+            href="#contacts"
+            variant="secondary"
+            onClick={close}
+          />
         </div>
       </div>
 

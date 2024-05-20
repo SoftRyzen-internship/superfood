@@ -25,11 +25,11 @@ function CardComments({ data }: CardCommentsProps) {
           <div className="flex flex-col gap" key={comment._id}>
             <div className="bg-white rounded-xl flex h-[299px] w-[338px] md:h-[397px] xl:h-[490px]">
               <div className="flex flex-col">
-                <div className="px-6 pt-6 pb-8 md:px-8 md:tp-8 transition">
-                  <h3 className="transition font-geologica text-base font-medium leading-[21.6px] tracking-tighter pb-4 md:pb-5 md:text-[18px] md:leading-[24.3px] xl:text-[20px] xl:leading-[27px]">
+                <div className="px-6 pt-[24px] pb-8 md:px-8 md:pt-[32px] transition">
+                  <h3 className="transition text-black font-geologica text-base font-medium leading-[21.6px] tracking-tighter pb-4 md:pb-5 md:text-[18px] md:leading-[24.3px] xl:text-[20px] xl:leading-[27px]">
                     {comment.reviewer}
                   </h3>
-                  <p className="transition font-geologica text-sm font-light leading-[18.9px] tracking-tighter md:text-[16px] md:leading-[21.6px] xl:text-[18px] xl:leading-[24.3px] line-clamp-[8] md:line-clamp-[9] xl:line-clamp-[12] ">
+                  <p className="transition text-black font-geologica text-sm font-light leading-[18.9px] tracking-tighter md:text-[16px] md:leading-[21.6px] xl:text-[18px] xl:leading-[24.3px] line-clamp-[8] md:line-clamp-[9] xl:line-clamp-[12] ">
                     {comment.comment}
                   </p>
                   {comment.comment.split('').length > 320 && (
@@ -64,10 +64,10 @@ function CardComments({ data }: CardCommentsProps) {
         className='overflow-y-hidden'
       >
         <div className="px-6 py-[56px]">
-          <h3 className="transition font-geologica text-base font-medium leading-[21.6px] tracking-tighter pb-4 md:pb-5 md:text-[18px] md:leading-[24.3px] xl:text-[20px] xl:leading-[27px]">
+          <h3 className="text-black transition font-geologica text-base font-medium leading-[21.6px] tracking-tighter pb-4 md:pb-5 md:text-[18px] md:leading-[24.3px] xl:text-[20px] xl:leading-[27px]">
             {selectedName}
           </h3>
-          <p className="transition font-geologica text-sm font-light leading-[18.9px] tracking-tighter md:text-[16px] md:leading-[21.6px] xl:text-[18px] xl:leading-[24.3px] ">
+          <p className="text-black transition font-geologica text-sm font-light leading-[18.9px] tracking-tighter md:text-[16px] md:leading-[21.6px] xl:text-[18px] xl:leading-[24.3px] ">
             {selectedComment}
           </p>
         </div>

@@ -11,6 +11,7 @@
   "dependencies": {
     "@headlessui/react": "^2.0.3",
     "@hookform/resolvers": "^3.3.4",
+    "@portabletext/react": "^3.0.18",
     "@sanity/client": "^6.17.2",
     "@sanity/image-url": "^1.0.2",
     "@sanity/vision": "^3.40.0",
@@ -23,6 +24,7 @@
     "react-hook-form-persist": "^3.0.0",
     "react-scroll": "^1.9.0",
     "sanity": "^3.40.0",
+    "sanity-plugin-vercel-deploy": "^3.3.4",
     "styled-components": "^6.1.9",
     "swiper": "^11.1.1",
     "yup": "^1.4.0"

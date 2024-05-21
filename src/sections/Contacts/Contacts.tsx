@@ -12,9 +12,9 @@ import style from './Contacts.module.css';
 function Contacts() {
   const { title, owner, ownerImage, ownerText, ownerPosition } = contacts;
   return (
-    <section id="contacts" className={`bg-lightGreen ${style.contactsBg}`}>
+    <section id="contacts" className={`bg-lightGreen  ${style.contactsBg}`}>
       <div
-        className={`container smOnly:pb-0 py-[60px] xl:flex xl:gap-[272px] ${style.vegetablesBg}`}
+        className={`container smOnly:pb-0 py-[60px] md:py-20 xl:py-[120px] xl:flex xl:gap-[272px] ${style.vegetablesBg}`}
       >
         <div>
           <h2 className="font-roboto font-bold text-lightLarge leading-[1.15] uppercase text-center text-green mb-10 md:text-[40px] xl:text-[68px] xl:mb-[47px] xl:text-start">
@@ -37,13 +37,14 @@ function Contacts() {
                 className="mb-8  justify-center md:justify-start xl:mb-[70px]"
               />
             </div>
+            <span className="end-animation-contacts" />
             <div>
               <p
                 className={`smOnly:mx-auto font-geologica font-light text-light tracking-[-0.02em] text-black p-6 rounded-xl bg-[#dcf2b4] w-[312px] relative ${style.lowPartOfReview}  mb-6 md:w-[303px] xl:mb-27px `}
               >
                 {ownerText}
               </p>
-              <div className="smOnly:mb-[60px] smOnly:w-[312px] smOnly:mx-auto flex gap-3 items-center">
+              <div className="smOnly:mb-[60px] smOnly:w-[312px] smOnly:mx-auto flex gap-3 items-center ">
                 <Image
                   src={ownerImage}
                   alt={owner}

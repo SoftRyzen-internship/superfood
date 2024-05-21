@@ -25,9 +25,7 @@ function ProductCard({
           alt={alt}
           width={264}
           height={284}
-          className={classNames(
-            `md:w-[328px] md:h-[352px] xl:w-[381px] xl:h-[409px]`
-          )}
+          className={classNames(`md:w-[328px] md:h-[352px] xl:w-[381px] xl:h-[409px]`)}
         />
       </div>
       <h3 className="font-roboto font-bold text-[22px] leading-[1.15] uppercase  text-white mb-3 md:text-lightLarge xl:mb-3.5 xl:text-3xl ">

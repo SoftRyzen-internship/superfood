@@ -23,7 +23,7 @@ export const schema = yup.object({
   phone: yup
     .string()
     .required(required)
-    .matches(/^(\+38\d{10}|\+370\d{8})$/i, phonePattern),
-  email: yup.string().email(emailPattern),
+    .matches(/^(\s?\+38\d{10}\s?|\s?\+370\d{8}\s?)$/i, phonePattern),
+  email: yup.string().matches(/^\s*[^\s@]+@[^\s@]+\.[^\s@]+\s*$/, emailPattern),
   privacyPolicy: yup.boolean().oneOf([true]).required(),
 });

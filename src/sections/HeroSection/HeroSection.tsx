@@ -16,8 +16,8 @@ function HeroSection() {
         <Image
           className="mx-auto mb-6 w-[328px] h-[234px] md:w-[700px] md:h-[499px] md:mb-16 xl:w-[888px] xl:h-[633px] xl:mb-[91px] xl:hidden"
           src={heroSection.src}
-          width={888}
-          height={633}
+          width={328}
+          height={234}
           priority
           alt={heroSection.alt}
         />

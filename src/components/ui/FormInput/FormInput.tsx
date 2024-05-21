@@ -8,7 +8,7 @@ function FormInput({ placeholder, error, name, register }: FormInputProps) {
   return (
     <label
       className={classNames(
-        'block h-[83px]  mb-[34px]',
+        'block h-[83px] mb-[34px]',
         error[name] && `relative ${style.errorIcon}`
       )}
     >

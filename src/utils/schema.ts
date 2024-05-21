@@ -19,11 +19,11 @@ export const schema = yup.object({
     .required(required)
     .min(2, min)
     .max(30, max)
-    .matches(/[А-ЯҐЄІЇа-яґєіїA-Za-z\s'-]+/, namePattern),
+    .matches(/^[А-ЯҐЄІЇа-яґєіїA-Za-z\s'-]+$/u, namePattern),
   phone: yup
     .string()
     .required(required)
-    .matches(/^\+?3?8?(0\d{9})$/, phonePattern),
-  email: yup.string().email(emailPattern),
+    .matches(/^(\s?\+38\d{10}\s?|\s?\+370\d{8}\s?)$/i, phonePattern),
+  email: yup.string().matches(/^\s*[^\s@]+@[^\s@]+\.[^\s@]+\s*$/, emailPattern),
   privacyPolicy: yup.boolean().oneOf([true]).required(),
 });

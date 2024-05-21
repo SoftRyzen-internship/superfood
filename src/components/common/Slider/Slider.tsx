@@ -37,7 +37,7 @@ function Slider({ slides, isProductsSlider }: SliderProps) {
           nextEl: '.custom-next',
           prevEl: '.custom-prev',
         }}
-        className="w-[100%] mb-[64px] md:mb-[40px] xl:mb-[56px]"
+        className="w-[100%] mb-[40px]"
         breakpoints={{
           768: {
             slidesPerView: slidesToShowTabl,
@@ -77,16 +77,20 @@ function Slider({ slides, isProductsSlider }: SliderProps) {
             'stroke-white text-[#ffffff29]': isProductsSlider,
             'stroke-[#1F7437]  text-[#1f743752]': !isProductsSlider,
           })}
+          aria-label="Previous"
+          type="button"
         >
-          <Chevron />
+          <Chevron width={32} height={32} />
         </button>
         <button
           className={classNames('custom-next', 'border-inherit', {
             'stroke-white text-[#ffffff29]': isProductsSlider,
             'stroke-[#1F7437] text-[#1f743752]': !isProductsSlider,
           })}
+          aria-label="Next"
+          type="button"
         >
-          <Chevron />
+          <Chevron width={32} height={32} />
         </button>
       </div>
     </div>

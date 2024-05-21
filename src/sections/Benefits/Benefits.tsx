@@ -24,7 +24,7 @@ function Benefits() {
   };
 
   return (
-    <section id="benefits" className="bg-white py-[60px] md:py-20 xl:py-40">
+    <section id="benefits" className="bg-white py-[60px] md:py-20 xl:py-[120px]">
       <div className="overflow-hidden">
         <div className="flex flex-col container relative">
           <AnimationComponent
@@ -51,7 +51,7 @@ function Benefits() {
             <div className=" bg-[url('/images/benefits/ThirthFoodBen@2x.webp')] xl:w-[335px] xl:h-[282px]  bg-contain bg-no-repeat smOnly:hidden transition" />
           </AnimationComponent>
           <div className="absolute bg-[url('/images/benefits/ThirthFoodBen@2x.webp')] w-[263px] h-[221px] mt-[617px]  left-[-13%] bg-contain bg-no-repeat smOnly:hidden transition xl:hidden" />
-          <h2 className="section-title transition text-center pb-9 md:pb-16 xl:pb-14">
+          <h2 className="section-title transition text-center pb-8 md:pb-16 xl:pb-14">
             {data.title}
           </h2>
           <ul className="flex flex-col gap-[32px] md:gap-[60px] xl:gap-[120px] items-center">

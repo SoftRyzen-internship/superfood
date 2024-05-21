@@ -18,8 +18,6 @@ import { schema } from '@/utils/schema';
 
 import form from '@/data/form.json';
 
-import style from './Form.module.css';
-
 function Form() {
   const {
     title,
@@ -74,12 +72,13 @@ function Form() {
           {text}
         </p>
         <form onSubmit={handleSubmit(onSubmit)}>
-          {inputs.map(({ name, placeholder }, index) => (
+          {inputs.map(({ name, placeholder, type }, index) => (
             <FormInput
               key={index}
               placeholder={placeholder}
               register={register}
               name={name}
+              type={type}
               error={errors}
             />
           ))}
@@ -95,7 +94,7 @@ function Form() {
             label={buttonText}
             variant="primary"
             type="submit"
-            className={style.buttonCenter}
+            className="mt-8 w-full"
           />
         </form>
       </div>

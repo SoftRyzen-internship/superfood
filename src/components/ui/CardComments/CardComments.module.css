@@ -4,5 +4,8 @@
     width: 100%;
     height: 2px;
     background-color: green;
-  }
-  
+}
+
+.readMore:hover::after {
+    background-color: grey;
+}

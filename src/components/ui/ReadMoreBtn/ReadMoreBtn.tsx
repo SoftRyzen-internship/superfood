@@ -32,7 +32,7 @@ function ReadMoreBtn({
         onClick={() => setIsOpen(true)}
       />
       <Modal variant="simple" isOpen={isOpen} close={() => setIsOpen(false)}>
-        <div className="px-4 pt-12 pb-[26px] h-full">
+        <div className="px-4 pt-12 pb-[24px] h-full">
           <h2 className="font-roboto font-bold text-lg text-green leading-[1.3] mb-4 uppercase md:text-xl xl:text-[26px]">
             {data.productDescriptionTitle}
           </h2>

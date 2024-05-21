@@ -65,7 +65,7 @@ function Modal({
               {children}
             </DialogPanel>
             {variant === 'comments' && (
-              <div className="w-[328px] pl-[24px] md:w-[700px] xl:w-[800px]">
+              <div className="w-[328px] relative top-[-0.5px] pl-[24px] md:w-[700px] xl:w-[800px]">
                 <Icon width={31} height={21} className="w-[31px] h-[21px] " />
               </div>
             )}

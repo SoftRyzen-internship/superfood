@@ -1,4 +1,5 @@
 export interface LogoProps {
-    path: 'header' | 'footer';
-    classNames?: string;
+  path: 'header' | 'footer';
+  close?: () => void;
+  classNames?: string;
 }

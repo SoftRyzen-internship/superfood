@@ -12,7 +12,6 @@ export default function Home() {
   return (
     <main>
       <HeroSection />
-      <HeroParallax />
       <Benefits />
       <Products />
       <CompanyAdvantageSection />

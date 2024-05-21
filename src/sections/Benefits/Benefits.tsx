@@ -34,7 +34,7 @@ function Benefits() {
           >
             <div className="absolute bg-[url('/images/benefits/FirstFoodBen@2x.webp')]  xl:w-[345px] xl:h-[332px] bg-contain bg-no-repeat smOnly:hidden transition" />
           </AnimationComponent>
-          <div className="absolute bg-[url('/images/benefits/FirstFoodBen@2x.webp')] w-[276px] h-[266px] mt-[57px] left-[-19%] xl:w-[345px] xl:h-[332px] xl:mt-[65px] xl:left-[-11%] bg-contain bg-no-repeat smOnly:hidden transition xl:hidden" />
+          <div className="absolute bg-[url('/images/benefits/FirstFoodBen@2x.webp')] w-[276px] h-[266px] mt-[57px] left-[-19%] bg-contain bg-no-repeat smOnly:hidden transition xl:hidden" />
           <AnimationComponent
             startValue={200}
             end=".end-animation-benefits"
@@ -42,7 +42,7 @@ function Benefits() {
           >
             <div className=" bg-[url('/images/benefits/SecondFoodBen@2x.webp')] xl:w-[372px] xl:h-[373px] bg-contain bg-no-repeat " />
           </AnimationComponent>
-          <div className="absolute bg-[url('/images/benefits/SecondFoodBen@2x.webp')] w-[292px] h-[293px] mt-[363px] right-[-22%] xl:w-[372px] xl:h-[373px] xl:mt-[444px] xl:right-[-12%] bg-contain bg-no-repeat smOnly:hidden transition xl:hidden" />
+          <div className="absolute bg-[url('/images/benefits/SecondFoodBen@2x.webp')] w-[292px] h-[293px] mt-[363px] right-[-22%]  bg-contain bg-no-repeat smOnly:hidden transition xl:hidden" />
           <AnimationComponent
             startValue={-200}
             end=".end-animation-benefits"
@@ -50,7 +50,7 @@ function Benefits() {
           >
             <div className=" bg-[url('/images/benefits/ThirthFoodBen@2x.webp')] xl:w-[335px] xl:h-[282px]  bg-contain bg-no-repeat smOnly:hidden transition" />
           </AnimationComponent>
-          <div className="absolute bg-[url('/images/benefits/ThirthFoodBen@2x.webp')] w-[263px] h-[221px] mt-[617px]  left-[-13%] xl:w-[335px] xl:h-[282px] xl:mt-[896px] xl:left-[-8%] bg-contain bg-no-repeat smOnly:hidden transition xl:hidden" />
+          <div className="absolute bg-[url('/images/benefits/ThirthFoodBen@2x.webp')] w-[263px] h-[221px] mt-[617px]  left-[-13%] bg-contain bg-no-repeat smOnly:hidden transition xl:hidden" />
           <h2 className="section-title transition text-center pb-9 md:pb-16 xl:pb-14">
             {data.title}
           </h2>

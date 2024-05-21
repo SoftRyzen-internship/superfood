@@ -26,7 +26,7 @@ function FAQSection() {
           />
         </AnimationComponent>
         <Image
-          className="w-[135px] h-[135px] absolute right-[-49px] bottom-[-146px] md:w-[236px] md:h-[236px] md:right-[-75px] md:bottom-[-248px] xl:w-[322px] xl:h-[322px] xl:right-[-179px] xl:bottom-[-226px]"
+          className="w-[135px] h-[135px] absolute right-[-49px] bottom-[-146px] md:w-[236px] md:h-[236px] md:right-[-75px] md:bottom-[-239px] xl:hidden"
           src={faq.src}
           width={322}
           height={322}

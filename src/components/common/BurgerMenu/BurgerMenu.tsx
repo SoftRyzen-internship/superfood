@@ -19,8 +19,8 @@ function BurgerMenu({ close }: BurgerMenuProps) {
 
   return (
     <div className={classNames('container xl:hidden w-full flex flex-col')}>
-      <div className="flex py-[30px] justify-between items-center mb-9 md:mb-[148px] md:py-[43px]">
-        <Logo path="header" />
+      <div className="flex py-[28px] justify-between items-center mb-9 md:mb-[148px] md:py-[36px]">
+        <Logo path="header" close={close} />
         <button type="button" aria-label={burgerClose} onClick={close}>
           <CloseIcon
             width={24}

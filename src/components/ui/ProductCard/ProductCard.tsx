@@ -18,16 +18,14 @@ function ProductCard({
   buttonText,
 }: ProductCardProps) {
   return (
-    <div className="flex flex-col items-center w-full main h-[480px] md:h-[555px] xl:h-[626px]">
+    <div className="flex flex-col items-center w-full main h-[486px] md:h-[555px] xl:h-[626px]">
       <div className={` relative  mb-4 flex justify-center md:mb-5 `}>
         <Image
           src={img}
           alt={alt}
           width={264}
           height={284}
-          className={classNames(
-            `md:w-[328px] md:h-[352px] xl:w-[381px] xl:h-[409px]`
-          )}
+          className={classNames(`md:w-[328px] md:h-[352px] xl:w-[381px] xl:h-[409px]`)}
         />
       </div>
       <h3 className="font-roboto font-bold text-[22px] leading-[1.15] uppercase  text-white mb-3 md:text-lightLarge xl:mb-3.5 xl:text-3xl ">

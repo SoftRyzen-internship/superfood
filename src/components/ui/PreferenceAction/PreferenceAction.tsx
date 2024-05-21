@@ -15,15 +15,15 @@ function PreferenceAction({ productId }: PreferenceActionProps) {
   }
 
   return (
-    <div className="container grid gap-12 transition xl:grid-cols-2">
+    <div className="grid gap-12 transition xl:grid-cols-2">
       <div className="flex flex-col gap-6 transition">
-        <h2 className="font-bold font-geologica text-[18px] leading-[23.4px] text-green md:text-[20px] md:leading-[26px] xl:text-[26px] xl:leading-[33.8px] transition">
+        <h2 className="font-bold font-roboto uppercase text-[18px] leading-[23.4px] text-green md:text-[20px] md:leading-[26px] xl:text-[26px] xl:leading-[33.8px] transition">
           {dataPreference.title}
         </h2>
         <ProductPreference preferences={pd.preference} />
       </div>
       <div className="flex flex-col gap-6 transition">
-        <h2 className="font-bold font-geologica text-[18px] leading-[23.4px] text-green md:text-[20px] md:leading-[26px] xl:text-[26px] xl:leading-[33.8px] transition">
+        <h2 className="font-bold font-roboto uppercase text-[18px] leading-[23.4px] text-green md:text-[20px] md:leading-[26px] xl:text-[26px] xl:leading-[33.8px] transition">
           {dataAction.title}
         </h2>
         <ProductAction actions={ad.action} />

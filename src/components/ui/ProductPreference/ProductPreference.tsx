@@ -4,7 +4,7 @@ import Svg from '@/../public/icons/BenefitsGoodsLeaf.svg';
 
 function ProductPreference({ preferences }: ProdPrefernceProps) {
   return (
-    <ul className="flex flex-col gap-4 md:gap-3">
+    <ul className="flex flex-col gap-4 md:gap-3 smOnly:px-2 smOnly:pb-4">
       {preferences.map((preference, index) => (
         <li
           key={index}

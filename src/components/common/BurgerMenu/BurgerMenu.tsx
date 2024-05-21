@@ -18,9 +18,7 @@ function BurgerMenu({ close }: BurgerMenuProps) {
   const { burgerClose } = data.ariaLabel;
 
   return (
-    <div
-      className={classNames('container xl:hidden w-full h-full flex flex-col')}
-    >
+    <div className={classNames('container xl:hidden w-full flex flex-col')}>
       <div className="flex py-[30px] justify-between items-center mb-9 md:mb-[148px] md:py-[43px]">
         <Logo path="header" />
         <button type="button" aria-label={burgerClose} onClick={close}>
@@ -33,7 +31,7 @@ function BurgerMenu({ close }: BurgerMenuProps) {
         </button>
       </div>
 
-      <div className="mb-[105px] md:mb-[265px] flex-auto">
+      <div className="mb-[105px] md:mb-[225px] flex-auto">
         <div className="mb-10 md:mb-16">
           <NavList close={close} />
         </div>

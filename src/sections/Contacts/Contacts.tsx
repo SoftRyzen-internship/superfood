@@ -3,6 +3,7 @@ import Image from 'next/image';
 import PhoneContacts from '@/components/ui/PhoneContacts';
 import SocialMedia from '@/components/ui/SocialMedia';
 import Form from '@/components/ui/Form';
+import FormParallax from '@/components/ui/FormParallax/FormParallax';
 
 import contacts from '@/data/contacts.json';
 import common from '@/data/common.json';
@@ -12,7 +13,10 @@ import style from './Contacts.module.css';
 function Contacts() {
   const { title, owner, ownerImage, ownerText, ownerPosition } = contacts;
   return (
-    <section id="contacts" className={`bg-lightGreen  ${style.contactsBg}`}>
+    <section
+      id="contacts"
+      className={`bg-lightGreen relative  ${style.contactsBg}`}
+    >
       <div
         className={`container smOnly:pb-0 py-[60px] md:py-20 xl:py-[120px] xl:flex xl:gap-[272px] ${style.vegetablesBg}`}
       >
@@ -64,8 +68,10 @@ function Contacts() {
             </div>
           </div>
         </div>
-        <div className="smOnly:hidden">
+
+        <div className="smOnly:hidden relative">
           <Form />
+          <FormParallax />
         </div>
       </div>
       <div className="md:hidden">

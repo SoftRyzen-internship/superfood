@@ -6,8 +6,6 @@ import Contacts from '@/sections/Contacts';
 import Reviews from '@/sections/Reviews/Reviews';
 import Products from '@/sections/Products';
 
-import HeroParallax from '@/sections/HeroParallax/HeroParallax';
-
 export default function Home() {
   return (
     <main>

@@ -2,6 +2,7 @@ import Image from 'next/image';
 import ScrollLink from '@/components/ui/ScrollLink';
 import styles from './HeroSection.module.css';
 import heroSection from '@/data/heroSection.json';
+import HeroParallax from '../HeroParallax/HeroParallax';
 
 function HeroSection() {
   return (
@@ -13,13 +14,14 @@ function HeroSection() {
           {heroSection.title}
         </h1>
         <Image
-          className="mx-auto mb-6 w-[328px] h-[234px] md:w-[700px] md:h-[499px] md:mb-16 xl:w-[888px] xl:h-[633px] xl:mb-[91px]"
+          className="mx-auto mb-6 w-[328px] h-[234px] md:w-[700px] md:h-[499px] md:mb-16 xl:w-[888px] xl:h-[633px] xl:mb-[91px] xl:hidden"
           src={heroSection.src}
-          width={888}
-          height={633}
+          width={328}
+          height={234}
           priority
           alt={heroSection.alt}
         />
+        <HeroParallax />
         <p className="font-geologica text-black text-center text-light font-light tracking-[-0.32px] mb-6 md:w-[552px] md:mx-auto md:text-lightLarge md:mb-10 md:tracking-[-0.48px] xl:w-[799px] xl:text-extraLarge xl:mb-16 xl:tracking-[-0.64px]">
           {heroSection.description}
         </p>

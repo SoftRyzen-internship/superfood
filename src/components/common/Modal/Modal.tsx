@@ -49,14 +49,14 @@ function Modal({
           {/* Full-screen container to center the panel */}
           <div
             className={
-              'fixed inset-0 flex w-screen h-screen flex-col items-center justify-center overflow-y-auto'
+              'fixed inset-0 flex w-screen h-screen flex-col items-center justify-center'
             }
           >
             <DialogPanel
               className={classNames(
-                'relative overflow-hidden overflow-y-auto',
+                'relative overflow-hidden',
 
-                variant === 'burger' && 'w-full h-screen',
+                variant === 'burger' && 'w-full h-screen overflow-y-auto',
                 (variant === 'comments' || variant === 'simple') &&
                   'bg-white max-w-[328px] max-h-[90%] rounded-xl md:max-w-[700px] xl:max-w-[800px]',
                 className

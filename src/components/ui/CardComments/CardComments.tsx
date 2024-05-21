@@ -1,11 +1,14 @@
 'use client';
 import React, { useState } from 'react';
+
 import Icon from '@/../public/icons/LowPartOfReview.svg';
-import styles from './CardComments.module.css';
-import { CardCommentsProps } from './CardComments.types';
-import Modal from '@/components/common/Modal';
 import CloseIcon from '@/../public/icons/Close.svg';
+
+import Modal from '@/components/common/Modal';
 import readMore from '@/data/comments.json'
+
+import { CardCommentsProps } from './CardComments.types';
+import styles from './CardComments.module.css';
 
 function CardComments({ data }: CardCommentsProps) {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -39,7 +42,7 @@ function CardComments({ data }: CardCommentsProps) {
                           openModal(comment.comment, comment.reviewer)
                         }
                         type="button"
-                        className="transition font-geologica text-green text-sm font-light leading-[18.9px] tracking-tighter text-left relative md:text-[16px] md:leading-[21.6px] xl:text-[18px] xl:leading-[24.3px]"
+                        className="transition font-geologica text-green text-sm font-light hover:text-grey leading-[18.9px] tracking-tighter text-left relative md:text-[16px] md:leading-[21.6px] xl:text-[18px] xl:leading-[24.3px]"
                       >
                         <span className={`${styles.readMore}`}>
                           {readMore.readMore}
@@ -80,7 +83,7 @@ function CardComments({ data }: CardCommentsProps) {
             width={32}
             height={32}
             stroke="#CADAB0"
-            className="w-8 h-8 md:w-10 md:h-10"
+            className="w-8 h-8 md:w-10 md:h-10 hover:stroke-green transition" 
           />
         </button>
       </Modal>

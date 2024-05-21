@@ -6,13 +6,11 @@ import BurgerMenuBtn from '@/components/ui/BurgerMenuBtn';
 import ScrollLink from '@/components/ui/ScrollLink';
 import data from '@/data/common.json';
 
-export interface HeaderProps {}
-
-function Header({}: HeaderProps) {
+function Header() {
   const { main } = data.buttonsLabel;
 
   return (
-    <header className="absolute top-0 left-0 w-full py-[30px] md:py-[43px]">
+    <header className="absolute top-0 left-0 w-full py-7 md:py-9 xl:py-5">
       <div className="container flex justify-between items-center">
         <div className="hidden xl:block">
           <NavList />

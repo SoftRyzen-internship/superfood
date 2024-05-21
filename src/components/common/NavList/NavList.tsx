@@ -2,11 +2,9 @@ import React from 'react';
 
 import ScrollLink from '@/components/ui/ScrollLink/';
 
-import navList from '@/data/navlist.json';
+import { NavListProps } from './NavList.types';
 
-export interface NavListProps {
-  close?: () => void;
-}
+import navList from '@/data/navlist.json';
 
 function NavList({ close }: NavListProps) {
   return (

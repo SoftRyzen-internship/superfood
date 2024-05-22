@@ -24,6 +24,8 @@ export const schema = yup.object({
     .string()
     .required(required)
     .matches(/^(\s?\+38\d{10}\s?|\s?\+370\d{8}\s?)$/i, phonePattern),
-  email: yup.string().matches(/^\s*[^\s@]+@[^\s@]+\.[^\s@]+\s*$/, emailPattern),
+  email: yup
+    .string()
+    .matches(/^$|^\s*[^\s@]+@[^\s@]+\.[^\s@]+\s*$/, emailPattern),
   privacyPolicy: yup.boolean().oneOf([true]).required(),
 });

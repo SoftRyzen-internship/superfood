@@ -2,12 +2,12 @@ import Image from 'next/image';
 import ScrollLink from '@/components/ui/ScrollLink';
 import styles from './HeroSection.module.css';
 import heroSection from '@/data/heroSection.json';
-import HeroParallax from '../HeroParallax/HeroParallax';
+import HeroParallax from '@/components/ui/HeroParallax/HeroParallax';
 
 function HeroSection() {
   return (
     <section
-      className={`bg-lightGreen ${styles.bgHero} pt-[88px] pb-[30px] md:pt-[152px] md:pb-[76px] xl:pt-[148px] xl:pb-[100px]`}
+      className={`bg-lightGreen ${styles.bgHero} pt-[88px] pb-[30px] md:pt-[152px] md:pb-[76px] xl:pt-[148px] xl:pb-[100px] overflow-hidden`}
     >
       <div className="container">
         <h1 className="title w-[328px] mx-auto mb-6 md:w-[597px] md:mb-10 xl:w-[755px] xl:mb-7">

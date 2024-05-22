@@ -30,7 +30,7 @@ function AnimationComponent({
   ];
   return (
     <Plx
-      className={classNames('absolute z-[1]', className && className)}
+      className={classNames('xl:absolute xl:z-10', className && className)}
       parallaxData={parallaxData}
     >
       {children}

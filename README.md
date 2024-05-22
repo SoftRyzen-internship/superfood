@@ -12,6 +12,9 @@ modern stack that provides scalability, performance, and ease of maintenance.
 The synergy between these technologies enables fast development, an excellent
 developer experience, and flexibility in content management and presentations.
 
+[Link](https://www.figma.com/design/AE5tUPeUh3c2EwNQLrL9mj/%D0%A1%D1%83%D0%BF%D0%B5%D1%80%D1%84%D1%83%D0%B4?node-id=1162-118)
+to design layout
+
 ##
 
 <!-- <details> -->

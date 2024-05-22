@@ -26,11 +26,13 @@ function ProductDescription({ productId }: ProductDescriptionProps) {
     }
   }, [productId]);
 
-  const productDescription = data.productDescriptionList.find(item => item.id === productId);
+  const productDescription = data.productDescriptionList.find(
+    item => item.id === productId
+  );
 
   return (
     <div className="bg-white rounded-xl px-4 py-6 border border-strokeLightGreen md:px-6 xl:px-8">
-      <h2 className="font-roboto font-bold text-lg text-green leading-[1.3] mb-4 uppercase md:text-xl xl:text-[26px]">
+      <h2 className="font-roboto font-bold text-lg text-green leading-[1.3] mb-4 uppercase md:mb-6 md:text-xl xl:text-[26px]">
         {data.productDescriptionTitle}
       </h2>
       {productDescription && (

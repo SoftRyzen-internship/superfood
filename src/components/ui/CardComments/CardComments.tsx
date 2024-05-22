@@ -66,7 +66,7 @@ function CardComments({ data }: CardCommentsProps) {
         close={() => setIsModalOpen(false)}
         className="overflow-y-hidden"
       >
-        <div className="px-6 py-[56px]">
+        <div className="px-6 py-[56px] md:px-8 md:py-[66px]">
           <h3 className="text-black transition font-geologica text-base font-medium leading-[21.6px] tracking-tighter pb-4 md:pb-5 md:text-[18px] md:leading-[24.3px] xl:text-[20px] xl:leading-[27px]">
             {selectedName}
           </h3>

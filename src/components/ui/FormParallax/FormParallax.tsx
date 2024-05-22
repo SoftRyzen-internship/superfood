@@ -18,7 +18,7 @@ const parallaxData = [
         property: 'translateX',
       },
       {
-        startValue: 1,
+        startValue: 0,
         endValue: 1,
         property: 'opacity',
         duration: 500,
@@ -30,7 +30,7 @@ const parallaxData = [
 function FormParallax() {
   return (
     <Plx
-      className="absolute z-[-1] top-[55px] left-[-10px] hidden xl:block"
+      className="absolute  top-[55px] left-[-10px] hidden xl:block"
       parallaxData={parallaxData}
     >
       <Image

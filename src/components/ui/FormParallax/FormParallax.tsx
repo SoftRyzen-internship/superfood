@@ -34,11 +34,9 @@ function FormParallax() {
       parallaxData={parallaxData}
     >
       <Image
-        className=""
         src={contactsData.src}
         width={307}
         height={384}
-        priority
         alt={contactsData.alt}
       />
     </Plx>

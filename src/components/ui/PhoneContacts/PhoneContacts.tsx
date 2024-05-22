@@ -2,8 +2,9 @@
 
 import React, { useState, useEffect } from 'react';
 import classNames from 'classnames';
-import { getPhones } from '../../../../sanity/requests';
+
 import { Phone, PhoneProps, PhoneResponse } from './PhoneContacts.types';
+import { getPhones } from '@/../sanity/requests';
 
 function PhoneContacts({ location, classNames: additionalClasses }: PhoneProps) {
   const [contacts, setContacts] = useState<Phone[]>([]);
@@ -19,6 +20,12 @@ function PhoneContacts({ location, classNames: additionalClasses }: PhoneProps) 
       }
     });
   }, []);
+
+  const formatPhoneNumber = (phone: string) => {
+    // Regular expression to match phone number patterns
+    const match = phone.match(/^(\+\d{1,3})(\d{3})(\d{3})(\d{2})(\d{2})$/);
+    return match ? `${match[1]} ${match[2]}-${match[3]}-${match[4]}-${match[5]}` : phone;
+  };
 
   const PhoneStyles =
     location === 'contacts'
@@ -39,7 +46,7 @@ function PhoneContacts({ location, classNames: additionalClasses }: PhoneProps) 
     <div className={PhoneClassesGap}>
       {contacts.map((contact) => (
         <div key={contact.phone} className={PhoneClasses}>
-          <a href={`tel:${contact.phone}`}>{contact.phone}</a>
+          <a href={`tel:${contact.phone}`}>{formatPhoneNumber(contact.phone)}</a>
           <span>&nbsp;|&nbsp;</span>
           <p>{contact.country}</p>
         </div>

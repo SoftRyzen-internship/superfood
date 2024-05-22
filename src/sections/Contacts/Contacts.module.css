@@ -56,6 +56,7 @@
 
   .vegetablesBg {
     background-position: 488px 165px;
+    background-image: none;
   }
 
   @media (min-device-pixel-ratio: 2),

@@ -3,6 +3,7 @@ import Image from 'next/image';
 import PhoneContacts from '@/components/ui/PhoneContacts';
 import SocialMedia from '@/components/ui/SocialMedia';
 import Form from '@/components/ui/Form';
+import FormParallax from '@/components/ui/FormParallax/FormParallax';
 
 import contacts from '@/data/contacts.json';
 import common from '@/data/common.json';
@@ -12,35 +13,38 @@ import style from './Contacts.module.css';
 function Contacts() {
   const { title, owner, ownerImage, ownerText, ownerPosition } = contacts;
   return (
-    <section id="contacts" className={`bg-lightGreen  ${style.contactsBg}`}>
+    <section
+      id="contacts"
+      className={`bg-lightGreen relative  ${style.contactsBg}`}
+    >
       <div
-        className={`container smOnly:pb-0 py-[60px] md:py-20 xl:py-[120px] xl:flex xl:gap-[272px] ${style.vegetablesBg}`}
+        className={`container smOnly:pb-0 py-[60px] md:py-20 md:px-[62px] xl:py-[120px] xl:flex xl:gap-[272px] ${style.vegetablesBg}`}
       >
         <div>
-          <h2 className="font-roboto font-bold text-lightLarge leading-[1.15] uppercase text-center text-green mb-10 md:text-[40px] xl:text-[68px] xl:mb-[47px] xl:text-start">
+          <h2 className="font-roboto font-bold text-lightLarge leading-[1.15] uppercase text-center text-green mb-10 pt-5 md:text-[40px] xl:text-[68px] xl:mb-[47px] xl:text-start">
             {title}
           </h2>
-          <div className="md:flex md:gap-16 md:justify-center  md:mb-10 xl:block">
+          <div className="md:flex md:gap-16 md:justify-center  md:mb-10 xl:block xl:mb-0">
             <div>
               <PhoneContacts
                 location="contacts"
-                classNames="mb-4 justify-center md:justify-start"
+                classNames=" justify-center md:justify-start"
               />
               <a
                 href={`mailto:${common.email}`}
-                className="font-geologica font-light text-medium tracking-[-0.02em] text-black text-center transition-colors hover:text-green focus:text-green block mb-8 md:text-start md:text-xl md:leading-[1.35] xl:text-large xl:mb-10"
+                className="font-geologica font-light text-medium tracking-[-0.02em] text-black text-center mt-4 transition-colors hover:text-green focus:text-green block mb-8 md:text-start md:text-xl md:leading-[1.35] xl:text-large xl:mb-10"
               >
                 {common.email}
               </a>
               <SocialMedia
                 section="contacts"
-                className="mb-8  justify-center md:justify-start xl:mb-[70px]"
+                className="mb-8  justify-center md:mb-0 md:justify-start xl:mb-[70px]"
               />
             </div>
-            <span className="end-animation-contacts" />
             <div>
+              <span className="end-animation-contacts" />
               <p
-                className={`smOnly:mx-auto font-geologica font-light text-light tracking-[-0.02em] text-black p-6 rounded-xl bg-[#dcf2b4] w-[312px] relative ${style.lowPartOfReview}  mb-6 md:w-[303px] xl:mb-27px `}
+                className={`smOnly:mx-auto font-geologica font-light text-light tracking-[-0.02em] text-black p-6 rounded-xl bg-[#dcf2b4] w-[312px] relative ${style.lowPartOfReview}  mb-6 md:w-[303px] xl:mb-[27px] xl:w-[353px] `}
               >
                 {ownerText}
               </p>
@@ -64,8 +68,13 @@ function Contacts() {
             </div>
           </div>
         </div>
-        <div className="smOnly:hidden">
-          <Form />
+
+        <div className="smOnly:hidden relative">
+          <div className="xl:relative xl:z-[1]">
+            <Form />
+          </div>
+
+          <FormParallax />
         </div>
       </div>
       <div className="md:hidden">

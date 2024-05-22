@@ -70,7 +70,10 @@ function Contacts() {
         </div>
 
         <div className="smOnly:hidden relative">
-          <Form />
+          <div className="xl:relative xl:z-[1]">
+            <Form />
+          </div>
+
           <FormParallax />
         </div>
       </div>

@@ -9,6 +9,8 @@ import 'swiper/css/scrollbar';
 import 'swiper/css/free-mode';
 import 'swiper/css/effect-coverflow';
 
+import ariaLabel from '@/data/slider.json';
+
 import { SliderProps } from './Slider.types';
 import './Slider.css';
 
@@ -37,7 +39,7 @@ function Slider({ slides, isProductsSlider }: SliderProps) {
           nextEl: '.custom-next',
           prevEl: '.custom-prev',
         }}
-        className="w-[100%] mb-[64px] md:mb-[40px] xl:mb-[56px]"
+        className="w-[100%] mb-[40px]"
         breakpoints={{
           768: {
             slidesPerView: slidesToShowTabl,
@@ -75,18 +77,24 @@ function Slider({ slides, isProductsSlider }: SliderProps) {
         <button
           className={classNames('custom-prev', 'border-inherit', {
             'stroke-white text-[#ffffff29]': isProductsSlider,
-            'stroke-[#1F7437]  text-[#1f743752]': !isProductsSlider,
+            'stroke-[#1F7437]  text-[#1f743752] hover:stroke-white focus:stroke-white':
+              !isProductsSlider,
           })}
+          aria-label={ariaLabel.prev}
+          type="button"
         >
-          <Chevron />
+          <Chevron width={32} height={32} />
         </button>
         <button
           className={classNames('custom-next', 'border-inherit', {
             'stroke-white text-[#ffffff29]': isProductsSlider,
-            'stroke-[#1F7437] text-[#1f743752]': !isProductsSlider,
+            'stroke-[#1F7437] text-[#1f743752] hover:stroke-white focus:stroke-white':
+              !isProductsSlider,
           })}
+          aria-label={ariaLabel.next}
+          type="button"
         >
-          <Chevron />
+          <Chevron width={32} height={32} />
         </button>
       </div>
     </div>

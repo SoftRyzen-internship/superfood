@@ -1,4 +1,4 @@
-'use client'
+'use client';
 import React from 'react';
 import { usePathname } from 'next/navigation';
 
@@ -13,11 +13,11 @@ import PhoneContacts from '@/components/ui/PhoneContacts';
 import SocialMedia from '@/components/ui/SocialMedia';
 
 function Footer() {
-  const pathname = usePathname()
+  const pathname = usePathname();
   const isPolicyPage = pathname === '/policy';
   return (
     <>
-      <footer className="bg-green flex flex-col py-6 pb-4 text-center justify-center xl:py-10 transition">
+      <footer className="bg-green end-form-parallax flex flex-col py-6 pb-4 text-center justify-center xl:py-10 transition">
         <div className="xl:container xl:flex xl:items-center xl:justify-center transition">
           <div className="flex flex-col gap-4 xl:flex-row xl:items-center xl:gap-0 transition">
             <Logo path="footer" classNames="xl:mr-8" />
@@ -30,10 +30,10 @@ function Footer() {
           <hr className="w-full mt-4 mb-8 border-strokeGreen xl:hidden" />
           <div className="flex flex-col pb-4  gap-4 text-center font-extralight text-lightGreen text-[14px] leading-[18.9px] md:leading-[19.6px] xl:font-[250] xl:text-start xl:pb-0 transition">
             <a
-              href={isPolicyPage? data.linkMain : data.linkPolicy}
+              href={isPolicyPage ? data.linkMain : data.linkPolicy}
               className="hover:text-white transition"
             >
-              {isPolicyPage? data.nameHomePage : data.namePolicy}
+              {isPolicyPage ? data.nameHomePage : data.namePolicy}
             </a>
             <p>{data.footerTextSec}</p>
             <div className="flex flex-col gap-3 md:flex-row justify-center md:gap-4 xl:gap-6">

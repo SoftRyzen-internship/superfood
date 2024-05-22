@@ -5,7 +5,7 @@ import Icon from '@/../public/icons/LowPartOfReview.svg';
 import CloseIcon from '@/../public/icons/Close.svg';
 
 import Modal from '@/components/common/Modal';
-import readMore from '@/data/comments.json'
+import readMore from '@/data/comments.json';
 
 import { CardCommentsProps } from './CardComments.types';
 import styles from './CardComments.module.css';
@@ -26,7 +26,7 @@ function CardComments({ data }: CardCommentsProps) {
       <div className="flex gap-[23px] md:gap-6 xl:gap-8">
         {data.commentsList.map(comment => (
           <div className="flex flex-col gap" key={comment._id}>
-            <div className="bg-white rounded-xl flex h-[299px] w-[338px] md:h-[397px] xl:h-[490px]">
+            <div className="bg-white rounded-xl flex h-[299px] w-[338px] md:h-[397px] xl:h-[490px] xl:w-[384px]">
               <div className="flex flex-col">
                 <div className="px-6 pt-[24px] pb-8 md:px-8 md:pt-[32px] transition">
                   <h3 className="transition text-black font-geologica text-base font-medium leading-[21.6px] tracking-tighter pb-4 md:pb-5 md:text-[18px] md:leading-[24.3px] xl:text-[20px] xl:leading-[27px]">
@@ -64,7 +64,7 @@ function CardComments({ data }: CardCommentsProps) {
         variant="comments"
         isOpen={isModalOpen}
         close={() => setIsModalOpen(false)}
-        className='overflow-y-hidden'
+        className="overflow-y-hidden"
       >
         <div className="px-6 py-[56px]">
           <h3 className="text-black transition font-geologica text-base font-medium leading-[21.6px] tracking-tighter pb-4 md:pb-5 md:text-[18px] md:leading-[24.3px] xl:text-[20px] xl:leading-[27px]">
@@ -83,7 +83,7 @@ function CardComments({ data }: CardCommentsProps) {
             width={32}
             height={32}
             stroke="#CADAB0"
-            className="w-8 h-8 md:w-10 md:h-10 hover:stroke-green transition" 
+            className="w-8 h-8 md:w-10 md:h-10 hover:stroke-green transition"
           />
         </button>
       </Modal>
